@@ -1,0 +1,9 @@
+#Wed Apr 05 08:44:33 JST 2017
+managerUrl=http\://localhost\:8080/manager
+tomcatDir=C\:\\eclipse\\tomcat6.0
+eclipse.preferences.version=1
+fixTomcatHomeBug=fixed
+contextsDir=C\:\\eclipse\\tomcat6.0\\conf\\Catalina\\localhost
+tomcatVersion=tomcatV6
+computeSourcePath=true
+tomcatConfigFile=C\:\\eclipse\\tomcat6.0\\conf\\server.xml
