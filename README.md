@@ -1,3 +1,2 @@
 # TestYamanashi
-ŽR—œƒeƒXƒg‘‚«ž‚Ý
-
+UTF8ã§æ›¸ãæ›ãˆã—ã¦ã¿ã¾ã™
