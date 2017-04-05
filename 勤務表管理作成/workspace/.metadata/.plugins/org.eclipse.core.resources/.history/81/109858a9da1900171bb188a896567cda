@@ -1,0 +1,23 @@
+
+import java.io.InputStream;
+public class TestMain {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		URL url =
+		System.out.println("hoge");
+		//InputStream in = Resources.getResourceAsStream("/ClassTest/mybatis-config.xml");
+		URL resource
+	    = new URL(TestMain.class.getResource("."),
+	              "test.properties");
+
+		InputStream in
+	    = resource
+	      .openConnection().getInputStream();
+		System.out.println("hogeE");
+	}
+
+}

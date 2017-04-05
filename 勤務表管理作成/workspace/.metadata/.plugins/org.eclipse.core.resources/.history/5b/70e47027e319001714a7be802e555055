@@ -1,0 +1,64 @@
+package freewill;
+
+import java.io.InputStream;
+import java.net.URL;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+import test.TestMain;
+
+public class TestC {
+	private int hoge;
+
+	public int getHoge() {
+		return hoge * 10;
+	}
+
+	public void setHoge(int hoge) {
+		this.hoge = hoge;
+	}
+
+	public void test2() {
+		System.out.println("aaaa");
+	}
+
+	public void test() {
+
+		InputStream in  = null;
+		SqlSession session = null;
+		List<Map<String, Object>> result = null;
+        try {
+        	//in = TestC.class.getResourceAsStream("/mybatis-config.xml");
+        	URL resource  = TestC.class.getClassLoader().getResource("res/mybatis-config.xml");
+        	in = resource.openConnection().getInputStream();
+        	SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(in);
+        	session = factory.openSession();
+        	result = session.selectList("sample.mybatis.selectTest");
+        }
+        catch(Exception e) {
+        	// 例外処理を書くこと
+        	System.out.println(e.getMessage());
+        }
+        finally  {
+        	if (in != null){
+        		try {
+        			in.close();
+        		}
+        		catch(Exception e) {
+        			// 例外処理を書くこと
+        		}
+        	}
+        	if (session != null) session.close();
+        }
+
+        if (result == null) return;
+        for (Map<String, Object> row :  result) {
+        	System.out.println(row.get("ATTNUM"));
+        }
+     }
+
+}

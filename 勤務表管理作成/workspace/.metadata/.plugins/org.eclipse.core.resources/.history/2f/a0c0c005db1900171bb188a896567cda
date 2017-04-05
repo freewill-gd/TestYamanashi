@@ -1,0 +1,21 @@
+
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+public class TestMain {
+
+	/**
+	 * @param args
+	 * @throws MalformedURLException
+	 */
+	public static void main(String[] args) throws MalformedURLException {
+		// TODO 自動生成されたメソッド・スタブ
+		System.out.println("hoge");
+		//InputStream in = Resources.getResourceAsStream("/ClassTest/mybatis-config.xml");
+		URL resource  = new URL(TestMain.class.getResource("."), "mybatis-config.xml");
+
+		//InputStream in = resource.openConnection().getInputStream();
+		System.out.println("hogeE");
+	}
+
+}
