@@ -1,0 +1,9 @@
+INDEX VERSION 1.126
+C:\Users\yamanashi\Documents\TestYamanashi\勤務表管理作成\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2397061025.index
+\StrutsTest
+C:\Users\yamanashi\Documents\TestYamanashi\勤務表管理作成\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2143017290.index
+\StrutsTest
+C:\Users\yamanashi\Documents\TestYamanashi\勤務表管理作成\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3248677658.index
+\StrutsTest
+C:\Users\yamanashi\Documents\TestYamanashi\勤務表管理作成\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1973654592.index
+\StrutsTest
