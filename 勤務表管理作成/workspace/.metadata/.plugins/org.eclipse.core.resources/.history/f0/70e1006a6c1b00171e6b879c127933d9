@@ -1,0 +1,13 @@
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+			String[][] = {{"a","b","c"},{"a","b","c"}};
+			System.out.println("aaaaa");
+	}
+
+}

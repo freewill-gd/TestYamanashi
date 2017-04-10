@@ -1,9 +1,9 @@
-#Wed Apr 05 08:44:33 JST 2017
+#Fri Apr 07 17:43:13 JST 2017
 useQuickDiffPrefPage=true
 tabWidthPropagated=true
 proposalOrderMigrated=true
 useAnnotationsPrefPage=true
-org.eclipse.jface.textfont=1|\uFF2D\uFF33 \u30B4\u30B7\u30C3\u30AF|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|\uFF2D\uFF33 \u30B4\u30B7\u30C3\u30AF;
+org.eclipse.jface.textfont=1|\u30E1\u30A4\u30EA\u30AA|14.25|0|WINDOWS|1|-19|0|0|0|400|0|0|0|-128|3|2|1|50|\u30E1\u30A4\u30EA\u30AA;
 org.eclipse.wst.jsdt.ui.javadoclocations.migrated=true
 eclipse.preferences.version=1
 fontPropagated=true

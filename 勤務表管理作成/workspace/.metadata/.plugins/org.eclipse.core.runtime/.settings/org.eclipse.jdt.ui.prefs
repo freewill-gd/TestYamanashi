@@ -1,11 +1,11 @@
-#Wed Apr 05 17:27:56 JST 2017
+#Fri Apr 07 17:43:13 JST 2017
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
 content_assist_disabled_computers=org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
 org.eclipse.jdt.ui.text.templates_migrated=true
 useAnnotationsPrefPage=true
 eclipse.preferences.version=1
-org.eclipse.jface.textfont=1|\uFF2D\uFF33 \u30B4\u30B7\u30C3\u30AF|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|\uFF2D\uFF33 \u30B4\u30B7\u30C3\u30AF;
+org.eclipse.jface.textfont=1|\u30E1\u30A4\u30EA\u30AA|14.25|0|WINDOWS|1|-19|0|0|0|400|0|0|0|-128|3|2|1|50|\u30E1\u30A4\u30EA\u30AA;
 tabWidthPropagated=true
 org.eclipse.jdt.ui.editor.tab.width=
 fontPropagated=true

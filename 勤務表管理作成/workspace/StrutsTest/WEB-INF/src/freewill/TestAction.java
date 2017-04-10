@@ -12,7 +12,7 @@ public final class TestAction extends Action {
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
 		TestActionForm testActionForm = (TestActionForm)form;
-		testActionForm.setText("FreeWill Test");
+		testActionForm.setText("FreeWill TestSs");
 		request.setAttribute("testActionForm", testActionForm);
 		return map.findForward("success");
   }

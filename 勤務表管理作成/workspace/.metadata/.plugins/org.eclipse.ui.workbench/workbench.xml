@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="35" version="2.0">
+<workbench progressCount="67" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="138" y="465">
+<window height="768" maximized="true" width="1024" x="371" y="545">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -15,7 +15,7 @@
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="78" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="95" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="124" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -23,9 +23,11 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.compare.CompareEditor" itemType="typePlaceholder" x="84" y="22"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="net.sf.jadclipse.JadclipseClassFileEditor" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="net.sf.jadclipse.JadclipseClassFileEditor" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -39,24 +41,43 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestC.java" partName="TestC.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsDBTest/WEB-INF/src/freewill/TestC.java" title="TestC.java" tooltip="StrutsDBTest/WEB-INF/src/freewill/TestC.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsDBTest/WEB-INF/src/freewill/TestC.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="989" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="struts-config.xml" partName="struts-config.xml" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsTest/WEB-INF/struts-config.xml" title="struts-config.xml" tooltip="StrutsTest/WEB-INF/struts-config.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsTest/WEB-INF/struts-config.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="478" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestMain.java" partName="TestMain.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/ClassTest/src/TestMain.java" title="TestMain.java" tooltip="ClassTest/src/TestMain.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ClassTest/src/TestMain.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="591" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestActionForm.java" partName="TestActionForm.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsTest/WEB-INF/src/freewill/TestActionForm.java" title="TestActionForm.java" tooltip="StrutsTest/WEB-INF/src/freewill/TestActionForm.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsTest/WEB-INF/src/freewill/TestActionForm.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="427" selectionTopPixel="84"/>
 </editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="FileURLConnection.class" partName="FileURLConnection.class" title="FileURLConnection.class" tooltip="sun.net.www.protocol.file.FileURLConnection" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=ClassTest/C:\/eclipse\/eclipse\/jre\/lib\/rt.jar&lt;sun.net.www.protocol.file(FileURLConnection.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" partName="TestAction.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsTest/WEB-INF/src/freewill/TestAction.java" title="TestAction.java" tooltip="StrutsTest/WEB-INF/src/freewill/TestAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsTest/WEB-INF/src/freewill/TestAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="346" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" partName="test.jsp" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsTest/test.jsp" title="test.jsp" tooltip="StrutsTest/test.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsTest/test.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="242" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/LocaTest/src/Test.java" title="Test.java" tooltip="LocaTest/src/Test.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LocaTest/src/Test.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="216" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.team.ui.GenericHistoryView" partName="ヒストリー">
+<viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="検索">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+</viewState>
+</view>
 <view id="org.eclipse.debug.ui.DebugView" partName="デバッグ">
 <viewState/>
 </view>
@@ -103,6 +124,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="問題">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="問題">
 <expanded>
+<category IMemento.internal.id="警告"/>
+<category IMemento.internal.id="警告 (15 項目)"/>
 <category IMemento.internal.id="エラー"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -176,7 +199,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.DefaultTextEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="com_sysdeo_eclipse_tomcat_actionSet"/>
@@ -358,6 +381,7 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.team.ui.GenericHistoryView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <view id="zigen.plugin.db.ui.views.TreeView"/>
@@ -384,13 +408,14 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="478" ratioRight="1434" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.75" ratioLeft="699" ratioRight="233" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.5694295" ratioLeft="529" ratioRight="400" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="問題"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="宣言"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="コンソール"/>
 <page content="org.eclipse.debug.ui.DebugView" label="デバッグ"/>
+<page content="org.eclipse.team.ui.GenericHistoryView" label="ヒストリー"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -400,6 +425,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -475,68 +501,55 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.wst.server.ui.ServersView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="デバッグ"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="デバッグ"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="サーバー"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.75" ratioLeft="699" ratioRight="233" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="コンソール"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.75" ratioLeft="699" ratioRight="233" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="コンソール"/>
 <page content="org.eclipse.ui.views.TaskList" label="タスク"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="検索"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.datatools.sqltools.result.resultView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.44921315" ratioLeft="314" ratioRight="385" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="アウトライン"/>
+<info part="org.eclipse.ui.editorss" ratio="0.06888361" ratioLeft="29" ratioRight="392" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="アウトライン"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="変数"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="変数"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="ブレークポイント"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -548,160 +561,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/StrutsDBTest/WEB-INF/src/freewill/TestC.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ClassTest/src/TestMain.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/StrutsDBTest/WEB-INF/src/freewill/TestC.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=ClassTest/C:\/eclipse\/eclipse\/jre\/lib\/rt.jar&lt;sun.net.www.protocol.file(FileURLConnection.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/StrutsTest/WEB-INF/src/freewill/TestActionForm.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/StrutsTest/WEB-INF/src/freewill/TestAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/StrutsTest/test.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LocaTest/src/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/StrutsTest/WEB-INF/struts-config.xml"/>
 </editors>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="1022" y="0"/>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="359" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="429" y="0"/>
+<item historyLabel="TestAction.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="503" y="0"/>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="796" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="415" y="0"/>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="368" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="530" y="0"/>
+<item historyLabel="TestAction.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="560" y="0"/>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="796" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="619" y="0"/>
+<item historyLabel="TestActionForm.java" index="0">
+<position/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="690" y="0"/>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="275" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="987" y="0"/>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="434" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="989" y="0"/>
+<item historyLabel="TestAction.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="503" y="0"/>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="369" y="0"/>
 </item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="987" y="0"/>
-</item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="503" y="0"/>
-</item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="1020" y="0"/>
-</item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="945" y="0"/>
-</item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="1022" y="0"/>
-</item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="602" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="29" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="320" y="0"/>
-</item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="505" y="11"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="320" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="85" y="0"/>
-</item>
-<item historyLabel="TestC.java" index="0">
-<position info="not_deleted" x="21" y="27"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="85" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="322" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="171" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="202" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="286" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="250" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="171" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="202" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="286" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="200" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="171" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="202" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="286" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="322" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="171" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="202" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="286" y="0"/>
-</item>
-<item historyLabel="TestC.java" index="2">
-<position info="not_deleted" x="21" y="27"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="427" y="62"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="597" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="560" y="31"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="292" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="409" y="0"/>
-</item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="494" y="0"/>
-</item>
-<item historyLabel="FileURLConnection.class" index="3">
+<item historyLabel="Test.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TestMain.java" index="1">
-<position info="not_deleted" x="591" y="0"/>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="212" y="0"/>
 </item>
-<item active="true" historyLabel="TestC.java" index="2">
-<position info="not_deleted" x="21" y="27"/>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="134" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="136" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="148" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="152" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="156" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="206" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="TestAction.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="372" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="TestAction.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="481" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="372" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="TestAction.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="2">
+<position/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="549" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="250" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="TestAction.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="549" y="0"/>
+</item>
+<item historyLabel="struts-config.xml" index="4">
+<position info="not_deleted" x="478" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="337" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="250" y="0"/>
+</item>
+<item historyLabel="TestAction.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="250" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="337" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="311" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="311" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="432" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="393" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="427" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="0">
+<position info="not_deleted" x="427" y="0"/>
+</item>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="2">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item active="true" historyLabel="struts-config.xml" index="4">
+<position info="not_deleted" x="478" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -709,6 +723,15 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@c00612"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="right"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@6b74c8"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -720,32 +743,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="LocaTest/src/Test.java">
+<persistable path="/LocaTest/src/Test.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" tooltip="StrutsDBTest/test.jsp">
+<persistable path="/StrutsDBTest/test.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" tooltip="StrutsTest/test.jsp">
+<persistable path="/StrutsTest/test.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" tooltip="StrutsTest/WEB-INF/src/freewill/TestAction.java">
+<persistable path="/StrutsTest/WEB-INF/src/freewill/TestAction.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestActionForm.java" tooltip="StrutsTest/WEB-INF/src/freewill/TestActionForm.java">
+<persistable path="/StrutsTest/WEB-INF/src/freewill/TestActionForm.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="struts-config.xml" tooltip="StrutsTest/WEB-INF/struts-config.xml">
+<persistable path="/StrutsTest/WEB-INF/struts-config.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="mybatis-config.xml" tooltip="StrutsDBTest/WEB-INF/src/mybatis-config.xml">
+<persistable path="/StrutsDBTest/WEB-INF/src/mybatis-config.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="sample_mapper.xml" tooltip="StrutsDBTest/WEB-INF/src/sample_mapper.xml">
+<persistable path="/StrutsDBTest/WEB-INF/src/sample_mapper.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" tooltip="StrutsDBTest/WEB-INF/src/freewill/TestAction.java">
+<persistable path="/StrutsDBTest/WEB-INF/src/freewill/TestAction.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestMain.java" tooltip="StrutsDBTest/WEB-INF/src/TestMain.java">
+<persistable path="/StrutsDBTest/WEB-INF/src/TestMain.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestC.java" tooltip="StrutsDBTest/WEB-INF/src/freewill/TestC.java">
+<persistable path="/StrutsDBTest/WEB-INF/src/freewill/TestC.java"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="FileURLConnection.class" tooltip="sun.net.www.protocol.file.FileURLConnection">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=ClassTest/C:\/eclipse\/eclipse\/jre\/lib\/rt.jar&lt;sun.net.www.protocol.file(FileURLConnection.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestMain.java" tooltip="ClassTest/src/TestMain.java">
 <persistable path="/ClassTest/src/TestMain.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestC.java" tooltip="StrutsDBTest/WEB-INF/src/freewill/TestC.java">
-<persistable path="/StrutsDBTest/WEB-INF/src/freewill/TestC.java"/>
-</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="Class.class" tooltip="java.lang.Class">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=StrutsTest/C:\/eclipse\/eclipse\/jre\/lib\/rt.jar&lt;java.lang(Class.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" tooltip="StrutsDBTest/WEB-INF/src/freewill/TestAction.java">
-<persistable path="/StrutsDBTest/WEB-INF/src/freewill/TestAction.java"/>
-</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="ExecuteAction.class" tooltip="org.apache.struts.chain.commands.servlet.ExecuteAction">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=StrutsTest/WEB-INF\/lib\/struts-core-1.3.10.jar&lt;org.apache.struts.chain.commands.servlet(ExecuteAction.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" tooltip="StrutsTest/WEB-INF/src/freewill/TestAction.java">
-<persistable path="/StrutsTest/WEB-INF/src/freewill/TestAction.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="Test/WEB-INF/src/jp/co/freewill/Test.java">
-<persistable path="/Test/WEB-INF/src/jp/co/freewill/Test.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="Test/WEB-INF/src/co/jp/freewill/Test.java">
-<persistable path="/Test/WEB-INF/src/co/jp/freewill/Test.java"/>
 </file>
 </mruList>
 </workbench>
