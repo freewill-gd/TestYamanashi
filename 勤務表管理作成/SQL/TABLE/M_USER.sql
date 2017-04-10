@@ -1,30 +1,30 @@
--- Table: public."M_USER"
+-- Table: public.m_user
 
--- DROP TABLE public."M_USER";
+-- DROP TABLE public.m_user;
 
-CREATE TABLE public."M_USER"
+CREATE TABLE public.m_user
 (
-  "USER_ID" character varying(6) NOT NULL, -- ユーザID
-  "USER_NAME" character varying(6), -- ユーザ名
-  "INSERT_DATE" time with time zone, -- 追加日時
-  "INSERT_USER_ID" character varying(6), -- 追加ユーザID
-  "UPDATE_DATE" time with time zone, -- 更新日時
-  "UPDATE_USER_ID" character varying(6), -- 更新ユーザID
-  "ENABLE_FLG" smallint, -- 有効フラグ｜0:無効,1:有効
-  CONSTRAINT "M_USER_pkey" PRIMARY KEY ("USER_ID")
+  user_id character varying(6) NOT NULL, -- ユーザID
+  user_name character varying(6), -- ユーザ名
+  insert_date time with time zone, -- 追加日時
+  insert_user_id character varying(6), -- 追加ユーザID
+  update_date time with time zone, -- 更新日時
+  update_user_id character varying(6), -- 更新ユーザID
+  enable_flg smallint, -- 有効フラグ｜0:無効,1:有効
+  CONSTRAINT m_user_pkey PRIMARY KEY (user_id)
 )
 WITH (
   OIDS=FALSE
 );
-ALTER TABLE public."M_USER"
+ALTER TABLE public.m_user
   OWNER TO postgres;
-COMMENT ON TABLE public."M_USER"
+COMMENT ON TABLE public.m_user
   IS 'ユーザテーブル';
-COMMENT ON COLUMN public."M_USER"."USER_ID" IS 'ユーザID';
-COMMENT ON COLUMN public."M_USER"."USER_NAME" IS 'ユーザ名';
-COMMENT ON COLUMN public."M_USER"."INSERT_DATE" IS '追加日時';
-COMMENT ON COLUMN public."M_USER"."INSERT_USER_ID" IS '追加ユーザID';
-COMMENT ON COLUMN public."M_USER"."UPDATE_DATE" IS '更新日時';
-COMMENT ON COLUMN public."M_USER"."UPDATE_USER_ID" IS '更新ユーザID';
-COMMENT ON COLUMN public."M_USER"."ENABLE_FLG" IS '有効フラグ｜0:無効,1:有効';
+COMMENT ON COLUMN public.m_user.user_id IS 'ユーザID';
+COMMENT ON COLUMN public.m_user.user_name IS 'ユーザ名';
+COMMENT ON COLUMN public.m_user.insert_date IS '追加日時';
+COMMENT ON COLUMN public.m_user.insert_user_id IS '追加ユーザID';
+COMMENT ON COLUMN public.m_user.update_date IS '更新日時';
+COMMENT ON COLUMN public.m_user.update_user_id IS '更新ユーザID';
+COMMENT ON COLUMN public.m_user.enable_flg IS '有効フラグ｜0:無効,1:有効';
 
