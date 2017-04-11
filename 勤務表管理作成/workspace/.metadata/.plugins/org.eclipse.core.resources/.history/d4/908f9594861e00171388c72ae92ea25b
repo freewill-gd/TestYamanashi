@@ -9,7 +9,7 @@ public class SampleDB {
 	public String getText() {
 		DataAccess da = new DataAccess();
 	HashMap<String, Object> param = new HashMap<String, Object>();
-	param.put("table", "M_WORK");
+	param.put("table", "M_WORK);
 	List<Map<String, Object>> result = da.selectList("test.selectTest", param);
 	StringBuilder sb = new StringBuilder();
 	if (result == null) return "";

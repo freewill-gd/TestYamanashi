@@ -57,19 +57,19 @@ public class DataAccess {
 	 * @return
 	 */
 	public List<Map<String, Object>> selectList(String name, Object param) {
-		SqlSession session;
-		session = getSqlSession();
-		List<Map<String, Object>> result = null;
-		try {
-			result = session.selectList(name, param);
-		}
-		catch(Exception e) {
-			System.out.println(e.getMessage());
-		}
-		finally  {
-			if (session != null) session.close();
-		}
-		return result;
+			SqlSession session;
+			session = getSqlSession();
+			List<Map<String, Object>> result = null;
+			try {
+				result = session.selectList("test.selectTest", param);
+			}
+			catch(Exception e) {
+	        	System.out.println(e.getMessage());
+	        }
+	        finally  {
+	        	if (session != null) session.close();
+	        }
+	        return result;
 	}
 
 }
