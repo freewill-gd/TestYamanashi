@@ -2,8 +2,12 @@ package freewill.database;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
+
 import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+
 import freewill.database.DataAccess;
 
 public class SampleDB {

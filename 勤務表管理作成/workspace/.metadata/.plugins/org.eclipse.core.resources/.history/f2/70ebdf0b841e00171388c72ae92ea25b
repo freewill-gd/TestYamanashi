@@ -41,12 +41,8 @@ public class DataAccess {
 		return factory;
 	}
 
-	/**
-	 *
-	 * @return
-	 */
 	public SqlSession getSqlSession() {
-    	SqlSessionFactory factory = getSqlSessionFactory();
+    	SqlSessionFactory factory = da.getSqlSessionFactory();
     	return factory.openSession();
 	}
 

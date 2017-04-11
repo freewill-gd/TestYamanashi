@@ -2,8 +2,12 @@ package freewill.database;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
+
 import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+
 import freewill.database.DataAccess;
 
 public class SampleDB {
@@ -12,9 +16,12 @@ public class SampleDB {
 		List<Map<String, Object>> result = null;
 		SqlSession session = null;
         try {
-        	session = da.getSqlSession();
+        	SqlSessionFactory factory = da.getSqlSessionFactory();
+        	session = factory.openSession();
         	HashMap<String, Object> param = new HashMap<String, Object>();
+
         	param.put("table", "T_WORK_TIME");
+
         	result = session.selectList("test.selectTest", param);
         }
         catch(Exception e) {
