@@ -1,6 +1,6 @@
 package freewill.database;
 
-import freewill.database.DataAccess;
+import freewill.database.SampleDB;
 
 public class TestDB {
 
@@ -9,7 +9,7 @@ public class TestDB {
 	 */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		DataAccess da = new DataAccess();
+		SampleDB da = new SampleDB();
 		System.out.println(da.getText());
 
 	}
