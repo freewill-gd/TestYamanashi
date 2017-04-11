@@ -27,4 +27,8 @@
 		<taglib-location>/WEB-INF/tld/struts-html.tld</taglib-location>
 	</taglib>
 
+	<taglib>
+		<taglib-uri>/tags/struts-logic</taglib-uri>
+		<taglib-location>/WEB-INF/tld/struts-logic.tld</taglib-location>
+	</taglib>
 </web-app>

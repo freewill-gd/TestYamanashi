@@ -6,7 +6,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import freewill.database.SampleDB;
+import freewill.database.RosterDataAccess;
 
 public final class TestAction extends Action {
 
@@ -14,8 +14,8 @@ public final class TestAction extends Action {
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
 		TestActionForm testActionForm = (TestActionForm)form;
-		SampleDB data = new SampleDB();
-		testActionForm.setText(data.getText());
+		RosterDataAccess data = new RosterDataAccess();
+		testActionForm.setData(data.getData());
 		request.setAttribute("testActionForm", testActionForm);
 		return map.findForward("success");
   }

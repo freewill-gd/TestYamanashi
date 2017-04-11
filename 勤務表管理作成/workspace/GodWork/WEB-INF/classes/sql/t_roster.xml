@@ -4,7 +4,7 @@
   <select id="selectT_roster" resultType="map">
 <![CDATA[
 SELECT user_id
- , work_date
+ , to_char(work_date, 'DD') AS work_date
  , holiday_flg
  , work_kind
  , start_time

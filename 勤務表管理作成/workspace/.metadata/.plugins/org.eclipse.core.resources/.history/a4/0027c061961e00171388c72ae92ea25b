@@ -1,0 +1,15 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib uri="/tags/struts-html" prefix="html" %>
+<%@ taglib uri="/tags/struts-bean" prefix="bean" %>
+<%@ taglib uri="/tags/struts-logic" prefix="logic" %>
+<html:html>
+<body>
+	<logic:iterate id="row" name="testActionForm" property="data">
+			<logic:equal name="element" property="key" value="key1">
+				<bean:write name="element" property="value" />
+			</logic:equal>
+		<bean:write name="loop" property="key" />
+
+	</logic:iterate>
+</body>
+</html:html>
