@@ -1,0 +1,26 @@
+package freewill.database;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import freewill.database.DataAccess;
+
+public class SampleDB {
+	public String getText() {
+		DataAccess da = new DataAccess();
+	HashMap<String, Object> param = new HashMap<String, Object>();
+	param.put("table", "T_WORK_TIME");
+	List<Object> result = da.selectList("test.selectTest", param);
+	StringBuilder sb = new StringBuilder();
+	if (result == null) return "";
+		for (Object row :  result) {
+			if (row instanseof  Map<String, Object>)
+			Map<String, Object> rowMap = (Map<String, Object>)row;
+			sb.append(rowMap.get("table_name"));
+			sb.append(".");
+			sb.append(rowMap.get("column_name"));
+			sb.append("\r\n");
+		}
+		return sb.toString();
+	}
+}

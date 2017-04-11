@@ -9,8 +9,8 @@ public class SampleDB {
 	public String getText() {
 		DataAccess da = new DataAccess();
 	HashMap<String, Object> param = new HashMap<String, Object>();
-	param.put("table", "M_WORK");
-	List<Map<String, Object>> result = da.selectList("test.selectTest", param);
+	param.put("table", "T_WORK_TIME");
+	List<Map<String, Object>> result = da.selectMapList("test.selectTest", param);
 	StringBuilder sb = new StringBuilder();
 	if (result == null) return "";
 		for (Map<String, Object> row :  result) {
