@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="67" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="371" y="545">
+<window height="768" width="1024" x="244" y="264">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -23,7 +23,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.compare.CompareEditor" itemType="typePlaceholder" x="84" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -47,25 +47,25 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="struts-config.xml" partName="struts-config.xml" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsTest/WEB-INF/struts-config.xml" title="struts-config.xml" tooltip="StrutsTest/WEB-INF/struts-config.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsTest/WEB-INF/struts-config.xml"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="478" selectionTopPixel="0"/>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="mybatis-config.xml" partName="mybatis-config.xml" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/GodWork/WEB-INF/src/mybatis-config.xml" title="mybatis-config.xml" tooltip="GodWork/WEB-INF/src/mybatis-config.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GodWork/WEB-INF/src/mybatis-config.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="638" selectionTopPixel="23"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestActionForm.java" partName="TestActionForm.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsTest/WEB-INF/src/freewill/TestActionForm.java" title="TestActionForm.java" tooltip="StrutsTest/WEB-INF/src/freewill/TestActionForm.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsTest/WEB-INF/src/freewill/TestActionForm.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="427" selectionTopPixel="84"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataAccess.java" partName="DataAccess.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/GodWork/WEB-INF/src/freewill/database/DataAccess.java" title="DataAccess.java" tooltip="GodWork/WEB-INF/src/freewill/database/DataAccess.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GodWork/WEB-INF/src/freewill/database/DataAccess.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1343" selectionTopPixel="759"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" partName="TestAction.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsTest/WEB-INF/src/freewill/TestAction.java" title="TestAction.java" tooltip="StrutsTest/WEB-INF/src/freewill/TestAction.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsTest/WEB-INF/src/freewill/TestAction.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="346" selectionTopPixel="0"/>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="t_roster.xml" partName="t_roster.xml" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/GodWork/WEB-INF/src/sql/t_roster.xml" title="t_roster.xml" tooltip="GodWork/WEB-INF/src/sql/t_roster.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GodWork/WEB-INF/src/sql/t_roster.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="314" selectionTopPixel="23"/>
 </editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" partName="test.jsp" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/StrutsTest/test.jsp" title="test.jsp" tooltip="StrutsTest/test.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/StrutsTest/test.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="242" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" partName="TestAction.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/GodWork/WEB-INF/src/freewill/TestAction.java" title="TestAction.java" tooltip="GodWork/WEB-INF/src/freewill/TestAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GodWork/WEB-INF/src/freewill/TestAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="246" selectionTopPixel="46"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/LocaTest/src/Test.java" title="Test.java" tooltip="LocaTest/src/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LocaTest/src/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="216" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="struts-config.xml" partName="struts-config.xml" path="C:/Users/yamanashi/Documents/TestYamanashi/勤務表管理作成/workspace/GodWork/WEB-INF/struts-config.xml" title="struts-config.xml" tooltip="GodWork/WEB-INF/struts-config.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GodWork/WEB-INF/struts-config.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -123,9 +123,7 @@
 <view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="データ・ソース・エクスプローラー"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="問題">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="問題">
-<expanded>
-<category IMemento.internal.id="警告"/>
-<category IMemento.internal.id="警告 (15 項目)"/>
+<expanded>&#x0A;<category IMemento.internal.id="警告"/>
 <category IMemento.internal.id="エラー"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -562,160 +560,170 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/StrutsTest/WEB-INF/src/freewill/TestActionForm.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/StrutsTest/WEB-INF/src/freewill/TestAction.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/StrutsTest/test.jsp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LocaTest/src/Test.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/StrutsTest/WEB-INF/struts-config.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/StrutsTest/WEB-INF/src/freewill/TestActionForm.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/StrutsTest/WEB-INF/src/freewill/TestAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/StrutsTest/test.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LocaTest/src/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/GodWork/WEB-INF/struts-config.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/GodWork/WEB-INF/struts-config.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/GodWork/WEB-INF/src/sql-mapper.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GodWork/WEB-INF/src/freewill/TestC.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GodWork/WEB-INF/src/freewill/TestActionForm.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GodWork/WEB-INF/src/freewill/TestAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/GodWork/WEB-INF/src/sql/sql-mapper.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/GodWork/WEB-INF/src/sql/sql-mapper.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/GodWork/WEB-INF/src/mybatis-config.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GodWork/WEB-INF/src/freewill/database/TestC.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GodWork/WEB-INF/src/freewill/database/DataAccess.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/GodWork/WEB-INF/src/sql/t_roster.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GodWork/WEB-INF/src/freewill/TestActionForm.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/GodWork/WEB-INF/src/mybatis-config.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GodWork/WEB-INF/src/freewill/database/DataAccess.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GodWork/WEB-INF/src/freewill/TestAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/GodWork/WEB-INF/struts-config.xml"/>
 </editors>
-<item historyLabel="test.jsp" index="2">
-<position info="not_deleted" x="359" y="0"/>
-</item>
-<item historyLabel="TestAction.java" index="1">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="796" y="0"/>
-</item>
-<item historyLabel="test.jsp" index="2">
-<position info="not_deleted" x="368" y="0"/>
-</item>
-<item historyLabel="TestAction.java" index="1">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="796" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="275" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="434" y="0"/>
-</item>
-<item historyLabel="TestAction.java" index="1">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="test.jsp" index="2">
-<position info="not_deleted" x="369" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="212" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="134" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="136" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="148" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="152" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="156" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="206" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="216" y="0"/>
-</item>
-<item historyLabel="TestAction.java" index="1">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="434" y="0"/>
-</item>
-<item historyLabel="test.jsp" index="2">
-<position info="not_deleted" x="372" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="216" y="0"/>
-</item>
-<item historyLabel="TestAction.java" index="1">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="481" y="0"/>
-</item>
-<item historyLabel="test.jsp" index="2">
-<position info="not_deleted" x="372" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="434" y="0"/>
-</item>
-<item historyLabel="TestAction.java" index="1">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="test.jsp" index="2">
-<position/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="549" y="0"/>
-</item>
-<item historyLabel="test.jsp" index="2">
-<position info="not_deleted" x="250" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
-<position info="not_deleted" x="216" y="0"/>
-</item>
-<item historyLabel="TestAction.java" index="1">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="549" y="0"/>
-</item>
-<item historyLabel="struts-config.xml" index="4">
-<position info="not_deleted" x="478" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="337" y="0"/>
-</item>
-<item historyLabel="test.jsp" index="2">
-<position info="not_deleted" x="250" y="0"/>
-</item>
-<item historyLabel="TestAction.java" index="1">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="test.jsp" index="2">
-<position info="not_deleted" x="250" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="337" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="311" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="311" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="432" y="0"/>
-</item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="393" y="0"/>
-</item>
 <item historyLabel="TestActionForm.java" index="0">
 <position info="not_deleted" x="427" y="0"/>
 </item>
-<item historyLabel="TestActionForm.java" index="0">
-<position info="not_deleted" x="427" y="0"/>
-</item>
-<item historyLabel="Test.java" index="3">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="216" y="0"/>
 </item>
-<item historyLabel="test.jsp" index="2">
+<item historyLabel="test.jsp" index="1">
 <position info="not_deleted" x="242" y="0"/>
 </item>
-<item active="true" historyLabel="struts-config.xml" index="4">
+<item historyLabel="struts-config.xml" index="3">
 <position info="not_deleted" x="478" y="0"/>
+</item>
+<item historyLabel="TestActionForm.java" index="4">
+<position info="not_deleted" x="427" y="0"/>
+</item>
+<item historyLabel="TestAction.java" index="5">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="6">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item historyLabel="Test.java" index="7">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="struts-config.xml" index="8"/>
+<item historyLabel="struts-config.xml" index="3">
+<position info="not_deleted" x="373" y="0"/>
+</item>
+<item historyLabel="struts-config.xml" index="8"/>
+<item historyLabel="struts-config.xml" index="8"/>
+<item historyLabel="struts-config.xml" index="9">
+<position info="not_deleted" x="318" y="0"/>
+</item>
+<item historyLabel="sql-mapper.xml" index="10"/>
+<item historyLabel="struts-config.xml" index="9">
+<position info="not_deleted" x="318" y="0"/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position/>
+</item>
+<item historyLabel="TestActionForm.java" index="12">
+<position info="not_deleted" x="252" y="2"/>
+</item>
+<item historyLabel="TestAction.java" index="13">
+<position/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position/>
+</item>
+<item historyLabel="struts-config.xml" index="9">
+<position info="not_deleted" x="318" y="0"/>
+</item>
+<item historyLabel="TestAction.java" index="13">
+<position info="not_deleted" x="409" y="0"/>
+</item>
+<item historyLabel="struts-config.xml" index="9">
+<position info="not_deleted" x="318" y="0"/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position/>
+</item>
+<item historyLabel="sql-mapper.xml" index="14"/>
+<item historyLabel="TestC.java" index="11">
+<position/>
+</item>
+<item historyLabel="struts-config.xml" index="9">
+<position info="not_deleted" x="374" y="0"/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position/>
+</item>
+<item historyLabel="sql-mapper.xml" index="15">
+<position info="not_deleted" x="375" y="0"/>
+</item>
+<item historyLabel="mybatis-config.xml" index="16">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position/>
+</item>
+<item historyLabel="mybatis-config.xml" index="16">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="TestC.java" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DataAccess.java" index="18">
+<position info="not_deleted" x="351" y="0"/>
+</item>
+<item historyLabel="DataAccess.java" index="18">
+<position info="not_deleted" x="1345" y="0"/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position info="not_deleted" x="504" y="26"/>
+</item>
+<item historyLabel="DataAccess.java" index="18">
+<position info="not_deleted" x="1564" y="0"/>
+</item>
+<item historyLabel="t_roster.xml" index="19">
+<position info="not_deleted" x="205" y="0"/>
+</item>
+<item historyLabel="TestC.java" index="11">
+<position info="not_deleted" x="412" y="0"/>
+</item>
+<item historyLabel="t_roster.xml" index="19">
+<position/>
+</item>
+<item historyLabel="TestActionForm.java" index="20">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="t_roster.xml" index="19">
+<position/>
+</item>
+<item historyLabel="TestAction.java" index="13">
+<position info="not_deleted" x="246" y="0"/>
+</item>
+<item historyLabel="DataAccess.java" index="18">
+<position info="not_deleted" x="1343" y="0"/>
+</item>
+<item historyLabel="t_roster.xml" index="19">
+<position/>
+</item>
+<item historyLabel="mybatis-config.xml" index="21">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="DataAccess.java" index="22">
+<position info="not_deleted" x="1343" y="0"/>
+</item>
+<item historyLabel="TestAction.java" index="23">
+<position info="not_deleted" x="246" y="0"/>
+</item>
+<item active="true" historyLabel="struts-config.xml" index="24">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -723,15 +731,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@c00612"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="bottom"/>
-<trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@6b74c8"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -743,6 +742,33 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="struts-config.xml" tooltip="GodWork/WEB-INF/struts-config.xml">
+<persistable path="/GodWork/WEB-INF/struts-config.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" tooltip="GodWork/WEB-INF/src/freewill/TestAction.java">
+<persistable path="/GodWork/WEB-INF/src/freewill/TestAction.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestActionForm.java" tooltip="GodWork/WEB-INF/src/freewill/TestActionForm.java">
+<persistable path="/GodWork/WEB-INF/src/freewill/TestActionForm.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="t_roster.xml" tooltip="GodWork/WEB-INF/src/sql/t_roster.xml">
+<persistable path="/GodWork/WEB-INF/src/sql/t_roster.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestC.java" tooltip="GodWork/WEB-INF/src/freewill/TestC.java">
+<persistable path="/GodWork/WEB-INF/src/freewill/TestC.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestC.java" tooltip="GodWork/WEB-INF/src/freewill/database/TestC.java">
+<persistable path="/GodWork/WEB-INF/src/freewill/database/TestC.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="mybatis-config.xml" tooltip="GodWork/WEB-INF/src/mybatis-config.xml">
+<persistable path="/GodWork/WEB-INF/src/mybatis-config.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="sql-mapper.xml" tooltip="GodWork/WEB-INF/src/sql/sql-mapper.xml">
+<persistable path="/GodWork/WEB-INF/src/sql/sql-mapper.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="sql-mapper.xml" tooltip="GodWork/WEB-INF/src/sql-mapper.xml">
+<persistable path="/GodWork/WEB-INF/src/sql-mapper.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="LocaTest/src/Test.java">
 <persistable path="/LocaTest/src/Test.java"/>
 </file>
@@ -760,33 +786,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="struts-config.xml" tooltip="StrutsTest/WEB-INF/struts-config.xml">
 <persistable path="/StrutsTest/WEB-INF/struts-config.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="mybatis-config.xml" tooltip="StrutsDBTest/WEB-INF/src/mybatis-config.xml">
-<persistable path="/StrutsDBTest/WEB-INF/src/mybatis-config.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="sample_mapper.xml" tooltip="StrutsDBTest/WEB-INF/src/sample_mapper.xml">
-<persistable path="/StrutsDBTest/WEB-INF/src/sample_mapper.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestAction.java" tooltip="StrutsDBTest/WEB-INF/src/freewill/TestAction.java">
-<persistable path="/StrutsDBTest/WEB-INF/src/freewill/TestAction.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestMain.java" tooltip="StrutsDBTest/WEB-INF/src/TestMain.java">
-<persistable path="/StrutsDBTest/WEB-INF/src/TestMain.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestC.java" tooltip="StrutsDBTest/WEB-INF/src/freewill/TestC.java">
-<persistable path="/StrutsDBTest/WEB-INF/src/freewill/TestC.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="FileURLConnection.class" tooltip="sun.net.www.protocol.file.FileURLConnection">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=ClassTest/C:\/eclipse\/eclipse\/jre\/lib\/rt.jar&lt;sun.net.www.protocol.file(FileURLConnection.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestMain.java" tooltip="ClassTest/src/TestMain.java">
-<persistable path="/ClassTest/src/TestMain.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="Class.class" tooltip="java.lang.Class">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=StrutsTest/C:\/eclipse\/eclipse\/jre\/lib\/rt.jar&lt;java.lang(Class.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="ExecuteAction.class" tooltip="org.apache.struts.chain.commands.servlet.ExecuteAction">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=StrutsTest/WEB-INF\/lib\/struts-core-1.3.10.jar&lt;org.apache.struts.chain.commands.servlet(ExecuteAction.class"/>
 </file>
 </mruList>
 </workbench>

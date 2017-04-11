@@ -6,14 +6,16 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
+import freewill.database.DataAccess;
+
 public final class TestAction extends Action {
 
 	public ActionForward execute (
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
 		TestActionForm testActionForm = (TestActionForm)form;
-		TestC testC = new TestC();
-		testActionForm.setText(testC.getText());
+		DataAccess data = new DataAccess();
+		testActionForm.setText(data.getText());
 		request.setAttribute("testActionForm", testActionForm);
 		return map.findForward("success");
   }

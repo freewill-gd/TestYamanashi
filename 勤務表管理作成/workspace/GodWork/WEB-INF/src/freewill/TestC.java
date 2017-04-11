@@ -31,6 +31,7 @@ public class TestC {
         try {
         	//in = TestC.class.getResourceAsStream("/mybatis-config.xml");
         	URL resource  = TestC.class.getClassLoader().getResource("mybatis-config.xml");
+        	System.out.println(resource);
         	in = resource.openConnection().getInputStream();
         	SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(in);
         	session = factory.openSession();

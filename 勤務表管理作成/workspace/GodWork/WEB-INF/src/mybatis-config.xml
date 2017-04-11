@@ -15,6 +15,8 @@
     </environment>
   </environments>
   <mappers>
-    <mapper resource="sql-mapper.xml"/>
+    <mapper resource="sql/sql-mapper.xml"/>
+    <mapper resource="sql/t_roster.xml"/>
   </mappers>
+
 </configuration>
