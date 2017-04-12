@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test">
+
+<resultMap id="rosterResultMap" type="map">
+	<result property="hoge" column="hoge" />
+</resultMap>
+
+  <select id="selectT_roster" resultType="rosterResultMap">
+<![CDATA[
+SELECT
+  'aaa' as  hoge
+FROM
+  t_roster
+WHERE
+ work_date >= TO_DATE('2017/04', 'YYYY/MM')
+ AND work_date < TO_DATE('2017/05', 'YYYY/MM')
+]]>
+
+  </select>
+</mapper>

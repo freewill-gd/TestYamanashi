@@ -3,11 +3,16 @@
 <struts-config>
 	<form-beans>
 		<form-bean name="TestActionForm" type="freewill.TestActionForm" />
+		<form-bean name="RosterActionForm" type="freewill.RosterActionForm" />
 	</form-beans>
 
 	<action-mappings>
 		<action path="/Test" type="freewill.TestAction" name="TestActionForm" scope="request">
 			<forward name="success" path="/test.jsp" />
+		</action>
+
+		<action path="/Roster" type="freewill.RosterAction" name="RosterActionForm" scope="request">
+			<forward name="success" path="/roster.jsp" />
 		</action>
 	</action-mappings>
 
