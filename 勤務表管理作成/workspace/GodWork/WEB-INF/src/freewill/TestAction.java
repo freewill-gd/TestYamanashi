@@ -15,7 +15,7 @@ public final class TestAction extends Action {
 		HttpServletRequest request, HttpServletResponse response) {
 		TestActionForm testActionForm = (TestActionForm)form;
 		RosterDataAccess data = new RosterDataAccess();
-		testActionForm.setData(data.getData());
+		testActionForm.setData(data.getData("201704"));
 		request.setAttribute("testActionForm", testActionForm);
 		return map.findForward("success");
   }

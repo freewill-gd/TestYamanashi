@@ -15,7 +15,7 @@ public final class RosterAction extends Action {
 		HttpServletRequest request, HttpServletResponse response) {
 		RosterActionForm rosterActionForm = (RosterActionForm)form;
 		RosterDataAccess data = new RosterDataAccess();
-		rosterActionForm.setData(data.getData(rosterActionForm.getYear() + rosterActionForm.getMonth()));
+		rosterActionForm.setData(data.getData());
 		request.setAttribute("rosterActionForm", rosterActionForm);
 		return map.findForward("success");
   }

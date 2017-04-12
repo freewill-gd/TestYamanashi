@@ -9,7 +9,7 @@ public final class RosterActionForm extends ActionForm {
 	private static final long serialVersionUID = 1L;
 
 	private String year = "2017";
-	private String month = "07";
+	private String month = "06";
 	private String name = "テスト太郎";
 
 	public List<Map<String, Object>> data;

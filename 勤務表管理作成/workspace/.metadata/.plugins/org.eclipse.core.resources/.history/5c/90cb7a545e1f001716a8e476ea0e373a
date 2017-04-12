@@ -48,8 +48,8 @@ SELECT user_id
 FROM
   t_roster
 WHERE
- work_date >= TO_DATE(#{start}, 'YYYYMM')
- AND work_date < TO_DATE(#{end}, 'YYYYMM')
+ work_date >= TO_DATE('2017/04', 'YYYY/MM')
+ AND work_date < TO_DATE('2017/05', 'YYYY/MM')
 ORDER BY
   work_date
 ]]>
