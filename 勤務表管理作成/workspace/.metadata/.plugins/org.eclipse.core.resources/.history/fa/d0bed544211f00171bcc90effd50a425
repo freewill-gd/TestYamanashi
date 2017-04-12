@@ -6,7 +6,7 @@
 <body>
 	<div>勤務表</div>
 	<table border="1">
-		 <tr>
+			    <tr>
 			<td>work_date</td>
 			<td>work_kind</td>
 			<td>start_time</td>
