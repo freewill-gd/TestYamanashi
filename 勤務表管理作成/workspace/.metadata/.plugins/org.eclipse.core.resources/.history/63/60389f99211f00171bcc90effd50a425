@@ -8,7 +8,6 @@
 	<table border="1">
 		 <tr>
 			<td>work_date</td>
-			<td>weekday</td>
 			<td>work_kind</td>
 			<td>start_time</td>
 			<td>end_time</td>
@@ -22,7 +21,6 @@
 	<logic:iterate id="row" name="rosterActionForm" property="data">
 	    <tr>
 			<td><bean:write name="row" property="work_date"/></td>
-			<td><bean:write name="row" property="weekday"/></td>
 			<td><bean:write name="row" property="work_kind"/></td>
 			<td><bean:write name="row" property="start_time"/></td>
 			<td><bean:write name="row" property="end_time"/></td>
@@ -35,6 +33,6 @@
 		</tr>
 	</logic:iterate>
 	</table>
-
+	end<br>
 </body>
 </html:html>

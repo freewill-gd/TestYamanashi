@@ -22,7 +22,6 @@
 	<logic:iterate id="row" name="rosterActionForm" property="data">
 	    <tr>
 			<td><bean:write name="row" property="work_date"/></td>
-			<td><bean:write name="row" property="weekday"/></td>
 			<td><bean:write name="row" property="work_kind"/></td>
 			<td><bean:write name="row" property="start_time"/></td>
 			<td><bean:write name="row" property="end_time"/></td>

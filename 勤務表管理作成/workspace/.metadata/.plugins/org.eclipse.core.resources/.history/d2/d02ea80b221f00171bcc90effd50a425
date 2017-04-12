@@ -5,8 +5,6 @@
 <resultMap id="t_rosterResultMap" type="map">
 	<result property="user_id" column="user_id" javaType="String"/>
 	<result property="work_date" column="work_date" javaType="String"/>
-	<result property="weekday" column="weekday" javaType="String"/>
-	<result property="work_date_key" column="work_date_key" javaType="String"/>
 	<result property="holiday_flg" column="holiday_flg" javaType="String"/>
 	<result property="work_kind" column="work_kind" javaType="String"/>
 	<result property="start_time" column="start_time" javaType="String"/>
@@ -27,31 +25,27 @@
   <select id="selectT_roster" resultMap="t_rosterResultMap">
 <![CDATA[
 SELECT user_id
- ,  TO_CHAR(work_date, 'DD') AS work_date
- ,  fn_weekday(work_date) AS weekday
- ,  work_date AS work_date_key
- ,  holiday_flg
- ,  work_kind
- ,  TO_CHAR(start_time, 'HH24:MI') AS start_time
- ,  TO_CHAR(end_time, 'HH24:MI') AS end_time
- ,  break_time
- ,  over_time
- ,  late_night_over_time
- ,  holiday_over_time
- ,  holiday_late_night_over_time
- ,  remarks
- ,  insert_date
- ,  insert_user_id
- ,  update_date
- ,  update_user_id
- ,  enable_flg
+ , work_date AS work_date_key
+ , holiday_flg
+ , work_kind
+ , start_time
+ , end_time
+ , break_time
+ , over_time
+ , late_night_over_time
+ , holiday_over_time
+ , holiday_late_night_over_time
+ , remarks
+ , insert_date
+ , insert_user_id
+ , update_date
+ , update_user_id
+ , enable_flg
 FROM
   t_roster
 WHERE
  work_date >= TO_DATE('2017/04', 'YYYY/MM')
  AND work_date < TO_DATE('2017/05', 'YYYY/MM')
-ORDER BY
-  work_date
 ]]>
 
   </select>
