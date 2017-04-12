@@ -8,7 +8,16 @@
 	<title><bean:message key="title.roster" /></title>
 </head>
 <body>
-	<div class="title"><bean:message key="title.roster" /></div>
+	<div class="title">
+			<bean:message key="title.roster" />
+			<bean:write name="rosterActionForm" property="year"/>
+			<bean:message key="disp.year" />
+			<bean:write name="rosterActionForm" property="month"/>
+			<bean:message key="disp.month" />
+	</div>
+	<div class="subtitle">
+		<bean:message key="disp.name" />:<bean:write name="rosterActionForm" property="name"/>
+	</div>
 	<table class="maintable">
 		 <tr>
 			<td class="work_date"><bean:message key="disp.work_date" /></td>

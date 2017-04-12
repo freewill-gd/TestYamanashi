@@ -1,29 +1,48 @@
 package freewill;
+
 import java.util.List;
 import java.util.Map;
 
 import org.apache.struts.action.ActionForm;
 
 public final class RosterActionForm extends ActionForm {
-  private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-  public List<Map<String, Object>> data;
+	private String year = "2017";
+	private String month = "04";
+	private String name = "テスト太郎";
 
-  public List<Map<String, Object>> getData() {
-	return data;
-}
+	public List<Map<String, Object>> data;
 
-public void setData(List<Map<String, Object>> data) {
-	this.data = data;
-}
+	public String getYear() {
+		return year;
+	}
 
-private String text;
+	public void setYear(String year) {
+		this.year = year;
+	}
 
-  public String getText() {
-    return text;
-  }
+	public String getMonth() {
+		return month;
+	}
 
-  public void setText(String text) {
-    this.text = text;
-  }
+	public void setMonth(String month) {
+		this.month = month;
+	}
+
+	public List<Map<String, Object>> getData() {
+		return data;
+	}
+
+	public void setData(List<Map<String, Object>> data) {
+		this.data = data;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
 }

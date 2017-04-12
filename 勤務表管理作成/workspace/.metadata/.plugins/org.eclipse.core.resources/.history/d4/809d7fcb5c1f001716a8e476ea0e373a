@@ -1,0 +1,14 @@
+title.roster = \u52e4\u52d9\u8868
+disp.work_date = \u65e5\u4ed8
+disp.weekday = \u66dc\u65e5
+disp.work_kind = \u52e4\u52d9\u7a2e\u5225
+disp.start_time = \u958b\u59cb\u6642\u9593
+disp.end_time = \u7d42\u4e86\u6642\u9593
+disp.break_time = \u4f11\u61a9
+disp.over_time = \u6b8b\u696d
+disp.late_night_over_time = \u6df1\u591c\u6b8b\u696d
+disp.holiday_over_time = \u4f11\u65e5\u6b8b\u696d
+disp.holiday_late_night_over_time = \u4f11\u65e5\u6df1\u591c\u6b8b\u696d
+disp.remarks = \u5099\u8003
+disp.year = \u5e74
+disp.month = \u6708
