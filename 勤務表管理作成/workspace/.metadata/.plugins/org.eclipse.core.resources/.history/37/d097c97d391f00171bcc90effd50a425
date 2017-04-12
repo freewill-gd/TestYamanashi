@@ -1,0 +1,11 @@
+
+<style type="text/css">
+ <!--
+ body {
+ }
+table , td{
+		border-collspase : collapse;
+		border : 1px solid #333;
+	}
+ -->
+ </style>

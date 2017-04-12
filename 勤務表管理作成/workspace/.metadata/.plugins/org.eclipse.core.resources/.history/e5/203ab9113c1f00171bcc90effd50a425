@@ -1,0 +1,14 @@
+
+<style type="text/css">
+ <!--
+table , td{
+ border-collapse: collapse;
+    border:1px solid #333;
+    font-size:30px;
+	}
+.title {
+		font-size:30px;
+	}
+
+-->
+ </style>

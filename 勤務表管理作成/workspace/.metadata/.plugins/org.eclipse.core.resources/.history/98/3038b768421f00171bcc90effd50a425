@@ -1,0 +1,32 @@
+ body {
+	margin: 10mm;
+ }
+
+ .title  {
+ font-size: 30px;
+ }
+
+table , td  {
+	border-collapse: collapse;
+	border: 1px #333333 solid;
+}
+
+.maintable2{
+	table-layout: fixed;
+}
+
+.end_time
+, .work_date
+, .weekday
+, .work_kind
+, .start_time
+, .end_time
+, .break_time
+, .over_time
+, .late_night_over_time
+, .holiday_over_time
+, .holiday_late_night_over_time
+, .remarks {
+		color: red;
+		width: 100px;
+}

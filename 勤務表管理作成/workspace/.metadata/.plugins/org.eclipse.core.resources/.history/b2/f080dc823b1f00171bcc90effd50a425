@@ -1,0 +1,13 @@
+
+<style type="text/css">
+ <!--
+table , td{
+		border-collapse: collapse;
+		border : 2px solid #333;
+	}
+
+div {
+		font-size: 50px;
+	}
+-->
+ </style>
