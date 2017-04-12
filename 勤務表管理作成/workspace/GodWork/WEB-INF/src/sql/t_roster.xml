@@ -34,11 +34,11 @@ SELECT user_id
  ,  work_kind
  ,  TO_CHAR(start_time, 'HH24:MI') AS start_time
  ,  TO_CHAR(end_time, 'HH24:MI') AS end_time
- ,  break_time
- ,  over_time
- ,  late_night_over_time
- ,  holiday_over_time
- ,  holiday_late_night_over_time
+ ,  fn_minute_to_string(break_time) AS break_time
+ ,  fn_minute_to_string(over_time) AS over_time
+ ,  fn_minute_to_string(late_night_over_time) AS late_night_over_time
+ ,  fn_minute_to_string(holiday_over_time) AS holiday_over_time
+ ,  fn_minute_to_string(holiday_late_night_over_time) AS holiday_late_night_over_time
  ,  remarks
  ,  insert_date
  ,  insert_user_id
