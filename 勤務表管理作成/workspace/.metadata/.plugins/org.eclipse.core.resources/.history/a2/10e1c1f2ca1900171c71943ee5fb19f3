@@ -1,8 +1,0 @@
-package freewill;
-
-public class Snippet {
-	public static void main(String[] args) {
-		freewill
-	}
-}
-

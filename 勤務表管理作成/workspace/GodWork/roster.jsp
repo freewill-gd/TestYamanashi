@@ -5,22 +5,23 @@
 <html:html>
 <head>
 	<link rel="stylesheet" href="./css/godwork.css" type="text/css" />
+	<title><bean:message key="title.roster" /></title>
 </head>
 <body>
-	<div class="title">勤務表</div>
+	<div class="title"><bean:message key="title.roster" /></div>
 	<table class="maintable">
 		 <tr>
-			<td class="work_date">work_date</td>
-			<td class="weekday">weekday</td>
-			<td class="work_kind">work_kind</td>
-			<td class="start_time">start_time</td>
-			<td class="end_time">end_time</td>
-			<td class="break_time">break_time</td>
-			<td class="over_time">over_time</td>
-			<td class="late_night_over_time">late_night_over_time</td>
-			<td class="holiday_over_time">holiday_over_time</td>
-			<td class="holiday_late_night_over_time">holiday_late_night_over_time</td>
-			<td class="remarks">remarks</td>
+			<td class="work_date"><bean:message key="disp.work_date" /></td>
+			<td class="weekday"><bean:message key="disp.weekday" /></td>
+			<td class="work_kind"><bean:message key="disp.work_kind" /></td>
+			<td class="start_time"><bean:message key="disp.start_time" /></td>
+			<td class="end_time"><bean:message key="disp.end_time" /></td>
+			<td class="break_time"><bean:message key="disp.break_time" /></td>
+			<td class="over_time"><bean:message key="disp.over_time" /></td>
+			<td class="late_night_over_time"><bean:message key="disp.late_night_over_time" /></td>
+			<td class="holiday_over_time"><bean:message key="disp.holiday_over_time" /></td>
+			<td class="holiday_late_night_over_time"><bean:message key="disp.holiday_late_night_over_time" /></td>
+			<td class="remarks"><bean:message key="disp.remarks" /></td>
 		</tr>
 	<logic:iterate id="row" name="rosterActionForm" property="data">
 	    <tr data-weekday = "<bean:write name="row" property="weekday"/>">

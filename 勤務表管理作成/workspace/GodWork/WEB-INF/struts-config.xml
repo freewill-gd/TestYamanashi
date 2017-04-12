@@ -15,5 +15,5 @@
 			<forward name="success" path="/roster.jsp" />
 		</action>
 	</action-mappings>
-
+	<message-resources parameter="resources.application" />
 </struts-config>
