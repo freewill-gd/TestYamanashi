@@ -68,5 +68,5 @@ table , td  {
 }
 
 [data-weekday = "日"] {
-	background-color: pink;
+	background-color: lightpink;
 }
