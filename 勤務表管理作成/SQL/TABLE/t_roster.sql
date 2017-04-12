@@ -18,7 +18,8 @@ CREATE TABLE public.t_roster
   insert_user_id character varying(6), -- 追加ユーザID
   update_date timestamp with time zone, -- 更新日時
   update_user_id character varying(6), -- 更新ユーザID
-  enable_flg smallint -- 有効フラグ｜0:無効,1:有効
+  enable_flg smallint, -- 有効フラグ｜0:無効,1:有効
+  CONSTRAINT t_roster_pkey PRIMARY KEY (user_id, work_date)
 )
 WITH (
   OIDS=FALSE
