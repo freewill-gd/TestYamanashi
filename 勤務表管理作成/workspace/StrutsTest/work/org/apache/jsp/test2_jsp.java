@@ -166,6 +166,10 @@ public final class test2_jsp extends org.apache.jasper.runtime.HttpJspBase
         if (_jspx_meth_html_005ftext_005f0(_jspx_th_html_005fform_005f0, _jspx_page_context))
           return true;
         out.write("\r\n");
+        out.write("\t\t");
+        if (_jspx_meth_html_005ftext_005f1(_jspx_th_html_005fform_005f0, _jspx_page_context))
+          return true;
+        out.write("\r\n");
         out.write("\r\n");
         out.write("\t");
         int evalDoAfterBody = _jspx_th_html_005fform_005f0.doAfterBody();
@@ -201,6 +205,29 @@ public final class test2_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleClass_005fproperty_005fname_005fnobody.reuse(_jspx_th_html_005ftext_005f0);
+    return false;
+  }
+
+  private boolean _jspx_meth_html_005ftext_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_html_005fform_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  html:text
+    org.apache.struts.taglib.html.TextTag _jspx_th_html_005ftext_005f1 = (org.apache.struts.taglib.html.TextTag) _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleClass_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.html.TextTag.class);
+    _jspx_th_html_005ftext_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_html_005ftext_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_html_005fform_005f0);
+    // /test2.jsp(14,2) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_html_005ftext_005f1.setName("test2ActionForm");
+    // /test2.jsp(14,2) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_html_005ftext_005f1.setProperty("dt");
+    // /test2.jsp(14,2) name = styleClass type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_html_005ftext_005f1.setStyleClass("hoge");
+    int _jspx_eval_html_005ftext_005f1 = _jspx_th_html_005ftext_005f1.doStartTag();
+    if (_jspx_th_html_005ftext_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleClass_005fproperty_005fname_005fnobody.reuse(_jspx_th_html_005ftext_005f1);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleClass_005fproperty_005fname_005fnobody.reuse(_jspx_th_html_005ftext_005f1);
     return false;
   }
 }

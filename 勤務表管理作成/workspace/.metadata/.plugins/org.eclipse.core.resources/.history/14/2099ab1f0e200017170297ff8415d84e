@@ -8,6 +8,8 @@
 </head>
 <body>
    <div class="hoge" ></div>
+   <bean:write name="test2ActionForm" property=" dt" format="yyyy/mm/dd" />
+
 	<bean:write name="test2ActionForm" property="hoge" />
 	<html:form action="/Test2">
 		<html:text  name="test2ActionForm" property="text"  styleClass="hoge"/>

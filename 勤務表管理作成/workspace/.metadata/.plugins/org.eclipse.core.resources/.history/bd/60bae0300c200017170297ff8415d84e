@@ -8,10 +8,10 @@
 </head>
 <body>
    <div class="hoge" ></div>
+   <bean:write name="test2ActionForm" property="yyy" />
 	<bean:write name="test2ActionForm" property="hoge" />
 	<html:form action="/Test2">
 		<html:text  name="test2ActionForm" property="text"  styleClass="hoge"/>
-		<html:text  name="test2ActionForm" property="dt"  styleClass="hoge"/>
 
 	</html:form>
 </body>

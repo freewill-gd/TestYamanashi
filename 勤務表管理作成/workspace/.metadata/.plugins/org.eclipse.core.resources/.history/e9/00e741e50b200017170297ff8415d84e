@@ -19,12 +19,9 @@ public final class Test2Action extends Action {
 
 		Test2ActionForm test2ActionForm = (Test2ActionForm)form;
 		String aaa = test2ActionForm.getText();
-
-		test2ActionForm.setYyy(10);
 		System.out.println(aaa);
 		aaa = aaa + "|";
 		Date dt = new Date();
-		test2ActionForm.setDt(dt);
 		test2ActionForm.setHoge(dt.toString());
 		//test2ActionForm.setText(aaa);
 		request.setAttribute("test2ActionForm", test2ActionForm);

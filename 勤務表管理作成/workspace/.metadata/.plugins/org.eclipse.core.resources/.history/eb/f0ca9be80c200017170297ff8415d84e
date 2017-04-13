@@ -1,7 +1,5 @@
 package freewill;
 
-import java.util.Date;
-
 import org.apache.struts.action.ActionForm;
 
 public final class Test2ActionForm extends ActionForm {
@@ -14,13 +12,6 @@ public final class Test2ActionForm extends ActionForm {
 	private String hoge;
 
 	private int yyy;
-
-	public Date getDt() {
-		return dt;
-	}
-	public void setDt(Date dt) {
-		this.dt = dt;
-	}
 
 	private Date dt;
 
