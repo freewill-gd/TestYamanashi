@@ -6,6 +6,6 @@
 
 <body>
 	<bean:write name="testActionForm" property="text" />
-	<bean:write name="testActionForm"  property="text" />
+	<bean:write name="testActionForm"  property="map.get("hoge")" />
 </body>
 </html:html>

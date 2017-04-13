@@ -1,5 +1,7 @@
 package freewill;
 
+import java.util.Map;
+
 import org.apache.struts.action.ActionForm;
 
 public final class TestActionForm extends ActionForm {
@@ -10,6 +12,7 @@ public final class TestActionForm extends ActionForm {
 	public TestActionForm() {
 
 	}
+
 	public String getText() {
 		return text;
 	}
