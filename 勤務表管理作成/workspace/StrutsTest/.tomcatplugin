@@ -5,7 +5,7 @@
     <reloadable>true</reloadable>
     <redirectLogger>false</redirectLogger>
     <updateXml>true</updateXml>
-    <warLocation></warLocation>
+    <warLocation>C:\Users\yamanashi\Documents\StrutsTest.war</warLocation>
     <extraInfo></extraInfo>
     <webPath>/StrutsTest</webPath>
 </tomcatProjectProperties>

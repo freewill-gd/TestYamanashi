@@ -8,6 +8,7 @@ import org.apache.struts.action.ActionMapping;
 
 public final class TestAction extends Action {
 
+	@Override
 	public ActionForward execute (
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
