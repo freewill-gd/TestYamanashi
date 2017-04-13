@@ -1,5 +1,6 @@
 package freewill;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -11,6 +12,7 @@ public final class RosterActionForm extends ActionForm {
 	private String year = "2017";
 	private String month = "07";
 	private String name = "テスト太郎";
+	private LinkedHashMap<String, String> selectYear;
 
 	public List<Map<String, Object>> data;
 
@@ -44,5 +46,13 @@ public final class RosterActionForm extends ActionForm {
 
 	public String getName() {
 		return name;
+	}
+
+	public void setSelectYear(LinkedHashMap<String, String> selectYear) {
+		this.selectYear = selectYear;
+	}
+
+	public LinkedHashMap<String, String> getSelectYear() {
+		return selectYear;
 	}
 }
