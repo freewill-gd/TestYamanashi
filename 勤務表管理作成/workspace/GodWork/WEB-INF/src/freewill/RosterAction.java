@@ -23,7 +23,14 @@ public final class RosterAction extends Action {
 			selectYear.put(year , year);
 		}
 
+		LinkedHashMap<String, String> selectMonth = new LinkedHashMap<String, String>();
+		for (int i = 1; i <= 12; i++) {
+			String month = String.format("%02d", i);
+			selectMonth.put(month , month);
+		}
+
 		rosterActionForm.setSelectYear(selectYear);
+		rosterActionForm.setSelectMonth(selectMonth);
 
 		RosterDataAccess data = new RosterDataAccess();
 		rosterActionForm.setData(data.getData(rosterActionForm.getYear() + rosterActionForm.getMonth()));

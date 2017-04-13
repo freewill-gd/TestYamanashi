@@ -1,5 +1,7 @@
 package freewill;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,10 +11,26 @@ import org.apache.struts.action.ActionForm;
 public final class RosterActionForm extends ActionForm {
 	private static final long serialVersionUID = 1L;
 
-	private String year = "2017";
-	private String month = "07";
-	private String name = "テスト太郎";
+	private String year;
+	private String month;
+	private String name;
 	private LinkedHashMap<String, String> selectYear;
+	private LinkedHashMap<String, String> selectMonth;
+
+	public RosterActionForm() {
+		Date now = new Date();
+		year =   (new SimpleDateFormat("yyyy")).format(now);
+		month = (new SimpleDateFormat("MM")).format(now);
+		name = "テスト太郎";
+	}
+
+	public LinkedHashMap<String, String> getSelectMonth() {
+		return selectMonth;
+	}
+
+	public void setSelectMonth(LinkedHashMap<String, String> selectMonth) {
+		this.selectMonth = selectMonth;
+	}
 
 	public List<Map<String, Object>> data;
 

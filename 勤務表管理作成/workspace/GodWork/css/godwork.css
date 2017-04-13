@@ -2,7 +2,12 @@
 	margin: 10mm;
 	font-size: 12px;
  }
-
+.input_arear {
+	width:1000px;
+	height:30px;
+	margin-bottom: 20px;
+	border-bottom: 1px #333333 solid;
+}
  .title  {
  	width: 1000px;
  	font-size: 30px;

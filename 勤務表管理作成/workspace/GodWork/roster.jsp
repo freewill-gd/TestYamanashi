@@ -4,15 +4,22 @@
 <%@ taglib uri="/tags/struts-logic" prefix="logic" %>
 <html:html>
 <head>
-	<link rel="stylesheet" href="./css/godwork.css" type="text/css" />
+	<link rel="stylesheet" href="./css/godwork.css?2" type="text/css" />
 	<title><bean:message key="title.roster" /></title>
 </head>
 <body>
 	<html:form>
-		<html:select name="rosterActionForm" property="year">
-			<html:optionsCollection name="rosterActionForm" property="selectYear" value="key" label="value" />
-		</html:select>
-		<hr>
+		<div class="input_arear">
+			<html:select name="rosterActionForm" property="year">
+				<html:optionsCollection name="rosterActionForm" property="selectYear" value="key" label="value" />
+			</html:select>
+			<bean:message key="disp.year" />
+			<html:select name="rosterActionForm" property="month">
+				<html:optionsCollection name="rosterActionForm" property="selectMonth" value="key" label="value" />
+			</html:select>
+			<bean:message key="disp.month" />
+			<html:submit property="submit" ><bean:message key="disp.move" /></html:submit>
+		</div>
 		<div class="title">
 				<bean:message key="title.roster" />
 				<bean:write name="rosterActionForm" property="year"/>
