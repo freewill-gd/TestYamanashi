@@ -44,19 +44,19 @@
 				<td class="holiday_late_night_over_time"><bean:message key="disp.holiday_late_night_over_time" /></td>
 				<td class="remarks"><bean:message key="disp.remarks" /></td>
 			</tr>
-		<logic:iterate id="row" name="rosterActionForm" property="data">
-		    <tr data-weekday = "<bean:write name="row" property="weekday"/>">
-				<td><bean:write name="row" property="work_date"/></td>
-				<td><bean:write name="row" property="weekday"/></td>
-				<td><bean:write name="row" property="work_kind"/></td>
-				<td><bean:write name="row" property="start_time"/></td>
-				<td><bean:write name="row" property="end_time"/></td>
-				<td><bean:write name="row" property="break_time"/></td>
-				<td><bean:write name="row" property="over_time"/></td>
-				<td><bean:write name="row" property="late_night_over_time"/></td>
-				<td><bean:write name="row" property="holiday_over_time"/></td>
-				<td><bean:write name="row" property="holiday_late_night_over_time"/></td>
-				<td class="remarks_data"><bean:write name="row" property="remarks"/></td>
+		<logic:iterate id="data" name="rosterActionForm" property="data" >
+		    <tr data-weekday = "<bean:write name="data" property="weekday"/>">
+				<td><bean:write name="data" property="workDate"/></td>
+				<td><bean:write name="data" property="weekday"/></td>
+				<td><bean:write name="data" property="workKind"/></td>
+				<td><html:text name="data" property="startTime"  indexed="true"/></td>
+				<td><bean:write name="data" property="endTime"/></td>
+				<td><bean:write name="data" property="breakTime"/></td>
+				<td><bean:write name="data" property="overTime"/></td>
+				<td><bean:write name="data" property="lateNightOverTime"/></td>
+				<td><bean:write name="data" property="holidayOverTime"/></td>
+				<td><bean:write name="data" property="holidayLateNightOverTime"/></td>
+				<td class="remarks_data"><bean:write name="data" property="remarks"/></td>
 			</tr>
 		</logic:iterate>
 		</table>

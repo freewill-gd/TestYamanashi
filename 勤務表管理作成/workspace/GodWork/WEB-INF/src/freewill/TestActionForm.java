@@ -1,19 +1,19 @@
 package freewill;
-import java.util.List;
-import java.util.Map;
 
 import org.apache.struts.action.ActionForm;
+
+import freewill.database.RosterDto;
 
 public final class TestActionForm extends ActionForm {
   private static final long serialVersionUID = 1L;
 
-  public List<Map<String, Object>> data;
+  public RosterDto[] data;
 
-  public List<Map<String, Object>> getData() {
+  public RosterDto[] getData() {
 	return data;
 }
 
-public void setData(List<Map<String, Object>> data) {
+public void setData(RosterDto[] data) {
 	this.data = data;
 }
 

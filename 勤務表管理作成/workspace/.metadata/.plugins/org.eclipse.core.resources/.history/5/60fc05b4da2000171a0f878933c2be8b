@@ -1,0 +1,6 @@
+package test;
+
+public class TDto {
+	private int a;
+	private int b;
+}

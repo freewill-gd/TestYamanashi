@@ -1,11 +1,10 @@
 package freewill.database;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class RosterDataAccess {
 
-	public List<Map<String, Object>> getData(String start) {
+	public RosterDto[] getData(String start) {
 		// 数値変換エラー対策は現時点では未実装
 		DataAccess data = new DataAccess();
 		HashMap<String, Object> param = new HashMap<String, Object>();
@@ -13,7 +12,8 @@ public class RosterDataAccess {
 		int  end = Integer.parseInt(start);
 		end++;
 		param.put("end", String.valueOf(end));
-		List<Map<String, Object>> result = data.selectMapList("test.selectT_roster", param);
-		return result;
+		List<Object> result = data.selectList("test.selectT_roster", param);
+		if(result == null) return null;
+		return result.toArray(new RosterDto[0]);
 	}
 }

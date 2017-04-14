@@ -1,0 +1,25 @@
+package freewill.database;
+
+public class RosterDto {
+
+	private String userId;
+	private String workDate;
+	private String weekday;
+	private String workDateKey;
+	private String holidayFlg;
+	private String workKind;
+	private String startTime;
+	private String endTime;
+	private String breakTime;
+	private String overTime;
+	private String lateNightOverTime;
+	private String holidayOverTime;
+	private String holidayLateNightOverTime;
+	private String remarks;
+	private String insertDate;
+	private String insertUserId;
+	private String updateDate;
+	private String updateUserId;
+
+
+}

@@ -1,4 +1,5 @@
 package freewill;
+
 import java.util.LinkedHashMap;
 
 import javax.servlet.http.HttpServletRequest;
@@ -8,7 +9,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import freewill.database.RosterDataAccess;
+ import freewill.database.RosterDataAccess;
 
 public final class RosterAction extends Action {
 
@@ -33,7 +34,9 @@ public final class RosterAction extends Action {
 		rosterActionForm.setSelectMonth(selectMonth);
 
 		RosterDataAccess data = new RosterDataAccess();
-		rosterActionForm.setData(data.getData(rosterActionForm.getYear() + rosterActionForm.getMonth()));
+
+		String start = rosterActionForm.getYear() + rosterActionForm.getMonth();
+		rosterActionForm.setData(data.getData(start));
 		request.setAttribute("rosterActionForm", rosterActionForm);
 		return map.findForward("success");
   }

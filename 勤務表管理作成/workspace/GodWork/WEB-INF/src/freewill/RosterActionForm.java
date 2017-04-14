@@ -3,10 +3,8 @@ package freewill;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.apache.struts.action.ActionForm;
+import freewill.database.RosterDto;
 
 public final class RosterActionForm extends ActionForm {
 	private static final long serialVersionUID = 1L;
@@ -16,6 +14,7 @@ public final class RosterActionForm extends ActionForm {
 	private String name;
 	private LinkedHashMap<String, String> selectYear;
 	private LinkedHashMap<String, String> selectMonth;
+	private RosterDto data[];
 
 	public RosterActionForm() {
 		Date now = new Date();
@@ -31,8 +30,6 @@ public final class RosterActionForm extends ActionForm {
 	public void setSelectMonth(LinkedHashMap<String, String> selectMonth) {
 		this.selectMonth = selectMonth;
 	}
-
-	public List<Map<String, Object>> data;
 
 	public String getYear() {
 		return year;
@@ -50,12 +47,30 @@ public final class RosterActionForm extends ActionForm {
 		this.month = month;
 	}
 
-	public List<Map<String, Object>> getData() {
-		return data;
+	public RosterDto[] getData() {
+		if ( data != null) return data;
+
+		data = new RosterDto[31];
+		for (int i = 0; i < 31; i++) {
+				data[i] = new RosterDto();
+		}
+		 return data;
 	}
 
-	public void setData(List<Map<String, Object>> data) {
+	public void setData(RosterDto[] data) {
 		this.data = data;
+	}
+
+	public RosterDto getData(int index) {
+		/* TODOインデックス範囲チェック未実装 */
+		if(data == null) return  new RosterDto();
+		return data[index];
+	}
+
+	public void setData(int index, RosterDto[] data) {
+		/* TODOインデックス範囲チェック未実装  */
+		if(data == null) return;
+		this.data[index] = data[index];
 	}
 
 	public void setName(String name) {
