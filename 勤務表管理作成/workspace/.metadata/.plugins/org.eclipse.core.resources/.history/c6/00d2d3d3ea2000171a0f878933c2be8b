@@ -4,7 +4,7 @@
 <%@ taglib uri="/tags/struts-logic" prefix="logic" %>
 <html:html>
 <head>
-	<link rel="stylesheet" href="./css/godwork.css?6" type="text/css" />
+	<link rel="stylesheet" href="./css/godwork.css?3" type="text/css" />
 	<title><bean:message key="title.roster" /></title>
 </head>
 <body>
@@ -56,7 +56,7 @@
 				<td><html:text name="data" property="lateNightOverTime" indexed="true" styleClass="time_text"/></td>
 				<td><html:text name="data" property="holidayOverTime" indexed="true" styleClass="time_text"/></td>
 				<td><html:text name="data" property="holidayLateNightOverTime" indexed="true" styleClass="time_text"/></td>
-				<td ><html:text name="data" property="remarks" indexed="true" styleClass="remarks_text"/></td>
+				<td ><html:text name="data" property="remarks" indexed="true" styleClass="remarks_data"/></td>
 			</tr>
 		</logic:iterate>
 		</table>

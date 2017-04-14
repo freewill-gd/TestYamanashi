@@ -72,7 +72,7 @@ table , td  {
 }
 
 .remarks_text {
-	width:  482px;
+	width:  500px;
 	text-align: left;
 }
 

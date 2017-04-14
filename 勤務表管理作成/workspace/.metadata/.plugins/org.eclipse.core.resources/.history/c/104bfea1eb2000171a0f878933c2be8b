@@ -72,7 +72,7 @@ table , td  {
 }
 
 .remarks_text {
-	width:  482px;
+	width:  300px */
 	text-align: left;
 }
 
@@ -86,5 +86,5 @@ table , td  {
 
 .time_text {
 	width :48px;
-	text-align: center;
+	text-align: left;
 }

@@ -98,7 +98,7 @@ public final class roster_jsp extends org.apache.jasper.runtime.HttpJspBase
         do {
           out.write("\r\n");
           out.write("<head>\r\n");
-          out.write("\t<link rel=\"stylesheet\" href=\"./css/godwork.css?3\" type=\"text/css\" />\r\n");
+          out.write("\t<link rel=\"stylesheet\" href=\"./css/godwork.css?6\" type=\"text/css\" />\r\n");
           out.write("\t<title>");
           if (_jspx_meth_bean_005fmessage_005f0(_jspx_th_html_005fhtml_005f0, _jspx_page_context))
             return;
@@ -1205,7 +1205,7 @@ public final class roster_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /roster.jsp(59,9) name = indexed type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f7.setIndexed(true);
     // /roster.jsp(59,9) name = styleClass type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_html_005ftext_005f7.setStyleClass("remarks_data");
+    _jspx_th_html_005ftext_005f7.setStyleClass("remarks_text");
     int _jspx_eval_html_005ftext_005f7 = _jspx_th_html_005ftext_005f7.doStartTag();
     if (_jspx_th_html_005ftext_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleClass_005fproperty_005fname_005findexed_005fnobody.reuse(_jspx_th_html_005ftext_005f7);
