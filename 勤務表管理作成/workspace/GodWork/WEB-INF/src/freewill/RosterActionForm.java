@@ -14,6 +14,8 @@ public final class RosterActionForm extends ActionForm {
 	private String name;
 	private LinkedHashMap<String, String> selectYear;
 	private LinkedHashMap<String, String> selectMonth;
+	private LinkedHashMap<String, String> selectWorkKind;
+
 	private RosterDto data[];
 
 	public RosterActionForm() {
@@ -23,12 +25,28 @@ public final class RosterActionForm extends ActionForm {
 		name = "テスト太郎";
 	}
 
+	public void setSelectYear(LinkedHashMap<String, String> selectYear) {
+		this.selectYear = selectYear;
+	}
+
+	public LinkedHashMap<String, String> getSelectYear() {
+		return selectYear;
+	}
+
 	public LinkedHashMap<String, String> getSelectMonth() {
 		return selectMonth;
 	}
 
 	public void setSelectMonth(LinkedHashMap<String, String> selectMonth) {
 		this.selectMonth = selectMonth;
+	}
+
+	public LinkedHashMap<String, String> getSelectWorkKind() {
+		return selectWorkKind;
+	}
+
+	public void setSelectWorkKind(LinkedHashMap<String, String> selectWorkKind) {
+		this.selectWorkKind = selectWorkKind;
 	}
 
 	public String getYear() {
@@ -81,11 +99,4 @@ public final class RosterActionForm extends ActionForm {
 		return name;
 	}
 
-	public void setSelectYear(LinkedHashMap<String, String> selectYear) {
-		this.selectYear = selectYear;
-	}
-
-	public LinkedHashMap<String, String> getSelectYear() {
-		return selectYear;
-	}
 }

@@ -30,8 +30,17 @@ public final class RosterAction extends Action {
 			selectMonth.put(month , month);
 		}
 
+		LinkedHashMap<String, String> selectWorkKind = new LinkedHashMap<String, String>();
+		selectWorkKind.put("0","");
+		selectWorkKind.put("1","通常勤務");
+		selectWorkKind.put("2","休日出勤");
+		selectWorkKind.put("3","有給休暇");
+		selectWorkKind.put("4","特別休暇");
+		selectWorkKind.put("5","欠勤");
+
 		rosterActionForm.setSelectYear(selectYear);
 		rosterActionForm.setSelectMonth(selectMonth);
+		rosterActionForm.setSelectWorkKind(selectWorkKind);
 
 		RosterDataAccess data = new RosterDataAccess();
 

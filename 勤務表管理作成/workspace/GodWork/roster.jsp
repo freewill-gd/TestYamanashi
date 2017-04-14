@@ -4,7 +4,7 @@
 <%@ taglib uri="/tags/struts-logic" prefix="logic" %>
 <html:html>
 <head>
-	<link rel="stylesheet" href="./css/godwork.css?6" type="text/css" />
+	<link rel="stylesheet" href="./css/godwork.css?7" type="text/css" />
 	<title><bean:message key="title.roster" /></title>
 </head>
 <body>
@@ -48,7 +48,11 @@
 		    <tr data-weekday = "<bean:write name="data" property="weekday"/>">
 				<td><bean:write name="data" property="workDate"/></td>
 				<td><bean:write name="data" property="weekday"/></td>
-				<td><bean:write name="data" property="workKind"/></td>
+				<td>
+						<html:select name="data" property="workKind" indexed="true">
+							<html:optionsCollection name="rosterActionForm" property="selectWorkKind" value="key" label="value" />
+						</html:select>
+				</td>
 				<td><html:text name="data" property="startTime"  indexed="true" styleClass="time_text"/></td>
 				<td><html:text name="data" property="endTime" indexed="true" styleClass="time_text"/></td>
 				<td><html:text name="data" property="breakTime" indexed="true" styleClass="time_text"/></td>
