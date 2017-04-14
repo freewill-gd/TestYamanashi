@@ -50,13 +50,13 @@
 				<td><bean:write name="data" property="weekday"/></td>
 				<td><bean:write name="data" property="workKind"/></td>
 				<td><html:text name="data" property="startTime"  indexed="true" styleClass="time_text"/></td>
-				<td><html:text name="data" property="endTime" indexed="true" styleClass="time_text"/></td>
-				<td><html:text name="data" property="breakTime" indexed="true" styleClass="time_text"/></td>
-				<td><html:text name="data" property="overTime" indexed="true" styleClass="time_text"/></td>
-				<td><html:text name="data" property="lateNightOverTime" indexed="true" styleClass="time_text"/></td>
-				<td><html:text name="data" property="holidayOverTime" indexed="true" styleClass="time_text"/></td>
-				<td><html:text name="data" property="holidayLateNightOverTime" indexed="true" styleClass="time_text"/></td>
-				<td ><html:text name="data" property="remarks" indexed="true" styleClass="remarks_data"/></td>
+				<td><bean:write name="data" property="endTime"/></td>
+				<td><bean:write name="data" property="breakTime"/></td>
+				<td><bean:write name="data" property="overTime"/></td>
+				<td><bean:write name="data" property="lateNightOverTime"/></td>
+				<td><bean:write name="data" property="holidayOverTime"/></td>
+				<td><bean:write name="data" property="holidayLateNightOverTime"/></td>
+				<td class="remarks_data"><bean:write name="data" property="remarks"/></td>
 			</tr>
 		</logic:iterate>
 		</table>
