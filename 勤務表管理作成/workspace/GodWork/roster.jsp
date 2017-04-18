@@ -6,9 +6,28 @@
 <head>
 	<link rel="stylesheet" href="./css/godwork.css?7" type="text/css" />
 	<title><bean:message key="title.roster" /></title>
+	<script type="text/javascript">
+
+			function move() {
+				goAction("move");
+			}
+
+			function update() {
+				goAction("update");
+			}
+
+			function goAction(mode) {
+				var obj  = document.getElementById("aMode");
+				// alert(obj.name);
+				obj.value = mode;
+				document.forms[0].submit();
+			}
+	</script>
+
 </head>
 <body>
 	<html:form>
+		<input type="hidden" id="aMode" name="aMode" />
 		<div class="input_arear">
 			<html:select name="rosterActionForm" property="year">
 				<html:optionsCollection name="rosterActionForm" property="selectYear" value="key" label="value" />
@@ -18,7 +37,9 @@
 				<html:optionsCollection name="rosterActionForm" property="selectMonth" value="key" label="value" />
 			</html:select>
 			<bean:message key="disp.month" />
-			<html:submit property="submit" ><bean:message key="disp.move" /></html:submit>
+			<button type="button"  onclick="move();"><bean:message key="disp.move" /></button>
+			<button type="button"  onclick="update();"><bean:message key="disp.update" /></button>
+			<bean:write name="rosterActionForm" property="aMode"/>
 		</div>
 		<div class="title">
 				<bean:message key="title.roster" />
@@ -66,4 +87,5 @@
 		</table>
 	</html:form>
 </body>
+
 </html:html>

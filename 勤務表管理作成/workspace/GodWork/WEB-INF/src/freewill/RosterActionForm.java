@@ -15,6 +15,15 @@ public final class RosterActionForm extends ActionForm {
 	private LinkedHashMap<String, String> selectYear;
 	private LinkedHashMap<String, String> selectMonth;
 	private LinkedHashMap<String, String> selectWorkKind;
+	private String aMode;
+
+	public String getaMode() {
+		return aMode;
+	}
+
+	public void setaMode(String aMode) {
+		this.aMode = aMode;
+	}
 
 	private RosterDto data[];
 
