@@ -18,6 +18,12 @@ public final class RosterAction extends Action {
 		HttpServletRequest request, HttpServletResponse response) {
 		RosterActionForm rosterActionForm = (RosterActionForm)form;
 
+		getPage(request, rosterActionForm);
+		return map.findForward("success");
+  }
+
+	private void getPage(HttpServletRequest request,
+			RosterActionForm rosterActionForm) {
 		LinkedHashMap<String, String> selectYear = new LinkedHashMap<String, String>();
 		for (int i = 2015; i <= 2025; i++) {
 			String year = String.valueOf(i);
@@ -47,7 +53,6 @@ public final class RosterAction extends Action {
 		String start = rosterActionForm.getYear() + rosterActionForm.getMonth();
 		rosterActionForm.setData(data.getData(start));
 		request.setAttribute("rosterActionForm", rosterActionForm);
-		return map.findForward("success");
-  }
+	}
 
 }
