@@ -4,26 +4,9 @@
 <%@ taglib uri="/tags/struts-logic" prefix="logic" %>
 <html:html>
 <head>
-	<link rel="stylesheet" href="./css/godwork.css?7" type="text/css" />
+	<link rel="stylesheet" href="./css/godwork.css<bean:write name="rosterActionForm" property="timeString"/>" type="text/css" />
 	<title><bean:message key="title.roster" /></title>
-	<script type="text/javascript">
-
-			function move() {
-				goAction("move");
-			}
-
-			function update() {
-				goAction("update");
-			}
-
-			function goAction(mode) {
-				var obj  = document.getElementById("aMode");
-				// alert(obj.name);
-				obj.value = mode;
-				document.forms[0].submit();
-			}
-	</script>
-
+	<script type="text/javascript" src="./js/roster.js<bean:write name="rosterActionForm" property="timeString"/>"></script>
 </head>
 <body>
 	<html:form>

@@ -16,6 +16,15 @@ public final class RosterActionForm extends ActionForm {
 	private LinkedHashMap<String, String> selectMonth;
 	private LinkedHashMap<String, String> selectWorkKind;
 	private String aMode;
+	private String timeString;
+
+	public String getTimeString() {
+		return timeString;
+	}
+
+	public void setTimeString(String timeString) {
+		this.timeString = timeString;
+	}
 
 	public String getaMode() {
 		return aMode;
@@ -32,6 +41,7 @@ public final class RosterActionForm extends ActionForm {
 		year =   (new SimpleDateFormat("yyyy")).format(now);
 		month = (new SimpleDateFormat("MM")).format(now);
 		name = "テスト太郎";
+		timeString = "?time=" + String.valueOf(now.getTime());
 	}
 
 	public void setSelectYear(LinkedHashMap<String, String> selectYear) {
