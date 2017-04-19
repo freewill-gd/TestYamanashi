@@ -5,6 +5,7 @@
 CREATE OR REPLACE FUNCTION public.fn_string_to_minute("time" character varying)
   RETURNS numeric AS
 $BODY$BEGIN
+	IF time = '' THEN RETURN NULL; END IF;
 	RETURN  TO_NUMBER(SUBSTR(time, 1,2), '99') * 60 + TO_NUMBER(SUBSTR(time, 4,2), '99');
 END;$BODY$
   LANGUAGE plpgsql VOLATILE
