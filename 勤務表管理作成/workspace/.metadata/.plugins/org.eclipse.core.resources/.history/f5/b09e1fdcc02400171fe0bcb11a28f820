@@ -26,6 +26,7 @@ public final class RosterAction extends Action {
 				if (rosterActionForm.getaMode() != null  && rosterActionForm.getaMode().equals("update")){
 					rosterActionForm.setDebugString("3");
 					update(rosterActionForm);
+					rosterActionForm.setDebugString("アップデート通過");
 				}
 			}
 
@@ -43,7 +44,6 @@ public final class RosterAction extends Action {
 		RosterDataAccess da = new RosterDataAccess();
 		for(RosterDto dto: rosterActionForm.getData()) {
 				dto.setUserId("fw001");
-				rosterActionForm.setDebugString("sss");
 		}
 		da.updates( rosterActionForm.getData());
 	}
