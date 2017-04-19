@@ -9,7 +9,8 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
- import freewill.database.RosterDataAccess;
+import freewill.database.RosterDataAccess;
+import freewill.database.RosterDto;
 
 public final class RosterAction extends Action {
 
@@ -17,6 +18,17 @@ public final class RosterAction extends Action {
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
 		RosterActionForm rosterActionForm = (RosterActionForm)form;
+		if(rosterActionForm != null) {
+			if (rosterActionForm.getaMode() != null  && rosterActionForm.getaMode().equals("update")){
+				System.out.println("test");
+				for(RosterDto dto: rosterActionForm.getData()) {
+						System.out.println(dto.getRemarks());
+						RosterDataAccess da = new RosterDataAccess();
+						dto.setUserId("fw001");
+						da.update(dto);
+				}
+			}
+		}
 
 		getPage(request, rosterActionForm);
 		return map.findForward("success");

@@ -25,6 +25,7 @@ public final class roster_jsp extends org.apache.jasper.runtime.HttpJspBase
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fproperty_005fname;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005foptionsCollection_0026_005fvalue_005fproperty_005fname_005flabel_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005flogic_005fiterate_0026_005fproperty_005fname_005fid;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fproperty_005fname_005findexed_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fproperty_005fname_005findexed;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleClass_005fproperty_005fname_005findexed_005fnobody;
 
@@ -43,6 +44,7 @@ public final class roster_jsp extends org.apache.jasper.runtime.HttpJspBase
     _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fproperty_005fname = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fhtml_005foptionsCollection_0026_005fvalue_005fproperty_005fname_005flabel_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005flogic_005fiterate_0026_005fproperty_005fname_005fid = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fproperty_005fname_005findexed_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fproperty_005fname_005findexed = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleClass_005fproperty_005fname_005findexed_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
@@ -57,6 +59,7 @@ public final class roster_jsp extends org.apache.jasper.runtime.HttpJspBase
     _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fproperty_005fname.release();
     _005fjspx_005ftagPool_005fhtml_005foptionsCollection_0026_005fvalue_005fproperty_005fname_005flabel_005fnobody.release();
     _005fjspx_005ftagPool_005flogic_005fiterate_0026_005fproperty_005fname_005fid.release();
+    _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fproperty_005fname_005findexed_005fnobody.release();
     _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fproperty_005fname_005findexed.release();
     _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleClass_005fproperty_005fname_005findexed_005fnobody.release();
   }
@@ -257,6 +260,8 @@ public final class roster_jsp extends org.apache.jasper.runtime.HttpJspBase
                     return;
                   out.write("\">\r\n");
                   out.write("\t\t\t\t<td>");
+                  if (_jspx_meth_html_005fhidden_005f0(_jspx_th_logic_005fiterate_005f0, _jspx_page_context))
+                    return;
                   if (_jspx_meth_bean_005fwrite_005f7(_jspx_th_logic_005fiterate_005f0, _jspx_page_context))
                     return;
                   out.write("</td>\r\n");
@@ -1017,6 +1022,29 @@ public final class roster_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
+  private boolean _jspx_meth_html_005fhidden_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fiterate_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  html:hidden
+    org.apache.struts.taglib.html.HiddenTag _jspx_th_html_005fhidden_005f0 = (org.apache.struts.taglib.html.HiddenTag) _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fproperty_005fname_005findexed_005fnobody.get(org.apache.struts.taglib.html.HiddenTag.class);
+    _jspx_th_html_005fhidden_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_html_005fhidden_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f0);
+    // /roster.jsp(53,8) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_html_005fhidden_005f0.setName("data");
+    // /roster.jsp(53,8) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_html_005fhidden_005f0.setProperty("workDateKey");
+    // /roster.jsp(53,8) name = indexed type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_html_005fhidden_005f0.setIndexed(true);
+    int _jspx_eval_html_005fhidden_005f0 = _jspx_th_html_005fhidden_005f0.doStartTag();
+    if (_jspx_th_html_005fhidden_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fproperty_005fname_005findexed_005fnobody.reuse(_jspx_th_html_005fhidden_005f0);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fproperty_005fname_005findexed_005fnobody.reuse(_jspx_th_html_005fhidden_005f0);
+    return false;
+  }
+
   private boolean _jspx_meth_bean_005fwrite_005f7(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fiterate_005f0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -1025,9 +1053,9 @@ public final class roster_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f7 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f7.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f0);
-    // /roster.jsp(53,8) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /roster.jsp(53,75) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f7.setName("data");
-    // /roster.jsp(53,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /roster.jsp(53,75) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f7.setProperty("workDate");
     int _jspx_eval_bean_005fwrite_005f7 = _jspx_th_bean_005fwrite_005f7.doStartTag();
     if (_jspx_th_bean_005fwrite_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

@@ -50,7 +50,7 @@
 			</tr>
 		<logic:iterate id="data" name="rosterActionForm" property="data" >
 		    <tr data-weekday = "<bean:write name="data" property="weekday"/>">
-				<td><bean:write name="data" property="workDate"/></td>
+				<td><html:hidden name="data"  property="workDateKey"  indexed="true" /><bean:write name="data" property="workDate"/></td>
 				<td><bean:write name="data" property="weekday"/></td>
 				<td>
 						<html:select name="data" property="workKind" indexed="true">
