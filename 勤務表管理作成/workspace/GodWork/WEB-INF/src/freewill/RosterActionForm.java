@@ -18,6 +18,16 @@ public final class RosterActionForm extends ActionForm {
 	private String aMode;
 	private String timeString;
 
+	private String debugString = "デバッグ文字列";
+
+	public String getDebugString() {
+		return debugString;
+	}
+
+	public void setDebugString(String debugString) {
+		this.debugString = debugString;
+	}
+
 	public String getTimeString() {
 		return timeString;
 	}

@@ -10,6 +10,7 @@
 </head>
 <body>
 	<html:form>
+		<bean:write name="rosterActionForm" property="debugString"/>
 		<input type="hidden" id="aMode" name="aMode" />
 		<div class="input_arear">
 			<html:select name="rosterActionForm" property="year">
