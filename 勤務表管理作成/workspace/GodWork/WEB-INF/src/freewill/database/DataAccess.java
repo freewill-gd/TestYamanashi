@@ -87,4 +87,12 @@ public class DataAccess {
 		}
 		return result;
 	}
+
+	public void update() {
+		SqlSession session;
+		session = getSqlSession();
+		session.update("test.updateT_roster", null);
+		session.commit();
+	}
+
 }

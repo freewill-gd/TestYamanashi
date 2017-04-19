@@ -10,6 +10,13 @@ public class TestDB {
 	 */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
+		//testSelect();
+		DataAccess da = new DataAccess();
+		da.update();
+
+	}
+
+	private static void testSelect() {
 		RosterDataAccess da = new RosterDataAccess();
 		RosterDto[] result = da.getData("201704");
 		if(result == null) {
@@ -20,7 +27,6 @@ public class TestDB {
 		for (RosterDto row : result) {
 			 System.out.println(row.getRemarks());
 		}
-
 	}
 
 }
