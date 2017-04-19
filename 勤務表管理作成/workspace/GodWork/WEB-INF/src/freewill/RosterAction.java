@@ -22,7 +22,7 @@ public final class RosterAction extends Action {
 			RosterActionForm rosterActionForm = (RosterActionForm)form;
 			if(rosterActionForm != null) {
 				if (rosterActionForm.getaMode() != null  && rosterActionForm.getaMode().equals("update")){
-					System.err.println(rosterActionForm.getData()[0].getRemarks());
+					System.err.println(rosterActionForm.getMonth());
 					update(rosterActionForm);
 				}
 				rosterActionForm.setDebugString(rosterActionForm.getData()[0].getRemarks());
