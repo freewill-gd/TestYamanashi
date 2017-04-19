@@ -17,8 +17,8 @@ public class RosterDataAccess {
 		return result.toArray(new RosterDto[0]);
 	}
 
-	public void update(RosterDto dto) {
+	public void updates(RosterDto[] dto) {
 		DataAccess data = new DataAccess();
-		data.update("test.updateT_roster", dto);
+		data.updates("test.updateT_roster", dto);
 	}
 }

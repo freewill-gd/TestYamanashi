@@ -20,19 +20,22 @@ public final class RosterAction extends Action {
 		RosterActionForm rosterActionForm = (RosterActionForm)form;
 		if(rosterActionForm != null) {
 			if (rosterActionForm.getaMode() != null  && rosterActionForm.getaMode().equals("update")){
-				System.out.println("test");
-				for(RosterDto dto: rosterActionForm.getData()) {
-						System.out.println(dto.getRemarks());
-						RosterDataAccess da = new RosterDataAccess();
-						dto.setUserId("fw001");
-						da.update(dto);
-				}
+				update(rosterActionForm);
 			}
 		}
 
 		getPage(request, rosterActionForm);
 		return map.findForward("success");
   }
+
+	private void update(RosterActionForm rosterActionForm) {
+		System.out.println("test");
+		RosterDataAccess da = new RosterDataAccess();
+		for(RosterDto dto: rosterActionForm.getData()) {
+				dto.setUserId("fw001");
+		}
+		da.updates( rosterActionForm.getData());
+	}
 
 	private void getPage(HttpServletRequest request,
 			RosterActionForm rosterActionForm) {

@@ -91,9 +91,16 @@ public class DataAccess {
 	public void update(String name, Object param) {
 		SqlSession session;
 		session = getSqlSession();
-		// session.update("test.updateT_roster", null);
-		int ret = session.update(name , param);
-		System.out.println(ret);
+		session.update(name , param);
+		session.commit();
+	}
+
+	public void updates(String name, Object[] params) {
+		SqlSession session;
+		session = getSqlSession();
+		for(Object param : params) {
+			session.update(name , param);
+		}
 		session.commit();
 	}
 

@@ -25,7 +25,7 @@ public class TestDB {
 		dto.setBreakTime("10:00");
 		dto.setUserId("fw001");
 		dto.setWorkDateKey("2017/01/02");
-		da.update(dto);
+		//da.updates(dto);
 	}
 
 	private static void testSelect() {
