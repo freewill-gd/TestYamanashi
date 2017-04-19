@@ -39,7 +39,7 @@ public final class RosterAction extends Action {
   }
 
 	private void update(RosterActionForm rosterActionForm) {
-		System.err.println("えらーてすと");
+		System.err.println("えらーてすと")
 		RosterDataAccess da = new RosterDataAccess();
 		for(RosterDto dto: rosterActionForm.getData()) {
 				dto.setUserId("fw001");
