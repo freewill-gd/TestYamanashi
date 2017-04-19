@@ -16,4 +16,9 @@ public class RosterDataAccess {
 		if(result == null) return null;
 		return result.toArray(new RosterDto[0]);
 	}
+
+	public void update() {
+		DataAccess data = new DataAccess();
+		data.update("test.updateT_roster", null);
+	}
 }

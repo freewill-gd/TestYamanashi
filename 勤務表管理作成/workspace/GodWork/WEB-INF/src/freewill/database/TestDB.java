@@ -11,9 +11,14 @@ public class TestDB {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		//testSelect();
-		DataAccess da = new DataAccess();
-		da.update();
 
+		testUpdate();
+
+	}
+
+	private static void testUpdate() {
+		RosterDataAccess da = new RosterDataAccess();
+		da.update();
 	}
 
 	private static void testSelect() {

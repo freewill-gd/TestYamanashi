@@ -88,10 +88,11 @@ public class DataAccess {
 		return result;
 	}
 
-	public void update() {
+	public void update(String name, Object param) {
 		SqlSession session;
 		session = getSqlSession();
-		session.update("test.updateT_roster", null);
+		// session.update("test.updateT_roster", null);
+		session.update(name , param);
 		session.commit();
 	}
 
