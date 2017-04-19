@@ -17,15 +17,22 @@ public final class RosterAction extends Action {
 	public ActionForward execute (
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
-		RosterActionForm rosterActionForm = (RosterActionForm)form;
-		if(rosterActionForm != null) {
-			if (rosterActionForm.getaMode() != null  && rosterActionForm.getaMode().equals("update")){
-				update(rosterActionForm);
+
+		try {
+			RosterActionForm rosterActionForm = (RosterActionForm)form;
+			if(rosterActionForm != null) {
+				if (rosterActionForm.getaMode() != null  && rosterActionForm.getaMode().equals("update")){
+					update(rosterActionForm);
+				}
 			}
+
+			getPage(request, rosterActionForm);
+			return map.findForward("success");
+		}
+		catch(Exception e)  {
+			return map.findForward("failure");
 		}
 
-		getPage(request, rosterActionForm);
-		return map.findForward("success");
   }
 
 	private void update(RosterActionForm rosterActionForm) {
