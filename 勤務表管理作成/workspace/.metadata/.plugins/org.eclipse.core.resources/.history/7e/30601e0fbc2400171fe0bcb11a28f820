@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="TestActionForm" type="freewill.TestActionForm" />
+		<form-bean name="RosterActionForm" type="freewill.RosterActionForm" />
+	</form-beans>
+
+	<action-mappings>
+		<action path="/Test" type="freewill.TestAction" name="TestActionForm" scope="request">
+			<forward name="success" path="/test.jsp" />
+		</action>
+
+		<action path="/Roster" type="freewill.RosterAction" name="RosterActionForm" scope="request">
+			<forward name="success" path="/roster.jsp" />
+			<forward name="failure" path="/roster.jsp" />
+		</action>
+	</action-mappings>
+	<message-resources parameter="resources.application" />
+</struts-config>

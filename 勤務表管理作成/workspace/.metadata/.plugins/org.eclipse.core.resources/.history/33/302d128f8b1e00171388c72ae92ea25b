@@ -1,9 +1,0 @@
-package freewill.database;
-
-import java.util.Map;
-
-public class RosterDataAccess {
-	Map<String, Object> getData() {
-
-	}
-}

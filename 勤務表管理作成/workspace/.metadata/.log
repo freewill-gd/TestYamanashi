@@ -3530,3 +3530,182 @@ Caused by: java.lang.IllegalStateException
 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
 	... 22 more
+!SESSION 2017-04-18 09:47:36.848 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2017-04-18 09:48:06.504
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-18 09:48:06.504
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,サーバーでデバッグ,
+		サーバー上の現在の選択をデバッグ,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-18 09:48:06.504
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,サーバーで実行,
+		サーバー上の現在の選択を実行,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 09:48:13.153
+!MESSAGE properties loading for project 'ClassTest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 09:48:13.166
+!MESSAGE properties loading for project 'GodWork'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 09:48:13.167
+!MESSAGE loading file 'application.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 09:48:13.226
+!MESSAGE loading file 'application_ja_JP.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 09:48:13.250
+!MESSAGE properties loading for project 'LocaTest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 09:48:13.250
+!MESSAGE properties loading for project 'StrutsDBTest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 09:48:13.254
+!MESSAGE properties loading for project 'StrutsTest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 09:48:13.256
+!MESSAGE properties loading for project 'Test'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 18:31:22.061
+!MESSAGE properties loading for project 'GodWork'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 18:31:22.071
+!MESSAGE loading file 'application.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-18 18:31:22.071
+!MESSAGE loading file 'application_ja_JP.properties'
+!SESSION 2017-04-19 08:57:27.985 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2017-04-19 08:57:53.695
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 08:57:53.695
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,サーバーでデバッグ,
+		サーバー上の現在の選択をデバッグ,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-19 08:57:53.695
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.ui.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,サーバーで実行,
+		サーバー上の現在の選択を実行,
+		Category(org.eclipse.debug.ui.category.run,実行/デバッグ,コマンド実行/デバッグのカテゴリー,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-19 08:57:56.725
+!MESSAGE properties loading for project 'ClassTest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-19 08:57:56.725
+!MESSAGE properties loading for project 'GodWork'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-19 08:57:56.725
+!MESSAGE loading file 'application.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-19 08:57:56.855
+!MESSAGE loading file 'application_ja_JP.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-19 08:57:56.915
+!MESSAGE properties loading for project 'LocaTest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-19 08:57:56.915
+!MESSAGE properties loading for project 'StrutsDBTest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-19 08:57:56.915
+!MESSAGE properties loading for project 'StrutsTest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-04-19 08:57:56.915
+!MESSAGE properties loading for project 'Test'
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-04-19 10:50:44.127
+!MESSAGE 内部エラー
+!STACK 1
+Java Model Exception: Java Model Status [Data [in Data.class [in javax.xml.crypto [in C:\eclipse\eclipse\jre\lib\rt.jar]]] に対しては不明な javadoc フォーマットです]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:78)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2017-04-19 10:50:44.127
+!MESSAGE Data [in Data.class [in javax.xml.crypto [in C:\eclipse\eclipse\jre\lib\rt.jar]]] に対しては不明な javadoc フォーマットです
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-04-19 11:47:54.699
+!MESSAGE 内部エラー
+!STACK 1
+Java Model Exception: Java Model Status [System [in System.class [in java.lang [in C:\eclipse\eclipse\jre\lib\rt.jar]]] に対しては不明な javadoc フォーマットです]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:78)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:96)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2017-04-19 11:47:54.699
+!MESSAGE System [in System.class [in java.lang [in C:\eclipse\eclipse\jre\lib\rt.jar]]] に対しては不明な javadoc フォーマットです

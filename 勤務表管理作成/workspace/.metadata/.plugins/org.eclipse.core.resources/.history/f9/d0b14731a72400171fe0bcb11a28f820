@@ -1,0 +1,39 @@
+package freewill.database;
+
+
+//import freewill.database.SampleDB;
+
+public class TestDB {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		testSelect();
+
+		//testUpdate();
+
+	}
+
+	private static void testUpdate() {
+		RosterDataAccess da = new RosterDataAccess();
+		RosterDto dto = new RosterDto();
+		dto.setRemarks("DTOテスト");
+		da.update(dto);
+	}
+
+	private static void testSelect() {
+		RosterDataAccess da = new RosterDataAccess();
+		RosterDto[] result = da.getData("201704");
+		if(result == null) {
+				System.out.println("Null");
+				return;
+		}
+
+		for (RosterDto row : result) {
+			 System.out.println(row.getWorkDateKey()());
+		}
+	}
+
+}
