@@ -52,6 +52,11 @@ public final class RosterActionForm extends ActionForm {
 		month = (new SimpleDateFormat("MM")).format(now);
 		name = "テスト太郎";
 		timeString = "?time=" + String.valueOf(now.getTime());
+
+		data = new RosterDto[31];
+		for (int i = 0; i < 31; i++) {
+				data[i] = new RosterDto();
+		}
 	}
 
 	public void setSelectYear(LinkedHashMap<String, String> selectYear) {

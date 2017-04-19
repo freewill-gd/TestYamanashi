@@ -1,5 +1,5 @@
-#Wed Apr 05 08:42:24 JST 2017
-org.eclipse.jdt.core.classpathVariable.TOMCAT_HOME=C\:/eclipse/tomcat6.0
+#Wed Apr 19 16:47:06 JST 2017
+org.eclipse.jdt.core.classpathVariable.TOMCAT_HOME=C\:/eclipse/apache-tomcat-7.0.77
 org.eclipse.jdt.core.compiler.compliance=1.6
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6
 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error

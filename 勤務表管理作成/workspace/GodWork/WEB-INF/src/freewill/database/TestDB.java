@@ -10,14 +10,14 @@ public class TestDB {
 	 */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		//testSelect();
+		testSelect();
 
 		testUpdate();
 
 	}
 
 	private static void testUpdate() {
-		RosterDataAccess da = new RosterDataAccess();
+		//RosterDataAccess da = new RosterDataAccess();
 		RosterDto dto = new RosterDto();
 		dto.setStartTime("09:00");
 		dto.setEndTime("18:00");
@@ -25,7 +25,7 @@ public class TestDB {
 		dto.setBreakTime("10:00");
 		dto.setUserId("fw001");
 		dto.setWorkDateKey("2017/01/02");
-		//da.updates(dto);
+		//da.update(dto);
 	}
 
 	private static void testSelect() {

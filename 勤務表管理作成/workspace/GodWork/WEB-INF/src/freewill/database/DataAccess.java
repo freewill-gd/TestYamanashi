@@ -99,9 +99,7 @@ public class DataAccess {
 		SqlSession session;
 		session = getSqlSession();
 		for(Object param : params) {
-			int i = session.update(name , param);
-			//RosterDto d = (RosterDto)param;
-			//System.err.println(d.getRemarks());
+			session.update(name , param);
 		}
 		session.commit();
 	}
