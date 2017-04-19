@@ -18,7 +18,10 @@ public class TestDB {
 
 	private static void testUpdate() {
 		RosterDataAccess da = new RosterDataAccess();
-		da.update();
+		RosterDto dto = new RosterDto();
+		dto.setRemarks("DTOテスト2");
+		dto.setWorkDateKey("2017/01/02");
+		da.update(dto);
 	}
 
 	private static void testSelect() {
@@ -30,7 +33,7 @@ public class TestDB {
 		}
 
 		for (RosterDto row : result) {
-			 System.out.println(row.getRemarks());
+			 System.out.println(row.getWorkDateKey());
 		}
 	}
 

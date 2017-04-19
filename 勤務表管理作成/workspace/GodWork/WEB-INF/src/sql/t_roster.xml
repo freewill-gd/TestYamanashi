@@ -29,7 +29,7 @@
 SELECT user_id
  ,  TO_CHAR(work_date, 'DD') AS work_date
  ,  fn_weekday(work_date) AS weekday
- ,  work_date AS work_date_key
+ ,  TO_CHAR(work_date, 'YYYY/MM/DD') AS work_date_key
  ,  holiday_flg
  ,  work_kind
  ,  TO_CHAR(start_time, 'HH24:MI') AS start_time
@@ -55,7 +55,7 @@ ORDER BY
 ]]>
   </select>
 
-<update id="updateT_roster">
+<update id="updateT_roster" parameterType="freewill.database.RosterDto">
 <![CDATA[
 UPDATE
 	t_roster
@@ -68,13 +68,13 @@ SET
 	, late_night_over_time = fn_string_to_minute('02:30') /*  深夜残業(分) */
 	, holiday_over_time = fn_string_to_minute('02:30') /* 休日残業(分) */
 	, holiday_late_night_over_time = fn_string_to_minute('02:30')   /* 休日深夜残業(分) */
-	, remarks = 'ほげほsssssげ' /* 備考 */
+	, remarks = #{remarks} /* 備考 */
 	, update_date = NOW()  /*  更新日時 */
 	, update_user_id = 'fw001' /* 更新ユーザID */
 	, enable_flg = 1  /* 有効フラグ｜0:無効,1:有効 */
 WHERE
 	 user_id = 'fw001' /* ユーザID */
-	AND work_date = TO_DATE('2017/01', 'YYYY/MM/DD')  /* 日付 */
+	AND work_date = TO_DATE(#{workDateKey},  'YYYY/MM/DD')  /* 日付 */
 ]]>
 </update>
 
