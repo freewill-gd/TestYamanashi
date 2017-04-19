@@ -19,7 +19,11 @@ public class TestDB {
 	private static void testUpdate() {
 		RosterDataAccess da = new RosterDataAccess();
 		RosterDto dto = new RosterDto();
+		dto.setStartTime("09:00");
+		dto.setEndTime("18:00");
 		dto.setRemarks("DTOテスト2");
+		dto.setBreakTime("10:00");
+		dto.setUserId("fw001");
 		dto.setWorkDateKey("2017/01/02");
 		da.update(dto);
 	}

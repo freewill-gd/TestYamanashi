@@ -92,7 +92,8 @@ public class DataAccess {
 		SqlSession session;
 		session = getSqlSession();
 		// session.update("test.updateT_roster", null);
-		session.update(name , param);
+		int ret = session.update(name , param);
+		System.out.println(ret);
 		session.commit();
 	}
 
