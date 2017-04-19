@@ -20,8 +20,11 @@ public final class RosterAction extends Action {
 
 		try {
 			RosterActionForm rosterActionForm = (RosterActionForm)form;
+			rosterActionForm.setDebugString("1");
 			if(rosterActionForm != null) {
+				rosterActionForm.setDebugString("2");
 				if (rosterActionForm.getaMode() != null  && rosterActionForm.getaMode().equals("update")){
+					rosterActionForm.setDebugString("3");
 					update(rosterActionForm);
 				}
 			}
@@ -36,9 +39,11 @@ public final class RosterAction extends Action {
   }
 
 	private void update(RosterActionForm rosterActionForm) {
+		System.err.println("えらーてすと");
 		RosterDataAccess da = new RosterDataAccess();
 		for(RosterDto dto: rosterActionForm.getData()) {
 				dto.setUserId("fw001");
+				rosterActionForm.setDebugString("sss");
 		}
 		da.updates( rosterActionForm.getData());
 	}

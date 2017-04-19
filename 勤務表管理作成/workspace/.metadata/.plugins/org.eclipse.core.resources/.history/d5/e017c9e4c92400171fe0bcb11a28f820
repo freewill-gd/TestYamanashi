@@ -100,7 +100,7 @@ public class DataAccess {
 		session = getSqlSession();
 		for(Object param : params) {
 			int i = session.update(name , param);
-			System.err.println(i);
+
 		}
 		session.commit();
 	}
