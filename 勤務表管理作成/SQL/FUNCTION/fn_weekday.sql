@@ -8,7 +8,7 @@ $BODY$DECLARE
 	ret_str TEXT[];
 	dow INT;
 BEGIN
-	ret_str = ARRAY['“ú', 'Œ', '‰Î', '…', '–Ø', '‹à', '“y'];
+	ret_str = ARRAY['æ—¥', 'æœˆ', 'ç«', 'æ°´', 'æœ¨', 'é‡‘', 'åœŸ'];
 	dow = date_part('dow'::text, in_date) + 1;
 	RETURN ret_str[dow];
 END
@@ -17,5 +17,5 @@ $BODY$
   COST 100;
 ALTER FUNCTION public.fn_weekday(timestamp with time zone)
   OWNER TO postgres;
-COMMENT ON FUNCTION public.fn_weekday(timestamp with time zone) IS '“ú•tŒ^‚©‚ç—j“úiŠ¿šj‚ğo—Í‚µ‚Ü‚·
+COMMENT ON FUNCTION public.fn_weekday(timestamp with time zone) IS 'æ—¥ä»˜å‹ã‹ã‚‰æ›œæ—¥ï¼ˆæ¼¢å­—ï¼‰ã‚’å‡ºåŠ›ã—ã¾ã™
 ';

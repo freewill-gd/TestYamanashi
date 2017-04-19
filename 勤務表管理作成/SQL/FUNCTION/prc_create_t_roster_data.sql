@@ -12,50 +12,50 @@ $BODY$DECLARE
 BEGIN
 
 	sysdate := now();
-	row_t_roster.user_id := in_user_id; -- ƒ†[ƒUID
-	row_t_roster.work_date := date_trunc('day', in_work_date); -- “ú•t
-	row_t_roster.insert_date := sysdate; -- ’Ç‰Á“ú
-	row_t_roster.insert_user_id := in_user_id; -- ’Ç‰Áƒ†[ƒUID
-	row_t_roster.update_date := sysdate; -- XV“ú
-	row_t_roster.update_user_id := in_user_id; -- XVƒ†[ƒUID
-	row_t_roster.enable_flg := 1; -- —LŒøƒtƒ‰ƒOb0:–³Œø,1:—LŒø
+	row_t_roster.user_id := in_user_id; -- ãƒ¦ãƒ¼ã‚¶ID
+	row_t_roster.work_date := date_trunc('day', in_work_date); -- æ—¥ä»˜
+	row_t_roster.insert_date := sysdate; -- è¿½åŠ æ—¥æ™‚
+	row_t_roster.insert_user_id := in_user_id; -- è¿½åŠ ãƒ¦ãƒ¼ã‚¶ID
+	row_t_roster.update_date := sysdate; -- æ›´æ–°æ—¥æ™‚
+	row_t_roster.update_user_id := in_user_id; -- æ›´æ–°ãƒ¦ãƒ¼ã‚¶ID
+	row_t_roster.enable_flg := 1; -- æœ‰åŠ¹ãƒ•ãƒ©ã‚°ï½œ0:ç„¡åŠ¹,1:æœ‰åŠ¹
 
 	INSERT INTO
 		t_roster
 	(
-		  user_id -- ƒ†[ƒUID
-		, work_date -- “ú•t
-		, work_kind -- ‹Î–±í•Ê
-		, start_time -- ŠJnŠÔ
-		, end_time -- I—¹ŠÔ
-		, break_time -- ‹xŒe(•ª)
-		, over_time -- c‹Æ(•ª)
-		, late_night_over_time -- [–éc‹Æ(•ª)
-		, holiday_over_time -- ‹x“úc‹Æ(•ª)
-		, holiday_late_night_over_time -- ‹x“ú[–éc‹Æ(•ª)
-		, insert_date -- ’Ç‰Á“ú
-		, insert_user_id -- ’Ç‰Áƒ†[ƒUID
-		, update_date -- XV“ú
-		, update_user_id -- XVƒ†[ƒUID
-		, enable_flg -- —LŒøƒtƒ‰ƒOb0:–³Œø,1:—LŒø
+		  user_id -- ãƒ¦ãƒ¼ã‚¶ID
+		, work_date -- æ—¥ä»˜
+		, work_kind -- å‹¤å‹™ç¨®åˆ¥
+		, start_time -- é–‹å§‹æ™‚é–“
+		, end_time -- çµ‚äº†æ™‚é–“
+		, break_time -- ä¼‘æ†©(åˆ†)
+		, over_time -- æ®‹æ¥­(åˆ†)
+		, late_night_over_time -- æ·±å¤œæ®‹æ¥­(åˆ†)
+		, holiday_over_time -- ä¼‘æ—¥æ®‹æ¥­(åˆ†)
+		, holiday_late_night_over_time -- ä¼‘æ—¥æ·±å¤œæ®‹æ¥­(åˆ†)
+		, insert_date -- è¿½åŠ æ—¥æ™‚
+		, insert_user_id -- è¿½åŠ ãƒ¦ãƒ¼ã‚¶ID
+		, update_date -- æ›´æ–°æ—¥æ™‚
+		, update_user_id -- æ›´æ–°ãƒ¦ãƒ¼ã‚¶ID
+		, enable_flg -- æœ‰åŠ¹ãƒ•ãƒ©ã‚°ï½œ0:ç„¡åŠ¹,1:æœ‰åŠ¹
 	)
 	VALUES
 	(
-		  row_t_roster.user_id -- ƒ†[ƒUID
-		, row_t_roster.work_date -- “ú•t
-		, row_t_roster.work_kind -- ‹Î–±í•Ê
-		, row_t_roster.start_time -- ŠJnŠÔ
-		, row_t_roster.end_time -- I—¹ŠÔ
-		, row_t_roster.break_time -- ‹xŒe(•ª)
-		, row_t_roster.over_time -- c‹Æ(•ª)
-		, row_t_roster.late_night_over_time -- [–éc‹Æ(•ª)
-		, row_t_roster.holiday_over_time -- ‹x“úc‹Æ(•ª)
-		, row_t_roster.holiday_late_night_over_time -- ‹x“ú[–éc‹Æ(•ª)
-		, row_t_roster.insert_date -- ’Ç‰Á“ú
-		, row_t_roster.insert_user_id -- ’Ç‰Áƒ†[ƒUID
-		, row_t_roster.update_date -- XV“ú
-		, row_t_roster.update_user_id -- XVƒ†[ƒUID
-		, row_t_roster.enable_flg -- —LŒøƒtƒ‰ƒOb0:–³Œø,1:—LŒø
+		  row_t_roster.user_id -- ãƒ¦ãƒ¼ã‚¶ID
+		, row_t_roster.work_date -- æ—¥ä»˜
+		, row_t_roster.work_kind -- å‹¤å‹™ç¨®åˆ¥
+		, row_t_roster.start_time -- é–‹å§‹æ™‚é–“
+		, row_t_roster.end_time -- çµ‚äº†æ™‚é–“
+		, row_t_roster.break_time -- ä¼‘æ†©(åˆ†)
+		, row_t_roster.over_time -- æ®‹æ¥­(åˆ†)
+		, row_t_roster.late_night_over_time -- æ·±å¤œæ®‹æ¥­(åˆ†)
+		, row_t_roster.holiday_over_time -- ä¼‘æ—¥æ®‹æ¥­(åˆ†)
+		, row_t_roster.holiday_late_night_over_time -- ä¼‘æ—¥æ·±å¤œæ®‹æ¥­(åˆ†)
+		, row_t_roster.insert_date -- è¿½åŠ æ—¥æ™‚
+		, row_t_roster.insert_user_id -- è¿½åŠ ãƒ¦ãƒ¼ã‚¶ID
+		, row_t_roster.update_date -- æ›´æ–°æ—¥æ™‚
+		, row_t_roster.update_user_id -- æ›´æ–°ãƒ¦ãƒ¼ã‚¶ID
+		, row_t_roster.enable_flg -- æœ‰åŠ¹ãƒ•ãƒ©ã‚°ï½œ0:ç„¡åŠ¹,1:æœ‰åŠ¹
 	);
 
 END
@@ -64,4 +64,4 @@ $BODY$
   COST 100;
 ALTER FUNCTION public.prc_create_t_roster_data(character varying, timestamp with time zone)
   OWNER TO postgres;
-COMMENT ON FUNCTION public.prc_create_t_roster_data(character varying, timestamp with time zone) IS '‹Î–±•\ƒf[ƒ^ì¬';
+COMMENT ON FUNCTION public.prc_create_t_roster_data(character varying, timestamp with time zone) IS 'å‹¤å‹™è¡¨ãƒ‡ãƒ¼ã‚¿ä½œæˆ';

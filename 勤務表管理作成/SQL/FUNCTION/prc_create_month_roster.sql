@@ -31,4 +31,4 @@ $BODY$
   COST 100;
 ALTER FUNCTION public.prc_create_month_roster(character varying, integer, integer)
   OWNER TO postgres;
-COMMENT ON FUNCTION public.prc_create_month_roster(character varying, integer, integer) IS '���ԋΖ��\�f�[�^�쐬';
+COMMENT ON FUNCTION public.prc_create_month_roster(character varying, integer, integer) IS '月間勤務表データ作成';
