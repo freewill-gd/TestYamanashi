@@ -101,7 +101,7 @@ public class DataAccess {
 		for(Object param : params) {
 			int i = session.update(name , param);
 			RosterDto d = (RosterDto)param;
-			System.err.println(d.getUserId());
+			System.err.println(d.getWorkDateKey());
 		}
 		session.commit();
 	}
