@@ -26,7 +26,7 @@ public final class RosterAction extends Action {
 					update(rosterActionForm);
 				}
 				String ss  = rosterActionForm.getData().length + "a";
-				rosterActionForm.setDebugString(ss);
+				rosterActionForm.setDebugString();
 			}
 
 			getPage(request, rosterActionForm);

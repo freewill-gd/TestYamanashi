@@ -25,8 +25,7 @@ public final class RosterAction extends Action {
 					System.err.println(rosterActionForm.getMonth());
 					update(rosterActionForm);
 				}
-				String ss  = rosterActionForm.getData().length + "a";
-				rosterActionForm.setDebugString(ss);
+				rosterActionForm.setDebugString(rosterActionForm.getData().length);
 			}
 
 			getPage(request, rosterActionForm);
