@@ -34,8 +34,7 @@ public final class RosterAction extends Action {
 		catch(Exception e)  {
 			return map.findForward("failure");
 		}
-
-  }
+	}
 
 	/**
 	 * 勤務表更新
@@ -57,13 +56,8 @@ public final class RosterAction extends Action {
 	private void getPage(HttpServletRequest request,
 			RosterBean rosterBean) {
 		
-		LinkedHashMap<String, String> selectYear = createNumberMap(2015, 2020, "%04d");
-
-		LinkedHashMap<String, String> selectMonth = new LinkedHashMap<String, String>();
-		for (int i = 1; i <= 12; i++) {
-			String month = String.format("%02d", i);
-			selectMonth.put(month , month);
-		}
+		LinkedHashMap<String, String> selectYear = createNumberMap(2015, 2025, "%04d");
+		LinkedHashMap<String, String> selectMonth = createNumberMap(1, 12, "%02d");
 
 		LinkedHashMap<String, String> selectWorkKind = new LinkedHashMap<String, String>();
 		selectWorkKind.put("0","");
@@ -84,6 +78,13 @@ public final class RosterAction extends Action {
 		request.setAttribute("rosterActionForm", rosterBean);
 	}
 	
+	/**
+	 * 数字コンボボックス作成
+	 * @param start
+	 * @param end
+	 * @param format
+	 * @return
+	 */
 	private LinkedHashMap<String, String> createNumberMap(int start, int end, String format) {
 		LinkedHashMap<String, String> ret = new LinkedHashMap<String, String>();
 		for (int i = start; i <= end; i++) {
