@@ -9,6 +9,8 @@ import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
 import org.apache.struts.util.MessageResources;
 
 import freewill.bean.RosterBean;
@@ -21,6 +23,10 @@ public final class RosterAction extends Action {
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
 
+		ActionMessages msgs = new ActionMessages();
+		msgs.add("test", new ActionMessage("error.timeformat"));
+		saveErrors(request, msgs);
+		
 		try {
 			RosterBean rosterBean = (RosterBean)form;
 			if(rosterBean != null) {
@@ -28,7 +34,7 @@ public final class RosterAction extends Action {
 					update(rosterBean);
 				}
 			}
-
+			
 			getPage(request, rosterBean);
 			return map.findForward("success");
 		}
