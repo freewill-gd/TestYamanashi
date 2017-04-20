@@ -1,3 +1,0 @@
-注意点
-　Shift-JIS禁止
-　TortoiseGitを使用する
