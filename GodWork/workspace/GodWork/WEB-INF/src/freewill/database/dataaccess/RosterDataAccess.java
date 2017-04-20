@@ -1,7 +1,8 @@
-package freewill.database;
+package freewill.database.dataaccess;
 import java.util.HashMap;
 import java.util.List;
 
+import freewill.database.DataAccess;
 import freewill.database.dto.RosterDto;
 
 public class RosterDataAccess {

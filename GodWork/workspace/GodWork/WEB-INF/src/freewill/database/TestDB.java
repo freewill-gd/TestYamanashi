@@ -1,5 +1,6 @@
 package freewill.database;
 
+import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
 
 

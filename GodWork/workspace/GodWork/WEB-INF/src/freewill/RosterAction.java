@@ -10,7 +10,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import freewill.database.RosterDataAccess;
+import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
 
 public final class RosterAction extends Action {
