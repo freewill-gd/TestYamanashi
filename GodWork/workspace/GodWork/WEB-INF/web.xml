@@ -45,4 +45,8 @@
 		<taglib-uri>/tags/struts-logic</taglib-uri>
 		<taglib-location>/WEB-INF/tld/struts-logic.tld</taglib-location>
 	</taglib>
+	
+	<welcome-file-list>
+    	<welcome-file>Roster.do</welcome-file>
+	</welcome-file-list>	
 </web-app>
