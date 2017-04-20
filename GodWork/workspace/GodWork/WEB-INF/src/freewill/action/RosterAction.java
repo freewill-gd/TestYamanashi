@@ -9,6 +9,7 @@ import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
+import org.apache.struts.util.MessageResources;
 
 import freewill.bean.RosterBean;
 import freewill.database.dataaccess.RosterDataAccess;
@@ -59,13 +60,14 @@ public final class RosterAction extends Action {
 		LinkedHashMap<String, String> selectYear = createNumberMap(2015, 2025, "%04d");
 		LinkedHashMap<String, String> selectMonth = createNumberMap(1, 12, "%02d");
 
+		MessageResources resources = getResources(request);
 		LinkedHashMap<String, String> selectWorkKind = new LinkedHashMap<String, String>();
 		selectWorkKind.put("0","");
-		selectWorkKind.put("1","通常勤務");
-		selectWorkKind.put("2","休日出勤");
-		selectWorkKind.put("3","有給休暇");
-		selectWorkKind.put("4","特別休暇");
-		selectWorkKind.put("5","欠勤");
+		selectWorkKind.put("1",resources.getMessage("work.regular_work"));
+		selectWorkKind.put("2",resources.getMessage("work.holiday_work"));
+		selectWorkKind.put("3",resources.getMessage("work.paid_holidays"));
+		selectWorkKind.put("4",resources.getMessage("work.special_holiday"));
+		selectWorkKind.put("5",resources.getMessage("work.absence"));
 
 		rosterBean.setSelectYear(selectYear);
 		rosterBean.setSelectMonth(selectMonth);
