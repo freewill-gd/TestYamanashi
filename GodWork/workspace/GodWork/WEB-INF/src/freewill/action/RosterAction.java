@@ -77,7 +77,7 @@ public final class RosterAction extends Action {
 
 		String start = rosterBean.getYear() + rosterBean.getMonth();
 		rosterBean.setData(data.getData(start));
-		request.setAttribute("rosterActionForm", rosterBean);
+		request.setAttribute("rosterBean", rosterBean);
 	}
 	
 	/**

@@ -4,20 +4,20 @@
 <%@ taglib uri="/tags/struts-logic" prefix="logic" %>
 <html:html>
 <head>
-	<link rel="stylesheet" href="./css/godwork.css<bean:write name="rosterActionForm" property="timeString"/>" type="text/css" />
+	<link rel="stylesheet" href="./css/godwork.css<bean:write name="rosterBean" property="timeString"/>" type="text/css" />
 	<title><bean:message key="title.roster" /></title>
-	<script type="text/javascript" src="./js/roster.js<bean:write name="rosterActionForm" property="timeString"/>"></script>
+	<script type="text/javascript" src="./js/roster.js<bean:write name="rosterBean" property="timeString"/>"></script>
 </head>
 <body>
 	<html:form>
 		<input type="hidden" id="actionMode" name="actionMode" />
 		<div class="input_arear">
-			<html:select name="rosterActionForm" property="year">
-				<html:optionsCollection name="rosterActionForm" property="selectYear" value="key" label="value" />
+			<html:select name="rosterBean" property="year">
+				<html:optionsCollection name="rosterBean" property="selectYear" value="key" label="value" />
 			</html:select>
 			<bean:message key="disp.year" />
-			<html:select name="rosterActionForm" property="month">
-				<html:optionsCollection name="rosterActionForm" property="selectMonth" value="key" label="value" />
+			<html:select name="rosterBean" property="month">
+				<html:optionsCollection name="rosterBean" property="selectMonth" value="key" label="value" />
 			</html:select>
 			<bean:message key="disp.month" />
 			<button type="button"  onclick="move();"><bean:message key="disp.move" /></button>
@@ -25,13 +25,13 @@
 		</div>
 		<div class="title">
 			<bean:message key="title.roster" />
-			<bean:write name="rosterActionForm" property="year"/>
+			<bean:write name="rosterBean" property="year"/>
 			<bean:message key="disp.year" />
-			<bean:write name="rosterActionForm" property="month"/>
+			<bean:write name="rosterBean" property="month"/>
 			<bean:message key="disp.month" />
 		</div>
 		<div class="subtitle">
-			<bean:message key="disp.name" />:<bean:write name="rosterActionForm" property="name"/>
+			<bean:message key="disp.name" />:<bean:write name="rosterBean" property="name"/>
 		</div>
 		<table class="maintable">
 			 <tr>
@@ -47,13 +47,13 @@
 				<td class="holiday_late_night_over_time"><bean:message key="disp.holiday_late_night_over_time" /></td>
 				<td class="remarks"><bean:message key="disp.remarks" /></td>
 			</tr>
-		<logic:iterate id="data" name="rosterActionForm" property="data" >
+		<logic:iterate id="data" name="rosterBean" property="data" >
 		    <tr data-weekday = "<bean:write name="data" property="weekday"/>">
 				<td><html:hidden name="data"  property="workDateKey"  indexed="true" /><bean:write name="data" property="workDate"/></td>
 				<td><bean:write name="data" property="weekday"/></td>
 				<td>
 					<html:select name="data" property="workKind" indexed="true">
-						<html:optionsCollection name="rosterActionForm" property="selectWorkKind" value="key" label="value" />
+						<html:optionsCollection name="rosterBean" property="selectWorkKind" value="key" label="value" />
 					</html:select>
 				</td>
 				<td><html:text name="data" property="startTime"  indexed="true" styleClass="time_text"/></td>
