@@ -56,11 +56,8 @@ public final class RosterAction extends Action {
 	 */
 	private void getPage(HttpServletRequest request,
 			RosterBean rosterBean) {
-		LinkedHashMap<String, String> selectYear = new LinkedHashMap<String, String>();
-		for (int i = 2015; i <= 2025; i++) {
-			String year = String.valueOf(i);
-			selectYear.put(year , year);
-		}
+		
+		LinkedHashMap<String, String> selectYear = createNumberMap(2015, 2020, "%04d");
 
 		LinkedHashMap<String, String> selectMonth = new LinkedHashMap<String, String>();
 		for (int i = 1; i <= 12; i++) {
@@ -85,6 +82,15 @@ public final class RosterAction extends Action {
 		String start = rosterBean.getYear() + rosterBean.getMonth();
 		rosterBean.setData(data.getData(start));
 		request.setAttribute("rosterActionForm", rosterBean);
+	}
+	
+	private LinkedHashMap<String, String> createNumberMap(int start, int end, String format) {
+		LinkedHashMap<String, String> ret = new LinkedHashMap<String, String>();
+		for (int i = start; i <= end; i++) {
+			String month = String.format(format, i);
+			ret.put(month , month);
+		}
+		return ret;
 	}
 
 }
