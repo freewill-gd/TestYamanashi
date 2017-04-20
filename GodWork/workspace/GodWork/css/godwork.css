@@ -88,3 +88,7 @@ table , td  {
 	width :48px;
 	text-align: center;
 }
+
+.error {
+	color: red;
+}

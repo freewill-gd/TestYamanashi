@@ -11,6 +11,9 @@
 <body>
 	<html:form>
 		<input type="hidden" id="actionMode" name="actionMode" />
+		<p class="error">
+				<html:errors />
+		</p>
 		<div class="input_arear">
 			<html:select name="rosterBean" property="year">
 				<html:optionsCollection name="rosterBean" property="selectYear" value="key" label="value" />
@@ -22,7 +25,6 @@
 			<bean:message key="disp.month" />
 			<button type="button"  onclick="move();"><bean:message key="disp.move" /></button>
 			<button type="button"  onclick="update();"><bean:message key="disp.save" /></button>
-			<html:errors />
 		</div>
 		<div class="title">
 			<bean:message key="title.roster" />
