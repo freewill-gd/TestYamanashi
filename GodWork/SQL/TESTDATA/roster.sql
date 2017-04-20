@@ -31,8 +31,8 @@ SET start_time = work_date + '9 hour'::interval
    , break_time = 60
    , over_time = 4 * 60
    , late_night_over_time = 60
-   , remarks = '”õl‚¾‚±‚Ì–ì˜Y!'
-WHERE fn_weekday(work_date) NOT IN('“y', '“ú')
+   , remarks = 'å‚™è€ƒã ã“ã®é‡éƒ!'
+WHERE fn_weekday(work_date) NOT IN('åœŸ', 'æ—¥')
 ;
 
 UPDATE t_roster
@@ -41,7 +41,7 @@ SET start_time = work_date + '9 hour'::interval
    , break_time = 60
    , holiday_over_time = 60
    , holiday_late_night_over_time = 4 * 60
-   , remarks = '‹x‚İ‚¾I•¶‹å‚ ‚é‚©AĞ’{‚¾‚±‚Ì–ì˜Y!'
-WHERE fn_weekday(work_date) IN ('“y', '“ú')
+   , remarks = 'ä¼‘ã¿ã ï¼æ–‡å¥ã‚ã‚‹ã‹ã€ç¤¾ç•œã ã“ã®é‡éƒ!'
+WHERE fn_weekday(work_date) IN ('åœŸ', 'æ—¥')
 ;
 
