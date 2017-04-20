@@ -24,11 +24,11 @@
 			<button type="button"  onclick="update();"><bean:message key="disp.update" /></button>
 		</div>
 		<div class="title">
-				<bean:message key="title.roster" />
-				<bean:write name="rosterActionForm" property="year"/>
-				<bean:message key="disp.year" />
-				<bean:write name="rosterActionForm" property="month"/>
-				<bean:message key="disp.month" />
+			<bean:message key="title.roster" />
+			<bean:write name="rosterActionForm" property="year"/>
+			<bean:message key="disp.year" />
+			<bean:write name="rosterActionForm" property="month"/>
+			<bean:message key="disp.month" />
 		</div>
 		<div class="subtitle">
 			<bean:message key="disp.name" />:<bean:write name="rosterActionForm" property="name"/>
@@ -52,9 +52,9 @@
 				<td><html:hidden name="data"  property="workDateKey"  indexed="true" /><bean:write name="data" property="workDate"/></td>
 				<td><bean:write name="data" property="weekday"/></td>
 				<td>
-						<html:select name="data" property="workKind" indexed="true">
-							<html:optionsCollection name="rosterActionForm" property="selectWorkKind" value="key" label="value" />
-						</html:select>
+					<html:select name="data" property="workKind" indexed="true">
+						<html:optionsCollection name="rosterActionForm" property="selectWorkKind" value="key" label="value" />
+					</html:select>
 				</td>
 				<td><html:text name="data" property="startTime"  indexed="true" styleClass="time_text"/></td>
 				<td><html:text name="data" property="endTime" indexed="true" styleClass="time_text"/></td>
