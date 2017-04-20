@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from プロジェクト &apos;StrutsDBTest&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;StrutsDBTest&apos;&#x0D;&#x0A;- オリジナル要素: &apos;StrutsDBTest/work/org.apache.jsp&apos;" description="要素の削除" element1="/work&lt;org.apache.jsp" element2="/work&lt;org.apache" element3="/work&lt;org" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1492588083924" subPackages="false" version="1.0"/>
-</session>

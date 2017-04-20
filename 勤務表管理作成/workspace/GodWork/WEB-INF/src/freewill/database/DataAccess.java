@@ -17,7 +17,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 public class DataAccess {
 
 	/**
-	 *
+	 *　ファクトリ取得
 	 * @return SqlSessionFactory
 	 */
 	public SqlSessionFactory getSqlSessionFactory() {
@@ -25,16 +25,16 @@ public class DataAccess {
 		SqlSessionFactory factory = null;
 		try {
 			URL resource = DataAccess.class.getClassLoader().getResource("mybatis-config.xml");
-			System.out.println(resource);
 			in = resource.openConnection().getInputStream();
 			factory = new SqlSessionFactoryBuilder().build(in);
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.err.println(e.getMessage());
 		} finally {
 			if (in != null) {
 				try {
 					in.close();
 				} catch (Exception e) {
+					System.err.println(e.getMessage());
 				}
 			}
 		}
@@ -42,7 +42,7 @@ public class DataAccess {
 	}
 
 	/**
-	 *
+	 *　セッション取得
 	 * @return
 	 */
 	public SqlSession getSqlSession() {
@@ -51,7 +51,7 @@ public class DataAccess {
 	}
 
 	/**
-	 *
+	 * DB取得
 	 * @param name
 	 * @param param
 	 * @return
@@ -72,6 +72,12 @@ public class DataAccess {
 		return result;
 	}
 
+	/**
+	 * DB取得
+	 * @param name
+	 * @param param
+	 * @return
+	 */
 	public List<Map<String, Object>> selectMapList(String name, Object param) {
 		SqlSession session;
 		session = getSqlSession();
@@ -80,7 +86,7 @@ public class DataAccess {
 			result = session.selectList(name, param);
 		}
 		catch(Exception e) {
-			System.out.println(e.getMessage());
+			System.err.println(e.getMessage());
 		}
 		finally  {
 			if (session != null) session.close();
@@ -88,20 +94,52 @@ public class DataAccess {
 		return result;
 	}
 
+	/**
+	 * DB更新
+	 * @param name
+	 * @param param
+	 */
 	public void update(String name, Object param) {
-		SqlSession session;
-		session = getSqlSession();
-		session.update(name , param);
-		session.commit();
+		SqlSession session = null;
+		try {
+			session = getSqlSession();
+			session.update(name , param);
+			session.commit();
+		}
+		catch(Exception e) {
+				if(session != null) {
+					session.rollback();
+				}
+				System.err.println(e.getMessage());
+		}
+		finally  {
+			if (session != null) session.close();
+		}
 	}
 
+	/**
+	 * DB更新複数
+	 * @param name
+	 * @param params
+	 */
 	public void updates(String name, Object[] params) {
-		SqlSession session;
-		session = getSqlSession();
-		for(Object param : params) {
-			session.update(name , param);
+		SqlSession session = null;
+		try {
+			session = getSqlSession();
+			for(Object param : params) {
+				session.update(name , param);
+			}
+			session.commit();
 		}
-		session.commit();
+		catch(Exception e) {
+				if(session != null) {
+					session.rollback();
+				}
+				System.err.println(e.getMessage());
+		}
+		finally  {
+			if (session != null) session.close();
+		}
 	}
 
 }

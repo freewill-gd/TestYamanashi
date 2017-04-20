@@ -1,5 +1,0 @@
-INDEX VERSION 1.122+C:\Users\yamanashi\Documents\TestYamanashi\‹Î–±•\ŠÇ—ì¬\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3164386521.index
-3389477593.index
-245906292.index
-662383875.index

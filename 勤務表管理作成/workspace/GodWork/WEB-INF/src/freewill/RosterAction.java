@@ -35,6 +35,10 @@ public final class RosterAction extends Action {
 
   }
 
+	/**
+	 * 勤務表更新
+	 * @param rosterActionForm
+	 */
 	private void update(RosterActionForm rosterActionForm) {
 		RosterDataAccess da = new RosterDataAccess();
 		for(RosterDto dto: rosterActionForm.getData()) {
@@ -43,6 +47,11 @@ public final class RosterAction extends Action {
 		da.updates( rosterActionForm.getData());
 	}
 
+	/**
+	 *  勤務表表示
+	 * @param request
+	 * @param rosterActionForm
+	 */
 	private void getPage(HttpServletRequest request,
 			RosterActionForm rosterActionForm) {
 		LinkedHashMap<String, String> selectYear = new LinkedHashMap<String, String>();

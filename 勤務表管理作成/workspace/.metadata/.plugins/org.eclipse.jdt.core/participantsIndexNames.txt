@@ -1,7 +1,0 @@
-INDEX VERSION 1.126
-C:\Users\yamanashi\Documents\TestYamanashi\‹Î–±•\ŠÇ—ì¬\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3248677658.index
-\StrutsTest
-C:\Users\yamanashi\Documents\TestYamanashi\‹Î–±•\ŠÇ—ì¬\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3418073627.index
-\StrutsDBTest
-C:\Users\yamanashi\Documents\TestYamanashi\‹Î–±•\ŠÇ—ì¬\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2704213687.index
-\GodWork
