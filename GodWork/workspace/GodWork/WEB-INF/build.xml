@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GodWork" default="compile" basedir="./">
+
+    <!-- propertyタグで変数compileを設定 -->
+    <property name="compile" value="Classes"/>
+
+    <!-- ディレクトリClassesの作成 -->
+    <target name="directory">
+        <mkdir dir="${compile}"/>
+    </target>
+
+    <!-- ソースファイルをコンパイル -->
+    <!-- ターゲットdirectoryに依存しているため、
+         ターゲットdirectoryを先に実行 -->
+    <target name="compile" depends="directory">
+        <javac
+                    srcdir="src"
+                    destdir="${compile}"
+                    excludes="build.xml"
+                />
+    </target>
+
+</project>
