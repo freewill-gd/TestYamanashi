@@ -6,6 +6,7 @@
 <head>
 	<link rel="stylesheet" href="./css/godwork.css<bean:write name="rosterBean" property="timeString"/>" type="text/css" />
 	<title><bean:message key="title.roster" /></title>
+	<script type="text/javascript" src="./js/jquery-3.2.1.js<bean:write name="rosterBean" property="timeString"/>"></script>
 	<script type="text/javascript" src="./js/roster.js<bean:write name="rosterBean" property="timeString"/>"></script>
 </head>
 <body>
