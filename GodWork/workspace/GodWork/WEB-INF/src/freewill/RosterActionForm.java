@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 
 import org.apache.struts.action.ActionForm;
 
-import freewill.database.RosterDto;
+import freewill.database.dto.RosterDto;
 
 public final class RosterActionForm extends ActionForm {
 	private static final long serialVersionUID = 1L;

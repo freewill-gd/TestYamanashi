@@ -1,5 +1,7 @@
 package freewill.database;
 
+import freewill.database.dto.RosterDto;
+
 
 //import freewill.database.SampleDB;
 

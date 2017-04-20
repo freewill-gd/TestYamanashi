@@ -1,4 +1,4 @@
-package freewill.database;
+package freewill.database.dto;
 
 public class RosterDto {
 

@@ -2,6 +2,8 @@ package freewill.database;
 import java.util.HashMap;
 import java.util.List;
 
+import freewill.database.dto.RosterDto;
+
 public class RosterDataAccess {
 
 	public RosterDto[] getData(String start) {
