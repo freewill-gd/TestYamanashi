@@ -7,8 +7,8 @@
 
 	<action-mappings>
 		<action path="/Roster" type="freewill.action.RosterAction" name="RosterActionForm" scope="request">
-			<forward name="success" path="/roster.jsp" />
-			<forward name="failure" path="/error.jsp" />
+			<forward name="success" path="/jsp/roster.jsp" />
+			<forward name="failure" path="/jsp/error.jsp" />
 		</action>
 	</action-mappings>
 	<message-resources parameter="resources.application" />
