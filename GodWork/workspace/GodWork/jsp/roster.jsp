@@ -21,7 +21,7 @@
 			</html:select>
 			<bean:message key="disp.month" />
 			<button type="button"  onclick="move();"><bean:message key="disp.move" /></button>
-			<button type="button"  onclick="update();"><bean:message key="disp.update" /></button>
+			<button type="button"  onclick="update();"><bean:message key="disp.save" /></button>
 		</div>
 		<div class="title">
 			<bean:message key="title.roster" />
