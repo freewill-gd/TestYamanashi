@@ -22,15 +22,12 @@ public final class RosterAction extends Action {
 	public ActionForward execute (
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
-
-		ActionMessages msgs = new ActionMessages();
-		msgs.add("test", new ActionMessage("error.timeformat"));
-		saveErrors(request, msgs);
 		
 		try {
 			RosterBean rosterBean = (RosterBean)form;
 			if(rosterBean != null) {
 				if (rosterBean.getActionMode() != null  && rosterBean.getActionMode().equals("update")){
+					checkInput(request, rosterBean);
 					update(rosterBean);
 				}
 			}
@@ -41,6 +38,18 @@ public final class RosterAction extends Action {
 		catch(Exception e)  {
 			return map.findForward("failure");
 		}
+	}
+
+	/**
+	 * 入力値を検証
+	 * @param request
+	 * @param rosterBean
+	 */
+	private void checkInput(HttpServletRequest request, RosterBean rosterBean) {
+		if(rosterBean == null) return;
+		ActionMessages msgs = new ActionMessages();
+		msgs.add("test", new ActionMessage("error.timeformat"));
+		saveErrors(request, msgs);
 	}
 
 	/**
