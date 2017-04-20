@@ -8,7 +8,7 @@ import org.apache.struts.action.ActionForm;
 
 import freewill.database.dto.RosterDto;
 
-public final class RosterActionForm extends ActionForm {
+public final class RosterBean extends ActionForm {
 	private static final long serialVersionUID = 1L;
 
 	private String year;
@@ -22,7 +22,7 @@ public final class RosterActionForm extends ActionForm {
 	private String timeString;
 	private String debugString = "デバッグ文字列";
 
-	public RosterActionForm() {
+	public RosterBean() {
 		Date now = new Date();
 		year =   (new SimpleDateFormat("yyyy")).format(now);
 		month = (new SimpleDateFormat("MM")).format(now);

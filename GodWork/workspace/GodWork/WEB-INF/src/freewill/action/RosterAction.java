@@ -10,7 +10,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import freewill.bean.RosterActionForm;
+import freewill.bean.RosterBean;
 import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
 
@@ -21,14 +21,14 @@ public final class RosterAction extends Action {
 		HttpServletRequest request, HttpServletResponse response) {
 
 		try {
-			RosterActionForm rosterActionForm = (RosterActionForm)form;
-			if(rosterActionForm != null) {
-				if (rosterActionForm.getActionMode() != null  && rosterActionForm.getActionMode().equals("update")){
-					update(rosterActionForm);
+			RosterBean rosterBean = (RosterBean)form;
+			if(rosterBean != null) {
+				if (rosterBean.getActionMode() != null  && rosterBean.getActionMode().equals("update")){
+					update(rosterBean);
 				}
 			}
 
-			getPage(request, rosterActionForm);
+			getPage(request, rosterBean);
 			return map.findForward("success");
 		}
 		catch(Exception e)  {
@@ -39,23 +39,23 @@ public final class RosterAction extends Action {
 
 	/**
 	 * 勤務表更新
-	 * @param rosterActionForm
+	 * @param rosterBean
 	 */
-	private void update(RosterActionForm rosterActionForm) {
+	private void update(RosterBean rosterBean) {
 		RosterDataAccess da = new RosterDataAccess();
-		for(RosterDto dto: rosterActionForm.getData()) {
+		for(RosterDto dto: rosterBean.getData()) {
 				dto.setUserId("fw001");
 		}
-		da.updates( rosterActionForm.getData());
+		da.updates( rosterBean.getData());
 	}
 
 	/**
 	 *  勤務表表示
 	 * @param request
-	 * @param rosterActionForm
+	 * @param rosterBean
 	 */
 	private void getPage(HttpServletRequest request,
-			RosterActionForm rosterActionForm) {
+			RosterBean rosterBean) {
 		LinkedHashMap<String, String> selectYear = new LinkedHashMap<String, String>();
 		for (int i = 2015; i <= 2025; i++) {
 			String year = String.valueOf(i);
@@ -76,15 +76,15 @@ public final class RosterAction extends Action {
 		selectWorkKind.put("4","特別休暇");
 		selectWorkKind.put("5","欠勤");
 
-		rosterActionForm.setSelectYear(selectYear);
-		rosterActionForm.setSelectMonth(selectMonth);
-		rosterActionForm.setSelectWorkKind(selectWorkKind);
+		rosterBean.setSelectYear(selectYear);
+		rosterBean.setSelectMonth(selectMonth);
+		rosterBean.setSelectWorkKind(selectWorkKind);
 
 		RosterDataAccess data = new RosterDataAccess();
 
-		String start = rosterActionForm.getYear() + rosterActionForm.getMonth();
-		rosterActionForm.setData(data.getData(start));
-		request.setAttribute("rosterActionForm", rosterActionForm);
+		String start = rosterBean.getYear() + rosterBean.getMonth();
+		rosterBean.setData(data.getData(start));
+		request.setAttribute("rosterActionForm", rosterBean);
 	}
 
 }
