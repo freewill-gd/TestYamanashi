@@ -5,7 +5,7 @@
     <reloadable>true</reloadable>
     <redirectLogger>false</redirectLogger>
     <updateXml>true</updateXml>
-    <warLocation>C:\Users\yamanashi\Documents\war\GodWork.war</warLocation>
+    <warLocation></warLocation>
     <extraInfo></extraInfo>
     <webPath>/GodWork</webPath>
 </tomcatProjectProperties>
