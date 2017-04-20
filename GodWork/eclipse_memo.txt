@@ -1,0 +1,31 @@
+注意点
+
+■文字コードがUTF-8にすること
+	eclipse全体で設定する場合は
+	eclipse.iniに
+
+	-Dfile.encoding=utf-8
+	を追加する
+
+■tomcatの設定
+	ウインドウ→設定
+	1.Tomcatで検索
+	
+	2.Tomcatバージョン
+		バージョン 7.xを指定
+	3.Tomcatホーム
+		C:\eclipse\apache-tomcat-7.0.77 を指定
+		※Tomcatがインストール場所を指定する
+		
+	
+		
+■プロジェクトの作成
+	ファイル→新規プロジェクト
+	1.Tomcatプロジェクト
+	2.プロジェクト名 GodWork
+	※Gitでクローンした場所と一致していること
+
+■Tomcat関連付け
+ 	パッケージエクスプローラ右クリック
+ 	Tomcatプロジェクト→コンテキスト定義を更新
+ 	
