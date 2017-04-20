@@ -1,4 +1,4 @@
-package freewill;
+package freewill.action;
 
 import java.util.LinkedHashMap;
 
@@ -10,6 +10,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
+import freewill.RosterActionForm;
 import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
 
