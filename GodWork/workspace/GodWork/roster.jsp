@@ -10,8 +10,7 @@
 </head>
 <body>
 	<html:form>
-		<bean:write name="rosterActionForm" property="debugString"/>
-		<input type="hidden" id="aMode" name="aMode" />
+		<input type="hidden" id="actionMode" name="actionMode" />
 		<div class="input_arear">
 			<html:select name="rosterActionForm" property="year">
 				<html:optionsCollection name="rosterActionForm" property="selectYear" value="key" label="value" />
@@ -23,7 +22,6 @@
 			<bean:message key="disp.month" />
 			<button type="button"  onclick="move();"><bean:message key="disp.move" /></button>
 			<button type="button"  onclick="update();"><bean:message key="disp.update" /></button>
-			<bean:write name="rosterActionForm" property="aMode"/>
 		</div>
 		<div class="title">
 				<bean:message key="title.roster" />

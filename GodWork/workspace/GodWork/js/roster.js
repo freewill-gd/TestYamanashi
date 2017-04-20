@@ -7,7 +7,7 @@ function update() {
 }
 
 function goAction(mode) {
-	var obj  = document.getElementById("aMode");
+	var obj  = document.getElementById("actionMode");
 	obj.value = mode;
 	document.forms[0].submit();
 }

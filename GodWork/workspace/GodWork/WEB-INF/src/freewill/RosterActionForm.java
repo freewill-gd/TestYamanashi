@@ -3,7 +3,9 @@ package freewill;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedHashMap;
+
 import org.apache.struts.action.ActionForm;
+
 import freewill.database.RosterDto;
 
 public final class RosterActionForm extends ActionForm {
@@ -12,39 +14,13 @@ public final class RosterActionForm extends ActionForm {
 	private String year;
 	private String month;
 	private String name;
+	private RosterDto data[];
 	private LinkedHashMap<String, String> selectYear;
 	private LinkedHashMap<String, String> selectMonth;
 	private LinkedHashMap<String, String> selectWorkKind;
-	private String aMode;
+	private String actionMode;
 	private String timeString;
-
 	private String debugString = "デバッグ文字列";
-
-	public String getDebugString() {
-		return debugString;
-	}
-
-	public void setDebugString(String debugString) {
-		this.debugString = debugString;
-	}
-
-	public String getTimeString() {
-		return timeString;
-	}
-
-	public void setTimeString(String timeString) {
-		this.timeString = timeString;
-	}
-
-	public String getaMode() {
-		return aMode;
-	}
-
-	public void setaMode(String aMode) {
-		this.aMode = aMode;
-	}
-
-	private RosterDto data[];
 
 	public RosterActionForm() {
 		Date now = new Date();
@@ -58,6 +34,15 @@ public final class RosterActionForm extends ActionForm {
 				data[i] = new RosterDto();
 		}
 	}
+
+	public String getActionMode() {
+		return actionMode;
+	}
+
+	public void setActionMode(String actionMode) {
+		this.actionMode = actionMode;
+	}
+
 
 	public void setSelectYear(LinkedHashMap<String, String> selectYear) {
 		this.selectYear = selectYear;
@@ -131,6 +116,22 @@ public final class RosterActionForm extends ActionForm {
 
 	public String getName() {
 		return name;
+	}
+
+	public String getTimeString() {
+		return timeString;
+	}
+
+	public void setTimeString(String timeString) {
+		this.timeString = timeString;
+	}
+
+	public String getDebugString() {
+		return debugString;
+	}
+
+	public void setDebugString(String debugString) {
+		this.debugString = debugString;
 	}
 
 }

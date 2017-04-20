@@ -21,7 +21,7 @@ public final class RosterAction extends Action {
 		try {
 			RosterActionForm rosterActionForm = (RosterActionForm)form;
 			if(rosterActionForm != null) {
-				if (rosterActionForm.getaMode() != null  && rosterActionForm.getaMode().equals("update")){
+				if (rosterActionForm.getActionMode() != null  && rosterActionForm.getActionMode().equals("update")){
 					update(rosterActionForm);
 				}
 			}
