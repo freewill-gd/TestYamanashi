@@ -27,8 +27,9 @@ public final class RosterAction extends Action {
 			RosterBean rosterBean = (RosterBean)form;
 			if(rosterBean != null) {
 				if (rosterBean.getActionMode() != null  && rosterBean.getActionMode().equals("update")){
-					checkInput(request, rosterBean);
-					update(rosterBean);
+					if(checkInput(request, rosterBean)) {
+						update(rosterBean);
+					}
 				}
 			}
 			
@@ -36,6 +37,7 @@ public final class RosterAction extends Action {
 			return map.findForward("success");
 		}
 		catch(Exception e)  {
+			System.err.println(e.getMessage());
 			return map.findForward("failure");
 		}
 	}
@@ -45,11 +47,26 @@ public final class RosterAction extends Action {
 	 * @param request
 	 * @param rosterBean
 	 */
-	private void checkInput(HttpServletRequest request, RosterBean rosterBean) {
-		if(rosterBean == null) return;
-		ActionMessages msgs = new ActionMessages();
-		msgs.add("test", new ActionMessage("error.timeformat"));
-		saveErrors(request, msgs);
+	private boolean checkInput(HttpServletRequest request, RosterBean rosterBean) {
+		if(rosterBean == null) return false;
+		boolean okflg = true;
+		for(RosterDto dto: rosterBean.getData()) {
+			if (dto == null) continue;
+			if (dto.getWorkDateKey() == null) continue;
+			if (dto.getStartTime() != null && dto.getStartTime().length() > 5) {
+				okflg = false;
+				break;
+			}
+			
+		}
+		
+		if( okflg == false) {
+			ActionMessages msgs = new ActionMessages();
+			msgs.add("test", new ActionMessage("error.timeformat"));
+			saveErrors(request, msgs);
+		}
+		
+		return okflg;
 	}
 
 	/**
