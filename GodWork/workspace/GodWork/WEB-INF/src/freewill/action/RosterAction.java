@@ -79,7 +79,12 @@ public final class RosterAction extends Action {
 		
 		if(!checkTimeString(dto.getStartTime())) return false;
 		if(!checkTimeString(dto.getEndTime())) return false;
-		
+		if(!checkTimeString(dto.getBreakTime())) return false;
+		if(!checkTimeString(dto.getOverTime())) return false;
+		if(!checkTimeString(dto.getLateNightOverTime())) return false;
+		if(!checkTimeString(dto.getHolidayOverTime())) return false;
+		if(!checkTimeString(dto.getHolidayLateNightOverTime())) return false;
+	
 		return true;
 	}
 	
