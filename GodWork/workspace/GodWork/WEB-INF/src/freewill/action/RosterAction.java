@@ -27,18 +27,21 @@ public final class RosterAction extends Action {
 		
 		try {
 			RosterBean rosterBean = (RosterBean)form;
-			if(rosterBean != null) {
-				if (rosterBean.getActionMode() != null  && rosterBean.getActionMode().equals("update")){
-					if(checkInput(request, rosterBean)) {
-						update(rosterBean);
-					}
-				}
+			if(rosterBean != null &&
+				rosterBean.getActionMode() != null  && 
+				rosterBean.getActionMode().equals("update") &&
+				checkInput(request, rosterBean)) {
+
+				/* 更新 */
+				update(rosterBean);
 			}
 			
+			/* データを取得して表示 */
 			getPage(request, rosterBean);
+			
 			return map.findForward("success");
 		}
-		catch(Exception e)  {
+		catch (Exception e)  {
 			System.err.println(e.getMessage());
 			return map.findForward("failure");
 		}
@@ -66,7 +69,7 @@ public final class RosterAction extends Action {
 		msgs.add("test", new ActionMessage("error.timeformat"));
 		saveErrors(request, msgs);
 		
-		return true;
+		return false;
 	}
 
 	/**
@@ -77,13 +80,13 @@ public final class RosterAction extends Action {
 	private boolean checkRoster(RosterDto dto) {
 		if (dto == null) return true;
 		
-		if(!checkTimeString(dto.getStartTime())) return false;
-		if(!checkTimeString(dto.getEndTime())) return false;
-		if(!checkTimeString(dto.getBreakTime())) return false;
-		if(!checkTimeString(dto.getOverTime())) return false;
-		if(!checkTimeString(dto.getLateNightOverTime())) return false;
-		if(!checkTimeString(dto.getHolidayOverTime())) return false;
-		if(!checkTimeString(dto.getHolidayLateNightOverTime())) return false;
+		if (!checkTimeString(dto.getStartTime())) return false;
+		if (!checkTimeString(dto.getEndTime())) return false;
+		if (!checkTimeString(dto.getBreakTime())) return false;
+		if (!checkTimeString(dto.getOverTime())) return false;
+		if (!checkTimeString(dto.getLateNightOverTime())) return false;
+		if (!checkTimeString(dto.getHolidayOverTime())) return false;
+		if (!checkTimeString(dto.getHolidayLateNightOverTime())) return false;
 	
 		return true;
 	}
@@ -94,14 +97,14 @@ public final class RosterAction extends Action {
 	 * @return
 	 */
 	private boolean checkTimeString(String timestr) {
-		if(timestr == null) return true;
-		if(timestr.length() == 0) return true;
+		if (timestr == null) return true;
+		if (timestr.length() == 0) return true;
 		
 		String regex = "^[0-9][0-9]:[0-5][0-9]$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher match = pattern.matcher(timestr);
 		
-		if(match.find()) return true;
+		if (match.find()) return true;
 		return false;
 	}
 	
@@ -111,7 +114,7 @@ public final class RosterAction extends Action {
 	 */
 	private void update(RosterBean rosterBean) {
 		RosterDataAccess da = new RosterDataAccess();
-		for(RosterDto dto: rosterBean.getData()) {
+		for (RosterDto dto: rosterBean.getData()) {
 				dto.setUserId("fw001");
 		}
 		da.updates( rosterBean.getData());
