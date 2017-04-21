@@ -1,20 +1,27 @@
 package freewill.bean;
 
+import org.apache.struts.action.ActionForm;
+
 /**
  * @author user
  *
  */
-public class LoginBean {
+public class LoginBean extends ActionForm {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2095343500027325049L;
+
 	/**
 	 * ユーザID
 	 */
-	private String userId;
+	private String userId = "";
 	
 	/**
 	 * パスワード
 	 */
-	private String password;
+	private String password = "";
 	
 	/**
 	 * ユーザID

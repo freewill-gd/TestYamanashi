@@ -47,6 +47,6 @@
 	</taglib>
 	
 	<welcome-file-list>
-    	<welcome-file>Roster.do</welcome-file>
+    	<welcome-file>Login.do</welcome-file>
 	</welcome-file-list>	
 </web-app>

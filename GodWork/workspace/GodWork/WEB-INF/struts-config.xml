@@ -3,11 +3,18 @@
 <struts-config>
 	<form-beans>
 		<form-bean name="RosterBean" type="freewill.bean.RosterBean" />
+		<form-bean name="LoginBean" type="freewill.bean.LoginBean" />
 	</form-beans>
 
 	<action-mappings>
 		<action path="/Roster" type="freewill.action.RosterAction" name="RosterBean"  scope="request">
 			<forward name="success" path="/jsp/roster.jsp" />
+			<forward name="failure" path="/jsp/error.jsp" />
+		</action>
+		
+		<action path="/Login" type="freewill.action.LoginAction" name="LoginBean"  scope="request">
+			<forward name="success" path="/jsp/login.jsp" />
+			<forward name="ok" path="/Roster.do" />
 			<forward name="failure" path="/jsp/error.jsp" />
 		</action>
 	</action-mappings>
