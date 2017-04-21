@@ -1,6 +1,8 @@
 package freewill.action;
 
 import java.util.LinkedHashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -48,27 +50,56 @@ public final class RosterAction extends Action {
 	 * @param rosterBean
 	 */
 	private boolean checkInput(HttpServletRequest request, RosterBean rosterBean) {
-		if(rosterBean == null) return false;
+		if (rosterBean == null) return false;
+		
 		boolean okflg = true;
-		for(RosterDto dto: rosterBean.getData()) {
-			if (dto == null) continue;
-			if (dto.getWorkDateKey() == null) continue;
-			if (dto.getStartTime() != null && dto.getStartTime().length() > 5) {
-				okflg = false;
-				break;
-			}
-			
+
+		for (RosterDto dto: rosterBean.getData()) {
+			if (checkRoster(dto)) continue;
+			okflg = false;
+			break;
 		}
+
+		if (okflg) return true;
 		
-		if( okflg == false) {
-			ActionMessages msgs = new ActionMessages();
-			msgs.add("test", new ActionMessage("error.timeformat"));
-			saveErrors(request, msgs);
-		}
+		ActionMessages msgs = new ActionMessages();
+		msgs.add("test", new ActionMessage("error.timeformat"));
+		saveErrors(request, msgs);
 		
-		return okflg;
+		return true;
 	}
 
+	/**
+	 * 1行分のデータを検証
+	 * @param dto
+	 * @return
+	 */
+	private boolean checkRoster(RosterDto dto) {
+		if (dto == null) return true;
+		
+		if(!checkTimeString(dto.getStartTime())) return false;
+		if(!checkTimeString(dto.getEndTime())) return false;
+		
+		return true;
+	}
+	
+	/**
+	 * 時間パターン検証
+	 * @param timestr
+	 * @return
+	 */
+	private boolean checkTimeString(String timestr) {
+		if(timestr == null) return true;
+		if(timestr.length() == 0) return true;
+		
+		String regex = "^[0-9][0-9]:[0-5][0-9]$";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher match = pattern.matcher(timestr);
+		
+		if(match.find()) return true;
+		return false;
+	}
+	
 	/**
 	 * 勤務表更新
 	 * @param rosterBean
