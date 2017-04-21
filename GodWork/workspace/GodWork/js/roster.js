@@ -7,6 +7,11 @@ function move() {
 
 // 勤務表更新
 function update() {
+	var errorCount = $('.error_text').length;
+	if (errorCount != 0) {
+		alert('入力誤りがあります。修正後保存ボタンを押してください。')
+		return;
+	}
 	goAction("update");
 }
 

@@ -92,3 +92,7 @@ table , td  {
 .error {
 	color: red;
 }
+
+.error_text {
+	background-color: pink;
+}
