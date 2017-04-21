@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="./js/roster.js<bean:write name="rosterBean" property="timeString"/>"></script>
 </head>
 <body>
-	<html:form>
+	<html:form action="/Roster.do">
 		<input type="hidden" id="actionMode" name="actionMode" />
 		<p class="error">
 				<html:errors />
