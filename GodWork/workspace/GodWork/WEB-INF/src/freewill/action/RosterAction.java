@@ -19,6 +19,11 @@ import freewill.bean.RosterBean;
 import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
 
+/**
+ * 勤務表アクション
+ * @author Tomoyuki Yamanashi
+ *
+ */
 public final class RosterAction extends Action {
 
 	public ActionForward execute (

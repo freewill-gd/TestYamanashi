@@ -12,7 +12,11 @@ import freewill.bean.LoginBean;
 import freewill.database.dataaccess.UserDataAccess;
 import freewill.database.dto.UserDto;
 
-
+/**
+ * ログインアクション
+ * @author Tomoyuki Yamanashi
+ *
+ */
 public class LoginAction extends Action {
 	
 	public ActionForward execute (

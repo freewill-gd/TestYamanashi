@@ -3,7 +3,8 @@ package freewill.bean;
 import org.apache.struts.action.ActionForm;
 
 /**
- * @author user
+ * ログインフォーム
+ * @author Tomoyuki Yamanashi
  *
  */
 public class LoginBean extends ActionForm {

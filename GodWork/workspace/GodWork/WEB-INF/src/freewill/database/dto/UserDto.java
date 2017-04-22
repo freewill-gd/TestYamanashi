@@ -1,5 +1,10 @@
 package freewill.database.dto;
 
+/**
+ * ユーザDTO
+ * @author user
+ *
+ */
 public class UserDto {
 	
 	private String userId; /* ユーザID */

@@ -10,8 +10,8 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 /**
- *
- * @author yamanashi
+ * データアクセスクラス
+ * @author Tomoyuki Yamanashi
  *
  */
 public class DataAccess {

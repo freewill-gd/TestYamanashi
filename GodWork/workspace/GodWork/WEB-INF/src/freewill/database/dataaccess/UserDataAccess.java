@@ -6,6 +6,11 @@ import java.util.List;
 import freewill.database.DataAccess;
 import freewill.database.dto.UserDto;
 
+/**
+ * ユーザデータアクセス
+ * @author Tomoyuki Yamanashi
+ *
+ */
 public class UserDataAccess {
 
 	public UserDto[] getData(String userId) {

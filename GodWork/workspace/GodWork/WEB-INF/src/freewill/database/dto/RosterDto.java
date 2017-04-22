@@ -1,5 +1,10 @@
 package freewill.database.dto;
 
+/**
+ * 勤務表DTO
+ * @author Tomoyuki Yamanashi
+ *
+ */
 public class RosterDto {
 
 	private String userId;

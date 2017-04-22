@@ -8,6 +8,11 @@ import org.apache.struts.action.ActionForm;
 
 import freewill.database.dto.RosterDto;
 
+/**
+ * 勤務表フォーム
+ * @author Tomoyuki Yamanashi
+ *
+ */
 public final class RosterBean extends ActionForm {
 	private static final long serialVersionUID = 1L;
 

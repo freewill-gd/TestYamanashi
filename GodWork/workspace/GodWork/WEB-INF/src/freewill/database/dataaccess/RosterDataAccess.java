@@ -5,6 +5,11 @@ import java.util.List;
 import freewill.database.DataAccess;
 import freewill.database.dto.RosterDto;
 
+/**
+ * 勤務表データアクセス
+ * @author Tomoyuki Yamanashi
+ *
+ */
 public class RosterDataAccess {
 
 	public RosterDto[] getData(String start) {
