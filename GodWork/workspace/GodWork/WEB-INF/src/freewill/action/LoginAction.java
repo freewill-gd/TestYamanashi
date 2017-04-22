@@ -9,6 +9,8 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
 import freewill.bean.LoginBean;
+import freewill.database.dataaccess.UserDataAccess;
+import freewill.database.dto.UserDto;
 
 
 public class LoginAction extends Action {
@@ -21,9 +23,15 @@ public class LoginAction extends Action {
 				LoginBean loginBean = (LoginBean)form;
 				
 				request.setAttribute("loginBean", loginBean);
-				if (loginBean.getUserId().equals("fw001")) {
+				UserDataAccess da = new UserDataAccess();
+				UserDto[] dtos = da.getData(loginBean.getUserId());
+				if (dtos != null &&
+					dtos.length == 1 &&
+					dtos[0].getPassword().equals(loginBean.getPassword())
+				) {
 					return map.findForward("ok");
 				}
+				
 				return map.findForward("success");
 			}
 			catch (Exception e)  {
