@@ -5,7 +5,7 @@
 <html:html>
 <head>
 	<link rel="stylesheet" href="./css/godwork.css" type="text/css" />
-	<title><bean:message key="title.roster" /></title>
+	<title><bean:message key="disp.login" /></title>
 	<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
 </head>
 <body>
@@ -14,10 +14,21 @@
 		<p class="error">
 				<html:errors />
 		</p>
-	
-				<html:text name="loginBean" property="userId" /><br>
-				<html:text name="loginBean" property="password" /><br>
-				<html:submit />
+		<div class="title">
+			<bean:message key="title.roster" /><bean:message key="disp.login" />
+		</div>
+		<table>
+			<tr>
+				<td><bean:message key="disp.user_id" /></td>
+				<td><html:text name="loginBean" property="userId" /></td>
+			</tr>
+			<tr>
+				<td><bean:message key="disp.password" /></td>
+				<td><html:text name="loginBean" property="password" /></td>
+			</tr>
+		</table>
+		<br>
+		<html:submit/>
 	</html:form>
 </body>
 
