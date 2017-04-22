@@ -27,7 +27,7 @@ SELECT
 FROM
 	m_user
 WHERE
-	user_id = 'fw0001'
+	user_id = #{userId}
 ]]>
 	</select>
 
