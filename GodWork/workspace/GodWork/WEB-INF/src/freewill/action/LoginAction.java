@@ -2,6 +2,7 @@ package freewill.action;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
@@ -33,6 +34,9 @@ public class LoginAction extends Action {
 					dtos.length == 1 &&
 					dtos[0].getPassword().equals(loginBean.getPassword())
 				) {
+					HttpSession session = request.getSession();
+					session.setAttribute("userId", loginBean.getUserId());
+					session.setAttribute("userName", dtos[0].getUserName());
 					return map.findForward("ok");
 				}
 				

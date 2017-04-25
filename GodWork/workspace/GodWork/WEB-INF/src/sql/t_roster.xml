@@ -50,6 +50,7 @@ FROM
 WHERE
  work_date >= TO_DATE(#{start}, 'YYYYMM')
  AND work_date < TO_DATE(#{end}, 'YYYYMM')
+ AND user_id = #{userId}
 ORDER BY
   work_date
 ]]>

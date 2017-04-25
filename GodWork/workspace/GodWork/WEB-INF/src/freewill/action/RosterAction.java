@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
@@ -29,6 +30,7 @@ public final class RosterAction extends Action {
 	public ActionForward execute (
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
+		HttpSession session = request.getSession();
 		
 		try {
 			RosterBean rosterBean = (RosterBean)form;
@@ -38,11 +40,11 @@ public final class RosterAction extends Action {
 				checkInput(request, rosterBean)) {
 
 				/* 更新 */
-				update(rosterBean);
+				update(rosterBean, session);
 			}
 			
 			/* データを取得して表示 */
-			getPage(request, rosterBean);
+			getPage(request, rosterBean, session);
 			
 			return map.findForward("success");
 		}
@@ -117,10 +119,10 @@ public final class RosterAction extends Action {
 	 * 勤務表更新
 	 * @param rosterBean
 	 */
-	private void update(RosterBean rosterBean) {
+	private void update(RosterBean rosterBean, HttpSession session) {
 		RosterDataAccess da = new RosterDataAccess();
 		for (RosterDto dto: rosterBean.getData()) {
-				dto.setUserId("fw001");
+				dto.setUserId(session.getAttribute("userId").toString());
 		}
 		da.updates( rosterBean.getData());
 	}
@@ -131,7 +133,7 @@ public final class RosterAction extends Action {
 	 * @param rosterBean
 	 */
 	private void getPage(HttpServletRequest request,
-			RosterBean rosterBean) {
+			RosterBean rosterBean, HttpSession session) {
 		
 		LinkedHashMap<String, String> selectYear = createNumberMap(2015, 2025, "%04d");
 		LinkedHashMap<String, String> selectMonth = createNumberMap(1, 12, "%02d");
@@ -152,7 +154,7 @@ public final class RosterAction extends Action {
 		RosterDataAccess data = new RosterDataAccess();
 
 		String start = rosterBean.getYear() + rosterBean.getMonth();
-		rosterBean.setData(data.getData(start));
+		rosterBean.setData(data.getData(start, session.getAttribute("userId").toString()));
 		request.setAttribute("rosterBean", rosterBean);
 	}
 	
