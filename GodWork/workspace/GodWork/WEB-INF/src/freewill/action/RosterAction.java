@@ -155,6 +155,7 @@ public final class RosterAction extends Action {
 
 		String start = rosterBean.getYear() + rosterBean.getMonth();
 		rosterBean.setData(data.getData(start, session.getAttribute("userId").toString()));
+		rosterBean.setName(session.getAttribute("userName").toString());
 		request.setAttribute("rosterBean", rosterBean);
 	}
 	

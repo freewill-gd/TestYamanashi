@@ -31,7 +31,7 @@ public final class RosterBean extends ActionForm {
 		Date now = new Date();
 		year =   (new SimpleDateFormat("yyyy")).format(now);
 		month = (new SimpleDateFormat("MM")).format(now);
-		name = "テスト太郎";
+		name = "";
 		timeString = "?time=" + String.valueOf(now.getTime());
 
 		data = new RosterDto[31];
