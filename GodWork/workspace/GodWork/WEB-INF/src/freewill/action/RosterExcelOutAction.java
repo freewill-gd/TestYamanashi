@@ -9,14 +9,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.action.ActionMessage;
-import org.apache.struts.action.ActionMessages;
-import org.apache.struts.util.MessageResources;
-import org.omg.CORBA_2_3.portable.OutputStream;
+
 
 import freewill.bean.RosterBean;
 import freewill.database.dataaccess.RosterDataAccess;
@@ -33,17 +35,28 @@ public final class RosterExcelOutAction extends Action {
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
 		HttpSession session = request.getSession();
+		Workbook book = null;
 		
 		try {
 			RosterBean rosterBean = (RosterBean)form;
 
+			book = new SXSSFWorkbook();
+			Sheet sheet;
+			sheet = book.createSheet();
+			Row row;
+			Cell cell;    
+			row = sheet.createRow(0);
+			cell = row.createCell(0);
+			cell.setCellValue("文字列");
+			
 			/* データを取得して表示 */
 			//getPage(request, rosterBean, session);
 			response.setContentType("application/octet-stream");
-			response.setHeader("Content-Disposition", "attachment; filename=test.txt");
+			response.setHeader("Content-Disposition", "attachment; filename=out.xlsx");
 			ServletOutputStream os = response.getOutputStream();
-			byte[] b = {0x41, 0x42};
-			os.write(b);
+			//byte[] b = {0x41, 0x42};
+			book.write(os);
+			//os.write(b);
 			os.flush();
 			os.close();
 			

@@ -20,6 +20,8 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/poi-ooxml-3.16.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/poi-ooxml-schemas-3.16.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/poi-scratchpad-3.16.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-collections4-4.1.jar"/>
 	<classpathentry kind="src" path="WEB-INF/src"/>
 	<classpathentry kind="src" output="work" path="work"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
