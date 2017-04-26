@@ -1,13 +1,17 @@
 package freewill.excel;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
 import freewill.database.DataAccess;
@@ -15,19 +19,47 @@ import freewill.database.DataAccess;
 public class RosterExcel {
 	public void OutoutExcel(OutputStream os) {
 	
-		//URL resource = DataAccess.class.getClassLoader().getResource("Roster.xlsx");
-		//in = resource.openConnection().getInputStream();
-		
+		URL resource = DataAccess.class.getClassLoader().getResource("Roster.xlsx");
 		Workbook book = null;
 		
-		book = new SXSSFWorkbook();
+		InputStream in = null;
+		try {
+			in = resource.openConnection().getInputStream();
+			try {
+				book = WorkbookFactory.create(in);
+			} catch (EncryptedDocumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (InvalidFormatException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} finally {
+			
+			try {
+				if(in != null)in.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+				
+		
+		//book = new SXSSFWorkbook();
+		
 		Sheet sheet;
-		sheet = book.createSheet();
+		sheet = book.getSheetAt(0);
 		Row row;
 		Cell cell;    
-		row = sheet.createRow(0);
-		cell = row.createCell(0);
-		cell.setCellValue("てすと");
+		//row = sheet.createRow(6);
+		//cell = row.createCell(1);
+		row = sheet.getRow(6);
+		cell = row.getCell(10);
+		cell.setCellValue("00:00");
 		try {
 			book.write(os);
 		} catch(Exception e) {
