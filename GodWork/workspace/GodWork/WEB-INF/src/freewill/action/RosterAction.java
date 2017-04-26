@@ -152,8 +152,9 @@ public final class RosterAction extends Action {
 		rosterBean.setSelectWorkKind(selectWorkKind);
 
 		RosterDataAccess data = new RosterDataAccess();
-
 		String start = rosterBean.getYear() + rosterBean.getMonth();
+		data.checkData(start, session.getAttribute("userId").toString());
+		
 		rosterBean.setData(data.getData(start, session.getAttribute("userId").toString()));
 		rosterBean.setName(session.getAttribute("userName").toString());
 		request.setAttribute("rosterBean", rosterBean);
