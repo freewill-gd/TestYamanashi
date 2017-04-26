@@ -2,6 +2,7 @@ package freewill.excel;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.net.URL;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -9,9 +10,14 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
+import freewill.database.DataAccess;
+
 public class RosterExcel {
 	public void OutoutExcel(OutputStream os) {
 	
+		//URL resource = DataAccess.class.getClassLoader().getResource("Roster.xlsx");
+		//in = resource.openConnection().getInputStream();
+		
 		Workbook book = null;
 		
 		book = new SXSSFWorkbook();
