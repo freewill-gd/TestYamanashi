@@ -3,6 +3,15 @@
 <mapper namespace="test">
 <!-- 勤務表SQL -->
 
+
+  <select id="createT_roster" resultType="int">
+<![CDATA[
+SELECT 
+	prc_create_month_roster(#{userId}, #{yyyy}, #{mm})
+]]>
+  </select>
+  
+
   <select id="selectT_rosterCount" resultType="int">
 <![CDATA[
 SELECT 

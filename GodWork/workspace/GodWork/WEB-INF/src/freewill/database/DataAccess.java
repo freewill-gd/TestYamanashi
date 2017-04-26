@@ -158,4 +158,19 @@ public class DataAccess {
 		return result;
 	}
 
+	public void proc(String name, Object param){
+		SqlSession session;
+		session = getSqlSession();
+		int result = 0;
+		try {
+			result = session.selectOne(name, param);
+			session.commit();
+		}
+		catch(Exception e) {
+			System.err.println(e.getMessage());
+		}
+		finally  {
+			if (session != null) session.close();
+		}
+	}
 }

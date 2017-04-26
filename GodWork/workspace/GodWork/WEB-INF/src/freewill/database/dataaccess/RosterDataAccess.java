@@ -11,7 +11,7 @@ import freewill.database.dto.RosterDto;
  *
  */
 public class RosterDataAccess {
-
+	
 	public RosterDto[] getData(String start, String userId) {
 		// 数値変換エラー対策は現時点では未実装
 		DataAccess data = new DataAccess();
@@ -22,7 +22,7 @@ public class RosterDataAccess {
 		param.put("end", String.valueOf(end));
 		param.put("userId", userId);
 		List<Object> result = data.selectList("test.selectT_roster", param);
-		if(result == null) return null;
+		if(result == null) return null;	
 		return result.toArray(new RosterDto[0]);
 	}
 
@@ -42,4 +42,18 @@ public class RosterDataAccess {
 		int result = data.selectOne("test.selectT_rosterCount", param);
 		return result;
 	}
+	
+	public void createDate(String start, String userId){
+		DataAccess data = new DataAccess();
+		HashMap<String, Object> param = new HashMap<String, Object>();
+		int yyyy = Integer.valueOf(start.substring(0, 4));
+		int mm = Integer.valueOf(start.substring(4, 6));
+		param.put("userId", userId);
+		param.put("yyyy", yyyy);
+		param.put("mm", mm);
+		
+		data.proc("test.createT_roster", param);
+		//return result;
+	}
+	
 }

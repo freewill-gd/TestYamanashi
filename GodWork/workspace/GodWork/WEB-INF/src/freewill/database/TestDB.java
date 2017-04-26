@@ -15,7 +15,8 @@ public class TestDB {
 	 */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		testSelect2();
+		testCreate();
+		//testSelect2();
 
 		// testUpdate();
 
@@ -49,6 +50,12 @@ public class TestDB {
 	private static void testSelect2() {
 		RosterDataAccess da = new RosterDataAccess();
 		System.out.println(da.getCount("202004", "fw001"));
+	}
+	
+	private static void testCreate() {
+		RosterDataAccess da = new RosterDataAccess();
+		da.createDate("201004", "hoge2");
+		//System.out.println(da.getCount("202004", "fw001"));
 	}
 
 }
