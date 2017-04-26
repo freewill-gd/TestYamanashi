@@ -1,28 +1,19 @@
 package freewill.action;
 
-import java.util.LinkedHashMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-
 import freewill.bean.RosterBean;
 import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
+import freewill.excel.RosterExcel;
 
 /**
  * 勤務表アクション
@@ -35,28 +26,17 @@ public final class RosterExcelOutAction extends Action {
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
 		HttpSession session = request.getSession();
-		Workbook book = null;
+
 		
 		try {
 			RosterBean rosterBean = (RosterBean)form;
-
-			book = new SXSSFWorkbook();
-			Sheet sheet;
-			sheet = book.createSheet();
-			Row row;
-			Cell cell;    
-			row = sheet.createRow(0);
-			cell = row.createCell(0);
-			cell.setCellValue("文字列");
-			
+			RosterExcel excl = new RosterExcel();			
 			/* データを取得して表示 */
 			//getPage(request, rosterBean, session);
 			response.setContentType("application/octet-stream");
 			response.setHeader("Content-Disposition", "attachment; filename=out.xlsx");
 			ServletOutputStream os = response.getOutputStream();
-			//byte[] b = {0x41, 0x42};
-			book.write(os);
-			//os.write(b);
+			excl.OutoutExcel(os);
 			os.flush();
 			os.close();
 			
@@ -87,6 +67,5 @@ public final class RosterExcelOutAction extends Action {
 		
 
 	}
-	
 
 }
