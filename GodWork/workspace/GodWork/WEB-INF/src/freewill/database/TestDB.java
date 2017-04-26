@@ -1,5 +1,6 @@
 package freewill.database;
 
+import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dataaccess.UserDataAccess;
 import freewill.database.dto.RosterDto;
 import freewill.database.dto.UserDto;
@@ -14,7 +15,7 @@ public class TestDB {
 	 */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		testSelect();
+		testSelect2();
 
 		// testUpdate();
 
@@ -43,6 +44,11 @@ public class TestDB {
 		for (UserDto row : result) {
 			 System.out.println(row.getUserName());
 		}
+	}
+	
+	private static void testSelect2() {
+		RosterDataAccess da = new RosterDataAccess();
+		System.out.println(da.getCount("202004", "fw001"));
 	}
 
 }

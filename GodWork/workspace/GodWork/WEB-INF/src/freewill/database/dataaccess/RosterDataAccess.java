@@ -30,4 +30,16 @@ public class RosterDataAccess {
 		DataAccess data = new DataAccess();
 		data.updates("test.updateT_roster", dto);
 	}
+	
+	public int getCount(String start, String userId){
+		DataAccess data = new DataAccess();
+		HashMap<String, Object> param = new HashMap<String, Object>();
+		param.put("start", start);
+		int  end = Integer.parseInt(start);
+		end++;
+		param.put("end", String.valueOf(end));
+		param.put("userId", userId);
+		int result = data.selectOne("test.selectT_rosterCount", param);
+		return result;
+	}
 }

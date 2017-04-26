@@ -141,5 +141,21 @@ public class DataAccess {
 			if (session != null) session.close();
 		}
 	}
+	
+	public int selectOne(String name, Object param){
+		SqlSession session;
+		session = getSqlSession();
+		int result = 0;
+		try {
+			result = session.selectOne(name, param);
+		}
+		catch(Exception e) {
+			System.err.println(e.getMessage());
+		}
+		finally  {
+			if (session != null) session.close();
+		}
+		return result;
+	}
 
 }
