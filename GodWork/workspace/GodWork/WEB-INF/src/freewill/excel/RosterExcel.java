@@ -15,6 +15,8 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
 import freewill.database.DataAccess;
+import freewill.database.dataaccess.RosterDataAccess;
+import freewill.database.dto.RosterDto;
 
 public class RosterExcel {
 	public void OutoutExcel(OutputStream os) {
@@ -55,11 +57,24 @@ public class RosterExcel {
 		sheet = book.getSheetAt(0);
 		Row row;
 		Cell cell;    
+		
+		RosterDataAccess data = new RosterDataAccess();
+		String start = "201704"; // rosterBean.getYear() + rosterBean.getMonth();
+		String userId = "fw001"; //session.getAttribute("userId").toString())
+		
+		RosterDto[] dtos = data.getData(start, userId);
+		
 		//row = sheet.createRow(6);
 		//cell = row.createCell(1);
-		row = sheet.getRow(6);
-		cell = row.getCell(10);
-		cell.setCellValue("00:00");
+		int rowNum = 4;
+		
+		for (RosterDto dto : dtos) {
+			row = sheet.getRow(rowNum);
+			cell = row.getCell(10);
+			cell.setCellValue(dto.getRemarks());
+			rowNum++;
+		}
+		
 		try {
 			book.write(os);
 		} catch(Exception e) {
