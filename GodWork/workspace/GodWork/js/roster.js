@@ -15,10 +15,20 @@ function update() {
 	goAction("update");
 }
 
+// エクセル
+function excel() {
+	goAction("excel");
+}
+
 // 押されたボタンを設定し送信
 function goAction(mode) {
 	var obj  = document.getElementById("actionMode");
 	obj.value = mode;
+	var  actionName = "Roster.do";
+	if (mode == "excel") {
+		actionName = "RosterExcelOut.do";
+	}
+	document.forms[0].action = actionName;
 	document.forms[0].submit();
 }
 
