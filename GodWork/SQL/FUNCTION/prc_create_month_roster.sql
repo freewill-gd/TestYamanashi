@@ -6,7 +6,7 @@ CREATE OR REPLACE FUNCTION public.prc_create_month_roster(
     in_user_id character varying,
     in_year integer,
     in_month integer)
-  RETURNS void AS
+  RETURNS numeric AS
 $BODY$DECLARE
 	month_str character varying;
 	start_date timestamp with time zone;
@@ -22,9 +22,8 @@ BEGIN
 	FOR day IN 1..end_date_num LOOP
 		work_date := TO_DATE(month_str || TO_CHAR(day, '00'), 'YYYYMMDD');
 		PERFORM prc_create_t_roster_data(in_user_id, work_date);
-		--PERFORM  prc_debug(day || 'test');
 	END LOOP;
-
+	RETURN 1;
 END
 $BODY$
   LANGUAGE plpgsql VOLATILE
@@ -32,3 +31,4 @@ $BODY$
 ALTER FUNCTION public.prc_create_month_roster(character varying, integer, integer)
   OWNER TO postgres;
 COMMENT ON FUNCTION public.prc_create_month_roster(character varying, integer, integer) IS '月間勤務表データ作成';
+
