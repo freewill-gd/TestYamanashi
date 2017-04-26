@@ -54,7 +54,7 @@ public class TestDB {
 	
 	private static void testCreate() {
 		RosterDataAccess da = new RosterDataAccess();
-		da.createDate("201004", "hoge2");
+		da.checkData("201004", "hoge3");
 		//System.out.println(da.getCount("202004", "fw001"));
 	}
 

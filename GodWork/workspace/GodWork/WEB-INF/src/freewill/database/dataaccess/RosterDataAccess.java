@@ -56,4 +56,10 @@ public class RosterDataAccess {
 		//return result;
 	}
 	
+	public void checkData(String start, String userId){
+		int count = getCount(start, userId);
+		if(count > 0) return;
+		createDate(start, userId);
+	}
+	
 }
