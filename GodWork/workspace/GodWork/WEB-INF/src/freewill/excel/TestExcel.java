@@ -10,7 +10,7 @@ public class TestExcel {
 	    FileOutputStream os = null;
 	    try{
 	      os = new FileOutputStream("/home/user/tmp/test.xlsx");
-	      excel.OutoutExcel(os);
+	      excel.OutoutExcel(os, "201704", "fw001");
 	    }catch(IOException e){
 	      System.out.println(e.toString());
 	    }finally{

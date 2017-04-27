@@ -26,17 +26,16 @@ public final class RosterExcelOutAction extends Action {
 		ActionMapping map, ActionForm form,
 		HttpServletRequest request, HttpServletResponse response) {
 		HttpSession session = request.getSession();
-
 		
 		try {
 			RosterBean rosterBean = (RosterBean)form;
 			RosterExcel excl = new RosterExcel();			
-			/* データを取得して表示 */
-			//getPage(request, rosterBean, session);
 			response.setContentType("application/octet-stream");
 			response.setHeader("Content-Disposition", "attachment; filename=out.xlsx");
 			ServletOutputStream os = response.getOutputStream();
-			excl.OutoutExcel(os);
+			String start = rosterBean.getYear() + rosterBean.getMonth();
+			String userId = session.getAttribute("userId").toString();
+			excl.OutoutExcel(os, start, userId);
 			os.flush();
 			os.close();
 			
@@ -46,26 +45,6 @@ public final class RosterExcelOutAction extends Action {
 			System.err.println(e.getMessage());
 			return map.findForward("failure");
 		}
-	}
-
-	/**
-	 *  勤務表表示
-	 * @param request
-	 * @param rosterBean
-	 */
-	private void getPage(HttpServletRequest request,
-			RosterBean rosterBean, HttpSession session) {
-		
-
-		RosterDataAccess data = new RosterDataAccess();
-
-		String start = rosterBean.getYear() + rosterBean.getMonth();
-		RosterDto[] rosterDtos = data.getData(start, session.getAttribute("userId").toString());
-		for(RosterDto dto : rosterDtos) {
-			System.out.println(dto.getRemarks());
-		}
-		
-
 	}
 
 }

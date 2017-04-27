@@ -19,7 +19,7 @@ import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
 
 public class RosterExcel {
-	public void OutoutExcel(OutputStream os) {
+	public void OutoutExcel(OutputStream os, String start, String userId) {
 	
 		URL resource = DataAccess.class.getClassLoader().getResource("Roster.xlsx");
 		Workbook book = null;
@@ -50,22 +50,14 @@ public class RosterExcel {
 			
 		}
 				
-		
-		//book = new SXSSFWorkbook();
-		
+			
 		Sheet sheet;
 		sheet = book.getSheetAt(0);
 		Row row;
 		Cell cell;    
 		
 		RosterDataAccess data = new RosterDataAccess();
-		String start = "201704"; // rosterBean.getYear() + rosterBean.getMonth();
-		String userId = "fw001"; //session.getAttribute("userId").toString())
-		
 		RosterDto[] dtos = data.getData(start, userId);
-		
-		//row = sheet.createRow(6);
-		//cell = row.createCell(1);
 		int rowNum = 4;
 		
 		for (RosterDto dto : dtos) {
