@@ -30,42 +30,22 @@ public class RosterExcel {
 			try {
 				book = WorkbookFactory.create(in);
 			} catch (EncryptedDocumentException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (InvalidFormatException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		} finally {
 			
 			try {
 				if(in != null)in.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-			
+			}	
 		}
 				
-			
-		Sheet sheet;
-		sheet = book.getSheetAt(0);
-		Row row;
-		Cell cell;    
-		
-		RosterDataAccess data = new RosterDataAccess();
-		RosterDto[] dtos = data.getData(start, userId);
-		int rowNum = 4;
-		
-		for (RosterDto dto : dtos) {
-			row = sheet.getRow(rowNum);
-			cell = row.getCell(10);
-			cell.setCellValue(dto.getRemarks());
-			rowNum++;
-		}
+		createData(start, userId, book);
 		
 		try {
 			book.write(os);
@@ -80,6 +60,28 @@ public class RosterExcel {
 			}
 		}
 
+	}
+
+	private void createData(String start, String userId, Workbook book) {
+		Sheet sheet;
+		sheet = book.getSheetAt(0);
+		Row row;
+		Cell cell;    
+		
+		RosterDataAccess data = new RosterDataAccess();
+		RosterDto[] dtos = data.getData(start, userId);
+		int rowNum = 4;
+		
+		for (RosterDto dto : dtos) {
+			row = sheet.getRow(rowNum);
+			setCell(row, 10, dto.getRemarks());
+			rowNum++;
+		}
+	}
+
+	private void setCell(Row row, int cellNum, String str) {
+		Cell cell = row.getCell(cellNum);
+		cell.setCellValue(str);
 	}
 	
 }
