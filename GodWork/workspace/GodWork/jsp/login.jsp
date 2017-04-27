@@ -11,9 +11,6 @@
 <body>
 	<html:form>
 		
-		<p class="error">
-				<html:errors />
-		</p>
 		<div class="title">
 			<bean:message key="title.roster" /><bean:message key="disp.login" />
 		</div>
@@ -27,6 +24,9 @@
 				<td><html:text name="loginBean" property="password" /></td>
 			</tr>
 		</table>
+		<p class="error">
+			<html:errors />
+		</p>
 		<br>
 		<html:submit/>
 	</html:form>

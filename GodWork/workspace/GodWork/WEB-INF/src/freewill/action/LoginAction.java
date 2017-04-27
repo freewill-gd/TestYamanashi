@@ -8,6 +8,8 @@ import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
 
 import freewill.bean.LoginBean;
 import freewill.database.dataaccess.UserDataAccess;
@@ -38,6 +40,12 @@ public class LoginAction extends Action {
 					session.setAttribute("userId", loginBean.getUserId());
 					session.setAttribute("userName", dtos[0].getUserName());
 					return map.findForward("ok");
+				}
+				
+				if(loginBean.getUserId().length() != 0 ) {
+					ActionMessages msgs = new ActionMessages();
+					msgs.add("error", new ActionMessage("error.login"));
+					saveErrors(request, msgs);
 				}
 				
 				return map.findForward("success");
