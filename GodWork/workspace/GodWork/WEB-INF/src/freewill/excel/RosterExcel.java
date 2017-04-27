@@ -83,6 +83,10 @@ public class RosterExcel {
 		
 		RosterDataAccess data = new RosterDataAccess();
 		RosterDto[] dtos = data.getData(start, userId);
+		row = sheet.getRow(1);
+		String title = "勤務表 " + start.substring(0, 4) + "年" + start.substring(4, 6) + "月";
+		setCell(row, 5, title);
+		
 		int rowNum = 4;
 		
 		for (RosterDto dto : dtos) {
