@@ -27,7 +27,7 @@ public class RosterExcel {
 	private final int CELL_END_TIME = 4;
 	private final int CELL_BREAK_TIME = 5;
 	private final int CELL_OVER_TIME = 6;
-	private final int CELL_LATE_NIGHTOVER_TIME = 7;
+	private final int CELL_LATE_NIGHT_OVER_TIME = 7;
 	private final int CELL_HOLIDAY_OVER_TIME = 8;
 	private final int CELL_HOLIDAY_LATE_NIGHT_OVER_TIME = 9;
 	private final int CELL_REMARKS = 10;
@@ -87,7 +87,16 @@ public class RosterExcel {
 		
 		for (RosterDto dto : dtos) {
 			row = sheet.getRow(rowNum);
+			setCell(row, CELL_WORK_DATE, dto.getWorkDate());
 			setCell(row, CELL_WEEKDAY, dto.getWeekday());
+			setCell(row, CELL_WORK_KIND, dto.getWorkKind());
+			setCell(row, CELL_START_TIME, dto.getStartTime());
+			setCell(row, CELL_END_TIME, dto.getEndTime());
+			setCell(row, CELL_BREAK_TIME, dto.getBreakTime());
+			setCell(row, CELL_OVER_TIME, dto.getOverTime());
+			setCell(row, CELL_LATE_NIGHT_OVER_TIME, dto.getLateNightOverTime());
+			setCell(row, CELL_HOLIDAY_OVER_TIME, dto.getHolidayOverTime());
+			setCell(row, CELL_HOLIDAY_LATE_NIGHT_OVER_TIME, dto.getHolidayLateNightOverTime());
 			setCell(row, CELL_REMARKS, dto.getRemarks());
 			rowNum++;
 		}
