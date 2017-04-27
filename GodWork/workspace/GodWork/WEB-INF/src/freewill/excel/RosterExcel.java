@@ -19,6 +19,19 @@ import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
 
 public class RosterExcel {
+	
+	private final int CELL_WORK_DATE = 0;
+	private final int CELL_WEEKDAY = 1;
+	private final int CELL_WORK_KIND = 2;
+	private final int CELL_START_TIME = 3;
+	private final int CELL_END_TIME = 4;
+	private final int CELL_BREAK_TIME = 5;
+	private final int CELL_OVER_TIME = 6;
+	private final int CELL_LATE_NIGHTOVER_TIME = 7;
+	private final int CELL_HOLIDAY_OVER_TIME = 8;
+	private final int CELL_HOLIDAY_LATE_NIGHT_OVER_TIME = 9;
+	private final int CELL_REMARKS = 10;
+	
 	public void OutoutExcel(OutputStream os, String start, String userId) {
 	
 		URL resource = DataAccess.class.getClassLoader().getResource("Roster.xlsx");
@@ -74,7 +87,8 @@ public class RosterExcel {
 		
 		for (RosterDto dto : dtos) {
 			row = sheet.getRow(rowNum);
-			setCell(row, 10, dto.getRemarks());
+			setCell(row, CELL_WEEKDAY, dto.getWeekday());
+			setCell(row, CELL_REMARKS, dto.getRemarks());
 			rowNum++;
 		}
 	}
