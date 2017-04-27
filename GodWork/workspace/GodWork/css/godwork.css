@@ -96,3 +96,13 @@ table , td  {
 .error_text {
 	background-color: pink;
 }
+
+.login_div {
+ 	width: 1000px;
+ 	text-align: center;
+}
+
+.login_table {
+	margin-top: 50px;
+ 	margin-left: 375px;
+}
