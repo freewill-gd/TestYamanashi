@@ -32,7 +32,7 @@ public class RosterExcel {
 	private final int CELL_HOLIDAY_LATE_NIGHT_OVER_TIME = 9;
 	private final int CELL_REMARKS = 10;
 	
-	public void OutoutExcel(OutputStream os, String start, String userId) {
+	public void OutoutExcel(OutputStream os, String start, String userId, String userName) {
 	
 		URL resource = DataAccess.class.getClassLoader().getResource("Roster.xlsx");
 		Workbook book = null;
@@ -58,7 +58,7 @@ public class RosterExcel {
 			}	
 		}
 				
-		createData(start, userId, book);
+		createData(start, userId, userName, book);
 		
 		try {
 			book.write(os);
@@ -75,7 +75,7 @@ public class RosterExcel {
 
 	}
 
-	private void createData(String start, String userId, Workbook book) {
+	private void createData(String start, String userId, String userName, Workbook book) {
 		Sheet sheet;
 		sheet = book.getSheetAt(0);
 		Row row;
@@ -86,6 +86,9 @@ public class RosterExcel {
 		row = sheet.getRow(1);
 		String title = "勤務表 " + start.substring(0, 4) + "年" + start.substring(4, 6) + "月";
 		setCell(row, 5, title);
+		
+		row = sheet.getRow(2);
+		setCell(row, 10, userName);
 		
 		int rowNum = 4;
 		

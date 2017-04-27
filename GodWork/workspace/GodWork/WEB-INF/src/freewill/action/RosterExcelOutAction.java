@@ -29,13 +29,18 @@ public final class RosterExcelOutAction extends Action {
 		
 		try {
 			RosterBean rosterBean = (RosterBean)form;
-			RosterExcel excl = new RosterExcel();			
-			response.setContentType("application/octet-stream");
-			response.setHeader("Content-Disposition", "attachment; filename=out.xlsx");
-			ServletOutputStream os = response.getOutputStream();
 			String start = rosterBean.getYear() + rosterBean.getMonth();
 			String userId = session.getAttribute("userId").toString();
-			excl.OutoutExcel(os, start, userId);
+			String userName = session.getAttribute("userName").toString();
+			
+			String fileName = "Roster(" +  userId + ")" + start + ".xlsx";
+			
+			RosterExcel excl = new RosterExcel();			
+			response.setContentType("application/octet-stream");
+			response.setHeader("Content-Disposition", "attachment; filename=" + fileName);
+			ServletOutputStream os = response.getOutputStream();
+
+			excl.OutoutExcel(os, start, userId, userName);
 			os.flush();
 			os.close();
 			
