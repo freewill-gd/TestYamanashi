@@ -10,7 +10,7 @@ function move() {
 function update() {
 	var errorCount = $('.error_text').length;
 	if (errorCount != 0) {
-		alert('入力誤りがあります。修正後保存ボタンを押してください。')
+		alert('入力誤りがあります。修正後保存ボタンを押してください。');
 		return;
 	}
 	goAction("update");
@@ -37,10 +37,8 @@ function goAction(mode) {
 function init() {
 	$('.time_text').blur(checkTime);
 	$('[data-work-date]').click(setRosterDefault);
-
- }
+}
  
-
 //　時間フォーマットチェック後テキストボックスの背景を変更
 function checkTime(){
 	textObject = $(this);
@@ -95,7 +93,6 @@ function formatTimeString(textObject) {
 		textObject.val(ret);
 		return;
 	}
-
 }
 
 // 勤務表データ取得
