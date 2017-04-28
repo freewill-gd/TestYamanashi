@@ -22,7 +22,7 @@ public class UserDataAccess {
 		DataAccess data = new DataAccess();
 		HashMap<String, Object> param = new HashMap<String, Object>();
 		param.put("userId", userId);
-		List<Object> result = data.selectList("test.selectM_user", param);
+		List<Object> result = data.selectList("user.selectM_user", param);
 		if (result == null) return null;
 		return result.toArray(new UserDto[0]);
 	}
