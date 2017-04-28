@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -12,12 +11,15 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.apache.poi.xssf.streaming.SXSSFWorkbook;
-
 import freewill.database.DataAccess;
 import freewill.database.dataaccess.RosterDataAccess;
 import freewill.database.dto.RosterDto;
 
+/**
+ * 勤務表エクセルクラス
+ * @author user
+ *
+ */
 public class RosterExcel {
 	
 	private final int CELL_WORK_DATE = 0;
@@ -75,7 +77,6 @@ public class RosterExcel {
 			try {
 				if (book != null ) book.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				System.err.println(e.getStackTrace().toString());
 			}
 		}
@@ -134,8 +135,6 @@ public class RosterExcel {
 		setCell(row, CELL_LATE_NIGHT_OVER_TIME, sumDto.getLateNightOverTime());
 		setCell(row, CELL_HOLIDAY_OVER_TIME, sumDto.getHolidayOverTime());
 		setCell(row, CELL_HOLIDAY_LATE_NIGHT_OVER_TIME, sumDto.getHolidayLateNightOverTime());
-		
-		
 	}
 
 	/**
@@ -148,5 +147,4 @@ public class RosterExcel {
 		Cell cell = row.getCell(cellNum);
 		cell.setCellValue(str);
 	}
-	
 }
