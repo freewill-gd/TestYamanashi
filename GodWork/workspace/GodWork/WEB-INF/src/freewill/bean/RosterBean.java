@@ -16,16 +16,51 @@ import freewill.database.dto.RosterDto;
 public final class RosterBean extends ActionForm {
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * コンボ年
+	 */
 	private String year;
+	
+	/**
+	 * コンボ月
+	 */
 	private String month;
+	
+	/**
+	 * ログイン名
+	 */
 	private String name;
+	
+	/**
+	 * 勤務表データ
+	 */
 	private RosterDto data[];
+	
+	/**
+	 * コンボ年（リスト内容）
+	 */
 	private LinkedHashMap<String, String> selectYear;
+	
+	/**
+	 * コンボ月（リスト内容）
+	 */
 	private LinkedHashMap<String, String> selectMonth;
+	
+	/**
+	 * コンボ勤務種別（リスト内容）
+	 */
 	private LinkedHashMap<String, String> selectWorkKind;
+	
+	/**
+	 * アクションモード
+	 * 移動、保存、Excel出力を判断する
+	 */
 	private String actionMode;
+	
+	/**
+	 * キャッシュ対策用の時間
+	 */
 	private String timeString;
-	private String debugString = "デバッグ文字列";
 
 	public RosterBean() {
 		Date now = new Date();
@@ -129,14 +164,6 @@ public final class RosterBean extends ActionForm {
 
 	public void setTimeString(String timeString) {
 		this.timeString = timeString;
-	}
-
-	public String getDebugString() {
-		return debugString;
-	}
-
-	public void setDebugString(String debugString) {
-		this.debugString = debugString;
 	}
 
 }
