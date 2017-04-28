@@ -3,7 +3,7 @@
 <mapper namespace="roster">
 <!-- 勤務表SQL -->
 
-
+<!-- 一月分の勤務表をカウント -->
   <select id="createT_roster" resultType="int">
 <![CDATA[
 SELECT 
@@ -11,7 +11,6 @@ SELECT
 ]]>
   </select>
   
-
   <select id="selectT_rosterCount" resultType="int">
 <![CDATA[
 SELECT 
@@ -25,7 +24,7 @@ WHERE
 ]]>
   </select>
 
-
+<!-- 一月分の勤務表データ取得 -->
 <resultMap id="t_rosterResultMap" type="freewill.database.dto.RosterDto">
 	<result property="userId" column="user_id" javaType="String"/>
 	<result property="workDate" column="work_date" javaType="String"/>
@@ -82,7 +81,7 @@ ORDER BY
 ]]>
   </select>
 
-
+<!-- 一月分の勤務表データの合計取得 -->
 <resultMap id="t_rosterSumResultMap" type="freewill.database.dto.RosterDto">
 	<result property="breakTime" column="break_time" javaType="String"/>
 	<result property="overTime" column="over_time" javaType="String"/>
@@ -108,7 +107,7 @@ WHERE
 ]]>
   </select>
  
-
+<!-- 一月分の勤務表更新 -->
 <update id="updateT_roster" parameterType="freewill.database.dto.RosterDto">
 <![CDATA[
 UPDATE
