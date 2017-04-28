@@ -38,6 +38,9 @@ table , td  {
 .weekday {
 	width: 30px;
 }
+.def {
+	width: 30px;
+}
  .work_kind  {
 	width: 80px;
 }
@@ -72,7 +75,7 @@ table , td  {
 }
 
 .remarks_text {
-	width:  472px;
+	width:  442px;
 	text-align: left;
 }
 

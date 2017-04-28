@@ -36,7 +36,8 @@ function goAction(mode) {
 // ページ初期化
 function init() {
 	$('.time_text').blur(checkTime);
-	
+	$('[data-work-date]').click(setRosterDefault);
+
  }
  
 
@@ -106,7 +107,9 @@ function getRoster(day, objName) {
 	return $(nameStr);
 }
 
-function setRosterDefault(day) {
+function setRosterDefault() {
+	var obj = $(this);
+	var day = obj.attr("data-work-date");
 	getRoster(day, "workKind").val("1");
 	getRoster(day, "startTime").val("09:00");
 	getRoster(day, "endTime").val("18:00");

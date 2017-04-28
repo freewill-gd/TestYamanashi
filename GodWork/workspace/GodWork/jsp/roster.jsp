@@ -42,6 +42,7 @@
 			 <tr>
 				<td class="work_date"><bean:message key="disp.work_date" /></td>
 				<td class="weekday"><bean:message key="disp.weekday" /></td>
+				<td class="def"><bean:message key="disp.weekday" /></td>
 				<td class="work_kind"><bean:message key="disp.work_kind" /></td>
 				<td class="start_time"><bean:message key="disp.start_time" /></td>
 				<td class="end_time"><bean:message key="disp.end_time" /></td>
@@ -56,6 +57,7 @@
 		    <tr data-weekday = "<bean:write name="data" property="weekday"/>">
 				<td><html:hidden name="data"  property="workDateKey"  indexed="true" /><bean:write name="data" property="workDate"/></td>
 				<td><bean:write name="data" property="weekday"/></td>
+				<td><button type="button" data-work-date = "<bean:write name="data" property="workDate"/>">○</button></td>
 				<td>
 					<html:select name="data" property="workKind" indexed="true">
 						<html:optionsCollection name="rosterBean" property="selectWorkKind" value="key" label="value" />
