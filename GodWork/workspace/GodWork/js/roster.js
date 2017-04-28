@@ -2,7 +2,8 @@ $(document).ready(init);
 
 // 月移動
 function move() {
-	goAction("move");
+	var flg = confirm("月移動してもよろしいでしょうか?");
+	if (flg) goAction("move");
 }
 
 // 勤務表更新
