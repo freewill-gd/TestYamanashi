@@ -13,7 +13,6 @@ import freewill.database.dto.RosterDto;
 public class RosterDataAccess {
 	
 	public RosterDto[] getData(String start, String userId) {
-		// 数値変換エラー対策は現時点では未実装
 		DataAccess data = new DataAccess();
 		HashMap<String, Object> param = new HashMap<String, Object>();
 		param.put("start", start);
@@ -26,6 +25,19 @@ public class RosterDataAccess {
 		return result.toArray(new RosterDto[0]);
 	}
 
+	public RosterDto getDataSum(String start, String userId) {
+		DataAccess data = new DataAccess();
+		HashMap<String, Object> param = new HashMap<String, Object>();
+		param.put("start", start);
+		int  end = Integer.parseInt(start);
+		end++;
+		param.put("end", String.valueOf(end));
+		param.put("userId", userId);
+		List<Object> result = data.selectList("test.selectT_rosterSum", param);
+		if(result == null) return null;	
+		return (RosterDto)result.get(0);
+	}
+	
 	public void updates(RosterDto[] dto) {
 		DataAccess data = new DataAccess();
 		data.updates("test.updateT_roster", dto);

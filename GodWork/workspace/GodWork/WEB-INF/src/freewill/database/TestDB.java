@@ -16,8 +16,8 @@ public class TestDB {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		//testCreate();
-		testSelect();
-
+		//testSelect();
+		testSelectSum();
 		// testUpdate();
 
 	}
@@ -33,6 +33,20 @@ public class TestDB {
 		dto.setWorkDateKey("2017/01/02");
 		//da.update(dto);
 	}
+	
+	private static void testSelectSum() {
+		RosterDataAccess da = new RosterDataAccess();
+		
+		RosterDto result = da.getDataSum("201704", "fw001");
+		if(result == null) {
+				System.out.println("Null");
+				return;
+		}
+
+		System.out.println(result.getOverTime());
+	}
+	
+	
 	private static void testSelect() {
 		RosterDataAccess da = new RosterDataAccess();
 		

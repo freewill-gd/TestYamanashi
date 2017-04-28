@@ -82,6 +82,33 @@ ORDER BY
 ]]>
   </select>
 
+
+<resultMap id="t_rosterSumResultMap" type="freewill.database.dto.RosterDto">
+	<result property="breakTime" column="break_time" javaType="String"/>
+	<result property="overTime" column="over_time" javaType="String"/>
+	<result property="lateNightOverTime" column="late_night_over_time" javaType="String"/>
+	<result property="holidayOverTime" column="holiday_over_time" javaType="String"/>
+	<result property="holidayLateNightOverTime" column="holiday_late_night_over_time" javaType="String"/>
+</resultMap>
+
+  <select id="selectT_rosterSum" resultMap="t_rosterSumResultMap">
+<![CDATA[
+SELECT
+    fn_minute_to_string(sum(break_time)) AS break_time
+  , fn_minute_to_string(sum(over_time)) AS over_time
+  , fn_minute_to_string(sum(late_night_over_time)) AS late_night_over_time
+  , fn_minute_to_string(sum(holiday_over_time)) AS holiday_over_time
+  , fn_minute_to_string(sum(holiday_late_night_over_time)) AS holiday_late_night_over_time
+FROM
+  t_roster
+WHERE
+ work_date >= TO_DATE(#{start}, 'YYYYMM')
+ AND work_date < TO_DATE(#{end}, 'YYYYMM')
+ AND user_id = #{userId}
+]]>
+  </select>
+ 
+
 <update id="updateT_roster" parameterType="freewill.database.dto.RosterDto">
 <![CDATA[
 UPDATE
