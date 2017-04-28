@@ -110,9 +110,12 @@ function getRoster(day, objName) {
 function setRosterDefault() {
 	var obj = $(this);
 	var day = obj.attr("data-work-date");
+	
+	var chkval = getRoster(day, "workKind").val();
+	if (chkval != 0) return; 
+	
 	getRoster(day, "workKind").val("1");
 	getRoster(day, "startTime").val("09:00");
 	getRoster(day, "endTime").val("18:00");
 	getRoster(day, "breakTime").val("01:00");
-	
 }
