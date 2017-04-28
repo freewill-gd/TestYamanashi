@@ -22,7 +22,7 @@
 				</tr>
 				<tr>
 					<td><bean:message key="disp.password" /></td>
-					<td><html:text name="loginBean" property="password" /></td>
+					<td><html:password name="loginBean" property="password" /></td>
 				</tr>
 			</table>
 			<p class="error">

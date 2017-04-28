@@ -115,7 +115,7 @@ public class RosterExcel {
 		// 合計
 		RosterDto sumDto = data.getDataSum(start, userId);
 		row = sheet.getRow(36);
-		setCell(row, CELL_BREAK_TIME, sumDto.getBreakTime());
+		// setCell(row, CELL_BREAK_TIME, sumDto.getBreakTime());
 		setCell(row, CELL_OVER_TIME, sumDto.getOverTime());
 		setCell(row, CELL_LATE_NIGHT_OVER_TIME, sumDto.getLateNightOverTime());
 		setCell(row, CELL_HOLIDAY_OVER_TIME, sumDto.getHolidayOverTime());
