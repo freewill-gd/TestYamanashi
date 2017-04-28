@@ -83,6 +83,8 @@ public class RosterExcel {
 		
 		RosterDataAccess data = new RosterDataAccess();
 		RosterDto[] dtos = data.getData(start, userId);
+		
+		//ヘッダー
 		row = sheet.getRow(1);
 		String title = "勤務表 " + start.substring(0, 4) + "年" + start.substring(4, 6) + "月";
 		setCell(row, 5, title);
@@ -92,7 +94,9 @@ public class RosterExcel {
 		
 		int rowNum = 4;
 		
+		// 明細
 		for (RosterDto dto : dtos) {
+			// 1日ごと
 			row = sheet.getRow(rowNum);
 			setCell(row, CELL_WORK_DATE, dto.getWorkDate());
 			setCell(row, CELL_WEEKDAY, dto.getWeekday());
@@ -107,6 +111,17 @@ public class RosterExcel {
 			setCell(row, CELL_REMARKS, dto.getRemarks());
 			rowNum++;
 		}
+		
+		// 合計
+		RosterDto sumDto = data.getDataSum(start, userId);
+		row = sheet.getRow(36);
+		setCell(row, CELL_BREAK_TIME, sumDto.getBreakTime());
+		setCell(row, CELL_OVER_TIME, sumDto.getOverTime());
+		setCell(row, CELL_LATE_NIGHT_OVER_TIME, sumDto.getLateNightOverTime());
+		setCell(row, CELL_HOLIDAY_OVER_TIME, sumDto.getHolidayOverTime());
+		setCell(row, CELL_HOLIDAY_LATE_NIGHT_OVER_TIME, sumDto.getHolidayLateNightOverTime());
+		
+		
 	}
 
 	private void setCell(Row row, int cellNum, String str) {
