@@ -1,24 +1,27 @@
- body {
+body {
 	margin: 10mm;
 	font-size: 12px;
- }
+}
+
 .input_arear {
-	width:1000px;
-	height:30px;
+	width: 1000px;
+	height: 30px;
 	margin-bottom: 20px;
 	border-bottom: 1px #333333 solid;
 }
- .title  {
- 	width: 1000px;
- 	font-size: 30px;
- 	text-align: center;
- }
+
+.title  {
+	width: 1000px;
+	font-size: 30px;
+	text-align: center;
+}
 
 .subtitle {
 	width: 1000px;
  	font-size: 25px;
  	text-align: right;
 }
+
 table , td  {
 	border-collapse: collapse;
 	border: 1px #333333 solid;
@@ -38,9 +41,11 @@ table , td  {
 .weekday {
 	width: 30px;
 }
+
 .def {
 	width: 30px;
 }
+
  .work_kind  {
 	width: 80px;
 }
@@ -48,6 +53,7 @@ table , td  {
 .start_time {
 	width: 50px;
 }
+
 .end_time {
 	width: 50px;
 }
@@ -55,6 +61,7 @@ table , td  {
 .break_time {
 	width: 50px;
 }
+
 .over_time {
 	width: 50px;
 }
@@ -66,6 +73,7 @@ table , td  {
 .holiday_over_time {
 	width: 50px;
 }
+
 .holiday_late_night_over_time  {
 	width: 50px;
 }
@@ -75,7 +83,7 @@ table , td  {
 }
 
 .remarks_text {
-	width:  442px;
+	width: 442px;
 	text-align: left;
 }
 
