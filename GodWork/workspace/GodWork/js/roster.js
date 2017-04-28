@@ -42,7 +42,10 @@ function init() {
 //　時間フォーマットチェック後テキストボックスの背景を変更
 function checkTime(){
 	textObject = $(this);
+	formatTimeString(textObject);
+	
 	var text = textObject.val();
+	
 	if (checkTimeString(text)) {
 		textObject.removeClass('error_text');
 	}
@@ -54,7 +57,40 @@ function checkTime(){
 
 // 時間のフォーマットチェック
 function checkTimeString(timestr) {
-	if(timestr.length == 0) return true;
+	if(timestr.length == 0) return true;	
 	var ptr = /^[0-9][0-9]:[0-5][0-9]$/;
 	return ptr.test(timestr);
+}
+
+function formatTimeString(textObject) {
+	var text = textObject.val();
+	var ret = "";
+	var ptr = /^[0-9][0-9][0-5][0-9]$/;
+	if (ptr.test(text)) {
+		ret = text.substr(0,2) + ":" + text.substr(2,2);
+		textObject.val(ret);
+		return;
+	}
+	
+	ptr = /^[0-9]$/;
+	if (ptr.test(text)) {
+		ret = "0" + text + ":00";
+		textObject.val(ret);
+		return;
+	}
+	
+	ptr = /^[0-9][0-9]$/;
+	if (ptr.test(text)) {
+		ret = text + ":00";
+		textObject.val(ret);
+		return;
+	}
+	
+	ptr = /^[0-9][0-9][0-5]$/;
+	if (ptr.test(text)) {
+		ret = text.substr(0,2) + ":" + text.substr(2,1) + "0";
+		textObject.val(ret);
+		return;
+	}
+
 }
