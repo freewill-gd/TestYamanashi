@@ -36,6 +36,7 @@ function goAction(mode) {
 // ページ初期化
 function init() {
 	$('.time_text').blur(checkTime);
+	
  }
  
 
@@ -43,7 +44,7 @@ function init() {
 function checkTime(){
 	textObject = $(this);
 	formatTimeString(textObject);
-	
+		
 	var text = textObject.val();
 	
 	if (checkTimeString(text)) {
@@ -62,6 +63,7 @@ function checkTimeString(timestr) {
 	return ptr.test(timestr);
 }
 
+// 時間補完関数
 function formatTimeString(textObject) {
 	var text = textObject.val();
 	var ret = "";
@@ -93,4 +95,21 @@ function formatTimeString(textObject) {
 		return;
 	}
 
+}
+
+function getRoster(day, objName) {
+	var index = day - 1;
+	var baseSName = "[name='data[" + index + "].";
+	var vaseEName = "']";
+	
+	var nameStr = baseSName +  objName + vaseEName;
+	return $(nameStr);
+}
+
+function setRosterDefault(day) {
+	getRoster(day, "workKind").val("1");
+	getRoster(day, "startTime").val("09:00");
+	getRoster(day, "endTime").val("18:00");
+	getRoster(day, "breakTime").val("01:00");
+	
 }
