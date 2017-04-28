@@ -96,7 +96,7 @@ public class RosterExcel {
 			row = sheet.getRow(rowNum);
 			setCell(row, CELL_WORK_DATE, dto.getWorkDate());
 			setCell(row, CELL_WEEKDAY, dto.getWeekday());
-			setCell(row, CELL_WORK_KIND, dto.getWorkKind());
+			setCell(row, CELL_WORK_KIND, dto.getWorkKindText());
 			setCell(row, CELL_START_TIME, dto.getStartTime());
 			setCell(row, CELL_END_TIME, dto.getEndTime());
 			setCell(row, CELL_BREAK_TIME, dto.getBreakTime());

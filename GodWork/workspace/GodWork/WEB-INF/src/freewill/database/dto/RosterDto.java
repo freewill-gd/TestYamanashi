@@ -13,6 +13,7 @@ public class RosterDto {
 	private String workDateKey;
 	private String holidayFlg;
 	private String workKind;
+	private String workKindText;
 	private String startTime;
 	private String endTime;
 	private String breakTime;
@@ -63,6 +64,14 @@ public class RosterDto {
 	public void setWorkKind(String workKind) {
 		this.workKind = workKind;
 	}
+	
+	public String getWorkKindText() {
+		return workKindText;
+	}
+	public void setWorkKindText(String workKindText) {
+		this.workKindText = workKindText;
+	}
+	
 	public String getStartTime() {
 		return startTime;
 	}

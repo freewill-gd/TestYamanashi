@@ -15,8 +15,8 @@ public class TestDB {
 	 */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		testCreate();
-		//testSelect2();
+		//testCreate();
+		testSelect();
 
 		// testUpdate();
 
@@ -33,8 +33,21 @@ public class TestDB {
 		dto.setWorkDateKey("2017/01/02");
 		//da.update(dto);
 	}
-
 	private static void testSelect() {
+		RosterDataAccess da = new RosterDataAccess();
+		
+		RosterDto[] result = da.getData("201704", "fw001");
+		if(result == null) {
+				System.out.println("Null");
+				return;
+		}
+
+		for (RosterDto row : result) {
+			 System.out.println(row.getWorkKindText());
+		}
+	}
+	
+	private static void testSelect1() {
 		UserDataAccess da = new UserDataAccess();
 		UserDto[] result = da.getData("fw001");
 		if(result == null) {

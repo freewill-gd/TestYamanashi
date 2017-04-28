@@ -33,6 +33,7 @@ WHERE
 	<result property="workDateKey" column="work_date_key" javaType="String"/>
 	<result property="holidayFlg" column="holiday_flg" javaType="String"/>
 	<result property="workKind" column="work_kind" javaType="String"/>
+	<result property="workKindText" column="work_kind_text" javaType="String"/>
 	<result property="startTime" column="start_time" javaType="String"/>
 	<result property="endTime" column="end_time" javaType="String"/>
 	<result property="breakTime" column="break_time" javaType="String"/>
@@ -56,6 +57,7 @@ SELECT user_id
  ,  TO_CHAR(work_date, 'YYYY/MM/DD') AS work_date_key
  ,  holiday_flg
  ,  work_kind
+ ,  fn_work_kind(work_kind) as work_kind_text
  ,  TO_CHAR(start_time, 'HH24:MI') AS start_time
  ,  TO_CHAR(end_time, 'HH24:MI') AS end_time
  ,  fn_minute_to_string(break_time) AS break_time
