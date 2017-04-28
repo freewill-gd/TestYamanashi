@@ -26,7 +26,7 @@ public class RosterDataAccess {
 		end++;
 		param.put("end", String.valueOf(end));
 		param.put("userId", userId);
-		List<Object> result = data.selectList("test.selectT_roster", param);
+		List<Object> result = data.selectList("roster.selectT_roster", param);
 		if (result == null) return null;	
 		return result.toArray(new RosterDto[0]);
 	}
@@ -45,7 +45,7 @@ public class RosterDataAccess {
 		end++;
 		param.put("end", String.valueOf(end));
 		param.put("userId", userId);
-		List<Object> result = data.selectList("test.selectT_rosterSum", param);
+		List<Object> result = data.selectList("roster.selectT_rosterSum", param);
 		if (result == null) return null;	
 		return (RosterDto)result.get(0);
 	}
@@ -56,7 +56,7 @@ public class RosterDataAccess {
 	 */
 	public void updates(RosterDto[] dto) {
 		DataAccess data = new DataAccess();
-		data.updates("test.updateT_roster", dto);
+		data.updates("roster.updateT_roster", dto);
 	}
 	
 	/**
@@ -73,7 +73,7 @@ public class RosterDataAccess {
 		end++;
 		param.put("end", String.valueOf(end));
 		param.put("userId", userId);
-		int result = data.selectOne("test.selectT_rosterCount", param);
+		int result = data.selectOne("roster.selectT_rosterCount", param);
 		return result;
 	}
 	
@@ -91,7 +91,7 @@ public class RosterDataAccess {
 		param.put("yyyy", yyyy);
 		param.put("mm", mm);
 		
-		data.proc("test.createT_roster", param);
+		data.proc("roster.createT_roster", param);
 	}
 
 	/**
