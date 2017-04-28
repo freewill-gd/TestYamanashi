@@ -12,6 +12,12 @@ import freewill.database.dto.RosterDto;
  */
 public class RosterDataAccess {
 	
+	/**
+	 * 一月分の勤務表データ取得
+	 * @param start
+	 * @param userId
+	 * @return
+	 */
 	public RosterDto[] getData(String start, String userId) {
 		DataAccess data = new DataAccess();
 		HashMap<String, Object> param = new HashMap<String, Object>();
@@ -25,6 +31,12 @@ public class RosterDataAccess {
 		return result.toArray(new RosterDto[0]);
 	}
 
+	/**
+	 * 一月分の勤務表データの合計取得
+	 * @param start
+	 * @param userId
+	 * @return
+	 */
 	public RosterDto getDataSum(String start, String userId) {
 		DataAccess data = new DataAccess();
 		HashMap<String, Object> param = new HashMap<String, Object>();
@@ -38,11 +50,21 @@ public class RosterDataAccess {
 		return (RosterDto)result.get(0);
 	}
 	
+	/**
+	 * 一月分の勤務表更新
+	 * @param dto
+	 */
 	public void updates(RosterDto[] dto) {
 		DataAccess data = new DataAccess();
 		data.updates("test.updateT_roster", dto);
 	}
 	
+	/**
+	 * 一月分の勤務表をカウント
+	 * @param start
+	 * @param userId
+	 * @return
+	 */
 	public int getCount(String start, String userId){
 		DataAccess data = new DataAccess();
 		HashMap<String, Object> param = new HashMap<String, Object>();
@@ -55,6 +77,11 @@ public class RosterDataAccess {
 		return result;
 	}
 	
+	/**
+	 * 一月分の勤務表を作成
+	 * @param start
+	 * @param userId
+	 */
 	public void createDate(String start, String userId){
 		DataAccess data = new DataAccess();
 		HashMap<String, Object> param = new HashMap<String, Object>();
@@ -65,9 +92,13 @@ public class RosterDataAccess {
 		param.put("mm", mm);
 		
 		data.proc("test.createT_roster", param);
-		//return result;
 	}
-	
+
+	/**
+	 * 勤務表データがない場合一月分の勤務表データを作成
+	 * @param start
+	 * @param userId
+	 */
 	public void checkData(String start, String userId){
 		int count = getCount(start, userId);
 		if(count > 0) return;

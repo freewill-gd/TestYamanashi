@@ -32,6 +32,13 @@ public class RosterExcel {
 	private final int CELL_HOLIDAY_LATE_NIGHT_OVER_TIME = 9;
 	private final int CELL_REMARKS = 10;
 	
+	/**
+	 * 勤務表エクセルの作成(ストリーム)
+	 * @param os
+	 * @param start
+	 * @param userId
+	 * @param userName
+	 */
 	public void OutoutExcel(OutputStream os, String start, String userId, String userName) {
 	
 		URL resource = DataAccess.class.getClassLoader().getResource("Roster.xlsx");
@@ -75,6 +82,13 @@ public class RosterExcel {
 
 	}
 
+	/**
+	 * 勤務表エクセルの作成
+	 * @param start
+	 * @param userId
+	 * @param userName
+	 * @param book
+	 */
 	private void createData(String start, String userId, String userName, Workbook book) {
 		Sheet sheet;
 		sheet = book.getSheetAt(0);
@@ -124,6 +138,12 @@ public class RosterExcel {
 		
 	}
 
+	/**
+	 * 指定したセルにデータを設定する
+	 * @param row
+	 * @param cellNum
+	 * @param str
+	 */
 	private void setCell(Row row, int cellNum, String str) {
 		Cell cell = row.getCell(cellNum);
 		cell.setCellValue(str);

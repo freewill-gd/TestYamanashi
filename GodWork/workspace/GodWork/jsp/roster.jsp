@@ -42,7 +42,7 @@
 			 <tr>
 				<td class="work_date"><bean:message key="disp.work_date" /></td>
 				<td class="weekday"><bean:message key="disp.weekday" /></td>
-				<td class="def"><bean:message key="disp.weekday" /></td>
+				<td class="def"></td>
 				<td class="work_kind"><bean:message key="disp.work_kind" /></td>
 				<td class="start_time"><bean:message key="disp.start_time" /></td>
 				<td class="end_time"><bean:message key="disp.end_time" /></td>

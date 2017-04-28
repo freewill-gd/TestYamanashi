@@ -13,6 +13,11 @@ import freewill.database.dto.UserDto;
  */
 public class UserDataAccess {
 
+	/**
+	 * ユーザデータを取得
+	 * @param userId
+	 * @return
+	 */
 	public UserDto[] getData(String userId) {
 		DataAccess data = new DataAccess();
 		HashMap<String, Object> param = new HashMap<String, Object>();

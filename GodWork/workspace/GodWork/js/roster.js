@@ -33,7 +33,6 @@ function goAction(mode) {
 	document.forms[0].submit();
 }
 
-
 // ページ初期化
 function init() {
 	$('.time_text').blur(checkTime);
@@ -99,6 +98,7 @@ function formatTimeString(textObject) {
 
 }
 
+// 勤務表データ取得
 function getRoster(day, objName) {
 	var index = day - 1;
 	var baseSName = "[name='data[" + index + "].";
@@ -108,6 +108,7 @@ function getRoster(day, objName) {
 	return $(nameStr);
 }
 
+// デフォルト勤務を設定
 function setRosterDefault() {
 	var obj = $(this);
 	var day = obj.attr("data-work-date");

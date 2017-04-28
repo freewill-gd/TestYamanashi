@@ -16,7 +16,7 @@ import freewill.database.dto.RosterDto;
 import freewill.excel.RosterExcel;
 
 /**
- * 勤務表アクション
+ * 勤務表Excelアクション
  * @author Tomoyuki Yamanashi
  *
  */
